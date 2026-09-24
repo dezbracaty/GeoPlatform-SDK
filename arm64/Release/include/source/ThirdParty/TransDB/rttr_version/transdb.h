@@ -1,4 +1,5 @@
 #pragma once
+#include <spdlog/spdlog.h>
 
 #include <string>
 #include <string_view>
@@ -134,8 +135,8 @@ namespace trans {
                 try {
                     return std::any_cast<T>(value);
                 } catch (const std::bad_any_cast&) {
-                    std::cerr << "Error: Type mismatch for property '" << prop.name() << "'"
-                              << std::endl;
+                    SPDLOG_ERROR("TransDB: type mismatch for property '{}' (owner='{}', expected='{}', actual='{}')",
+                                 prop.name(), prop.typeName(), typeid(T).name(), value.type().name());
                 }
             }
             return T{};
