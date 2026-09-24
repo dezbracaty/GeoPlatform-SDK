@@ -1,0 +1,3335 @@
+[
+    {
+        "classes": [
+            {
+                "className": "BaseDBObject",
+                "constructors": [
+                    {
+                        "access": "public",
+                        "arguments": [
+                            {
+                                "name": "parent",
+                                "type": "QObject*"
+                            }
+                        ],
+                        "index": 0,
+                        "name": "BaseDBObject",
+                        "returnType": ""
+                    },
+                    {
+                        "access": "public",
+                        "index": 1,
+                        "isCloned": true,
+                        "name": "BaseDBObject",
+                        "returnType": ""
+                    }
+                ],
+                "lineNumber": 9,
+                "object": true,
+                "qualifiedClassName": "BaseDBObject",
+                "superClasses": [
+                    {
+                        "access": "public",
+                        "name": "QObject"
+                    }
+                ]
+            }
+        ],
+        "inputFile": "BaseDBObject.hpp",
+        "outputRevision": 69
+    },
+    {
+        "classes": [
+            {
+                "classInfos": [
+                    {
+                        "name": "QML.Element",
+                        "value": "auto"
+                    }
+                ],
+                "className": "ControlBackgroundImpl",
+                "lineNumber": 8,
+                "object": true,
+                "properties": [
+                    {
+                        "constant": false,
+                        "designable": true,
+                        "final": false,
+                        "index": 0,
+                        "member": "m_radius",
+                        "name": "radius",
+                        "notify": "radiusChanged",
+                        "required": false,
+                        "scriptable": true,
+                        "stored": true,
+                        "type": "int",
+                        "user": false
+                    },
+                    {
+                        "constant": false,
+                        "designable": true,
+                        "final": false,
+                        "index": 1,
+                        "member": "m_defaultColor",
+                        "name": "defaultColor",
+                        "notify": "defaultColorChanged",
+                        "required": false,
+                        "scriptable": true,
+                        "stored": true,
+                        "type": "QColor",
+                        "user": false
+                    },
+                    {
+                        "constant": false,
+                        "designable": true,
+                        "final": false,
+                        "index": 2,
+                        "member": "m_secondaryColor",
+                        "name": "secondaryColor",
+                        "notify": "secondaryColorChanged",
+                        "required": false,
+                        "scriptable": true,
+                        "stored": true,
+                        "type": "QColor",
+                        "user": false
+                    },
+                    {
+                        "constant": false,
+                        "designable": true,
+                        "final": false,
+                        "index": 3,
+                        "member": "m_endColor",
+                        "name": "endColor",
+                        "notify": "endColorChanged",
+                        "required": false,
+                        "scriptable": true,
+                        "stored": true,
+                        "type": "QColor",
+                        "user": false
+                    },
+                    {
+                        "constant": false,
+                        "designable": true,
+                        "final": false,
+                        "index": 4,
+                        "member": "m_borderWidth",
+                        "name": "borderWidth",
+                        "notify": "borderWidthChanged",
+                        "required": false,
+                        "scriptable": true,
+                        "stored": true,
+                        "type": "int",
+                        "user": false
+                    }
+                ],
+                "qualifiedClassName": "ControlBackgroundImpl",
+                "signals": [
+                    {
+                        "access": "public",
+                        "index": 0,
+                        "name": "radiusChanged",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "index": 1,
+                        "name": "defaultColorChanged",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "index": 2,
+                        "name": "secondaryColorChanged",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "index": 3,
+                        "name": "endColorChanged",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "index": 4,
+                        "name": "borderWidthChanged",
+                        "returnType": "void"
+                    }
+                ],
+                "superClasses": [
+                    {
+                        "access": "public",
+                        "name": "QQuickPaintedItem"
+                    }
+                ]
+            }
+        ],
+        "inputFile": "ControlBackgroundImpl.h",
+        "outputRevision": 69
+    },
+    {
+        "classes": [
+            {
+                "classInfos": [
+                    {
+                        "name": "QML.Element",
+                        "value": "auto"
+                    }
+                ],
+                "className": "DataGridModel",
+                "lineNumber": 9,
+                "methods": [
+                    {
+                        "access": "public",
+                        "index": 2,
+                        "name": "clear",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "arguments": [
+                            {
+                                "name": "data",
+                                "type": "QJSValue"
+                            }
+                        ],
+                        "index": 3,
+                        "name": "append",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "arguments": [
+                            {
+                                "name": "index",
+                                "type": "int"
+                            }
+                        ],
+                        "index": 4,
+                        "name": "get",
+                        "returnType": "QVariant"
+                    },
+                    {
+                        "access": "public",
+                        "arguments": [
+                            {
+                                "name": "from",
+                                "type": "int"
+                            },
+                            {
+                                "name": "to",
+                                "type": "int"
+                            },
+                            {
+                                "name": "n",
+                                "type": "int"
+                            }
+                        ],
+                        "index": 5,
+                        "name": "move",
+                        "returnType": "bool"
+                    },
+                    {
+                        "access": "public",
+                        "arguments": [
+                            {
+                                "name": "index",
+                                "type": "int"
+                            },
+                            {
+                                "name": "count",
+                                "type": "int"
+                            }
+                        ],
+                        "index": 6,
+                        "name": "remove",
+                        "returnType": "bool"
+                    },
+                    {
+                        "access": "public",
+                        "arguments": [
+                            {
+                                "name": "index",
+                                "type": "int"
+                            }
+                        ],
+                        "index": 7,
+                        "isCloned": true,
+                        "name": "remove",
+                        "returnType": "bool"
+                    },
+                    {
+                        "access": "public",
+                        "arguments": [
+                            {
+                                "name": "index",
+                                "type": "int"
+                            },
+                            {
+                                "name": "data",
+                                "type": "QJSValue"
+                            }
+                        ],
+                        "index": 8,
+                        "name": "insert",
+                        "returnType": "bool"
+                    },
+                    {
+                        "access": "public",
+                        "arguments": [
+                            {
+                                "name": "index",
+                                "type": "int"
+                            },
+                            {
+                                "name": "data",
+                                "type": "QJSValue"
+                            }
+                        ],
+                        "index": 9,
+                        "name": "set",
+                        "returnType": "bool"
+                    },
+                    {
+                        "access": "public",
+                        "arguments": [
+                            {
+                                "name": "list",
+                                "type": "QModelIndexList"
+                            }
+                        ],
+                        "index": 10,
+                        "name": "removeItems",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "arguments": [
+                            {
+                                "name": "selectionModel",
+                                "type": "QItemSelectionModel*"
+                            },
+                            {
+                                "name": "startRow",
+                                "type": "int"
+                            },
+                            {
+                                "name": "endRow",
+                                "type": "int"
+                            }
+                        ],
+                        "index": 11,
+                        "name": "selectRange",
+                        "returnType": "void"
+                    }
+                ],
+                "object": true,
+                "properties": [
+                    {
+                        "constant": false,
+                        "designable": true,
+                        "final": false,
+                        "index": 0,
+                        "name": "count",
+                        "notify": "countChanged",
+                        "read": "count",
+                        "required": false,
+                        "scriptable": true,
+                        "stored": true,
+                        "type": "int",
+                        "user": false
+                    },
+                    {
+                        "constant": false,
+                        "designable": true,
+                        "final": false,
+                        "index": 1,
+                        "member": "m_sourceData",
+                        "name": "sourceData",
+                        "notify": "sourceDataChanged",
+                        "required": false,
+                        "scriptable": true,
+                        "stored": true,
+                        "type": "QList<QVariant>",
+                        "user": false
+                    }
+                ],
+                "qualifiedClassName": "DataGridModel",
+                "signals": [
+                    {
+                        "access": "public",
+                        "index": 0,
+                        "name": "sourceDataChanged",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "index": 1,
+                        "name": "countChanged",
+                        "returnType": "void"
+                    }
+                ],
+                "superClasses": [
+                    {
+                        "access": "public",
+                        "name": "QAbstractListModel"
+                    }
+                ]
+            }
+        ],
+        "inputFile": "DataGridModel.h",
+        "outputRevision": 69
+    },
+    {
+        "classes": [
+            {
+                "classInfos": [
+                    {
+                        "name": "QML.Element",
+                        "value": "DesktopCaptureItem"
+                    }
+                ],
+                "className": "DesktopCaptureItem",
+                "lineNumber": 7,
+                "methods": [
+                    {
+                        "access": "public",
+                        "index": 4,
+                        "name": "capture",
+                        "returnType": "void"
+                    }
+                ],
+                "object": true,
+                "properties": [
+                    {
+                        "constant": false,
+                        "designable": true,
+                        "final": true,
+                        "index": 0,
+                        "name": "desktop",
+                        "notify": "desktopChanged",
+                        "read": "desktop",
+                        "required": false,
+                        "scriptable": true,
+                        "stored": true,
+                        "type": "QImage",
+                        "user": false
+                    },
+                    {
+                        "constant": false,
+                        "designable": true,
+                        "final": true,
+                        "index": 1,
+                        "name": "target",
+                        "notify": "targetChanged",
+                        "read": "target",
+                        "required": false,
+                        "scriptable": true,
+                        "stored": true,
+                        "type": "QImage",
+                        "user": false
+                    },
+                    {
+                        "constant": false,
+                        "designable": true,
+                        "final": true,
+                        "index": 2,
+                        "name": "position",
+                        "notify": "positionChanged",
+                        "read": "position",
+                        "required": false,
+                        "scriptable": true,
+                        "stored": true,
+                        "type": "QPoint",
+                        "user": false
+                    },
+                    {
+                        "constant": false,
+                        "designable": true,
+                        "final": true,
+                        "index": 3,
+                        "name": "color",
+                        "notify": "colorChanged",
+                        "read": "color",
+                        "required": false,
+                        "scriptable": true,
+                        "stored": true,
+                        "type": "QColor",
+                        "user": false
+                    }
+                ],
+                "qualifiedClassName": "DesktopCaptureItem",
+                "signals": [
+                    {
+                        "access": "public",
+                        "index": 0,
+                        "name": "desktopChanged",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "index": 1,
+                        "name": "targetChanged",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "index": 2,
+                        "name": "positionChanged",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "index": 3,
+                        "name": "colorChanged",
+                        "returnType": "void"
+                    }
+                ],
+                "superClasses": [
+                    {
+                        "access": "public",
+                        "name": "QQuickPaintedItem"
+                    }
+                ]
+            }
+        ],
+        "inputFile": "DesktopCaptureItem.h",
+        "outputRevision": 69
+    },
+    {
+        "classes": [
+            {
+                "classInfos": [
+                    {
+                        "name": "QML.Element",
+                        "value": "FileWatcher"
+                    }
+                ],
+                "className": "FileWatcher",
+                "lineNumber": 8,
+                "object": true,
+                "properties": [
+                    {
+                        "constant": false,
+                        "designable": true,
+                        "final": false,
+                        "index": 0,
+                        "member": "m_path",
+                        "name": "path",
+                        "notify": "pathChanged",
+                        "required": false,
+                        "scriptable": true,
+                        "stored": true,
+                        "type": "QString",
+                        "user": false
+                    }
+                ],
+                "qualifiedClassName": "FileWatcher",
+                "signals": [
+                    {
+                        "access": "public",
+                        "index": 0,
+                        "name": "pathChanged",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "index": 1,
+                        "name": "fileChanged",
+                        "returnType": "void"
+                    }
+                ],
+                "superClasses": [
+                    {
+                        "access": "public",
+                        "name": "QObject"
+                    }
+                ]
+            }
+        ],
+        "inputFile": "FileWatcher.h",
+        "outputRevision": 69
+    },
+    {
+        "classes": [
+            {
+                "classInfos": [
+                    {
+                        "name": "QML.Element",
+                        "value": "Frameless"
+                    }
+                ],
+                "className": "Frameless",
+                "lineNumber": 17,
+                "methods": [
+                    {
+                        "access": "public",
+                        "index": 7,
+                        "name": "showFullScreen",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "index": 8,
+                        "name": "showMaximized",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "index": 9,
+                        "name": "showMinimized",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "index": 10,
+                        "name": "showNormal",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "arguments": [
+                            {
+                                "type": "QQuickItem*"
+                            }
+                        ],
+                        "index": 11,
+                        "name": "setHitTestVisible",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "index": 12,
+                        "name": "onDestruction",
+                        "returnType": "void"
+                    }
+                ],
+                "object": true,
+                "properties": [
+                    {
+                        "constant": false,
+                        "designable": true,
+                        "final": false,
+                        "index": 0,
+                        "member": "m_appbar",
+                        "name": "appbar",
+                        "notify": "appbarChanged",
+                        "required": false,
+                        "scriptable": true,
+                        "stored": true,
+                        "type": "QQuickItem*",
+                        "user": false
+                    },
+                    {
+                        "constant": false,
+                        "designable": true,
+                        "final": false,
+                        "index": 1,
+                        "member": "m_buttonMaximized",
+                        "name": "buttonMaximized",
+                        "notify": "buttonMaximizedChanged",
+                        "required": false,
+                        "scriptable": true,
+                        "stored": true,
+                        "type": "QQuickItem*",
+                        "user": false
+                    },
+                    {
+                        "constant": false,
+                        "designable": true,
+                        "final": false,
+                        "index": 2,
+                        "member": "m_topmost",
+                        "name": "topmost",
+                        "notify": "topmostChanged",
+                        "required": false,
+                        "scriptable": true,
+                        "stored": true,
+                        "type": "bool",
+                        "user": false
+                    },
+                    {
+                        "constant": false,
+                        "designable": true,
+                        "final": false,
+                        "index": 3,
+                        "member": "m_disabled",
+                        "name": "disabled",
+                        "notify": "disabledChanged",
+                        "required": false,
+                        "scriptable": true,
+                        "stored": true,
+                        "type": "bool",
+                        "user": false
+                    },
+                    {
+                        "constant": false,
+                        "designable": true,
+                        "final": false,
+                        "index": 4,
+                        "member": "m_fixSize",
+                        "name": "fixSize",
+                        "notify": "fixSizeChanged",
+                        "required": false,
+                        "scriptable": true,
+                        "stored": true,
+                        "type": "bool",
+                        "user": false
+                    },
+                    {
+                        "constant": false,
+                        "designable": true,
+                        "final": false,
+                        "index": 5,
+                        "member": "m_dark",
+                        "name": "dark",
+                        "notify": "darkChanged",
+                        "required": false,
+                        "scriptable": true,
+                        "stored": true,
+                        "type": "bool",
+                        "user": false
+                    },
+                    {
+                        "constant": false,
+                        "designable": true,
+                        "final": false,
+                        "index": 6,
+                        "member": "m_windowEffect",
+                        "name": "windowEffect",
+                        "notify": "windowEffectChanged",
+                        "required": false,
+                        "scriptable": true,
+                        "stored": true,
+                        "type": "int",
+                        "user": false
+                    }
+                ],
+                "qualifiedClassName": "Frameless",
+                "signals": [
+                    {
+                        "access": "public",
+                        "index": 0,
+                        "name": "appbarChanged",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "index": 1,
+                        "name": "buttonMaximizedChanged",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "index": 2,
+                        "name": "topmostChanged",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "index": 3,
+                        "name": "disabledChanged",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "index": 4,
+                        "name": "fixSizeChanged",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "index": 5,
+                        "name": "darkChanged",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "index": 6,
+                        "name": "windowEffectChanged",
+                        "returnType": "void"
+                    }
+                ],
+                "superClasses": [
+                    {
+                        "access": "public",
+                        "name": "QQuickItem"
+                    },
+                    {
+                        "access": "public",
+                        "name": "QAbstractNativeEventFilter"
+                    }
+                ]
+            }
+        ],
+        "inputFile": "Frameless.h",
+        "outputRevision": 69
+    },
+    {
+        "classes": [
+            {
+                "classInfos": [
+                    {
+                        "name": "QML.Element",
+                        "value": "ImageItem"
+                    }
+                ],
+                "className": "ImageItem",
+                "lineNumber": 7,
+                "object": true,
+                "properties": [
+                    {
+                        "constant": false,
+                        "designable": true,
+                        "final": false,
+                        "index": 0,
+                        "member": "m_source",
+                        "name": "source",
+                        "notify": "sourceChanged",
+                        "required": false,
+                        "scriptable": true,
+                        "stored": true,
+                        "type": "QImage",
+                        "user": false
+                    }
+                ],
+                "qualifiedClassName": "ImageItem",
+                "signals": [
+                    {
+                        "access": "public",
+                        "index": 0,
+                        "name": "sourceChanged",
+                        "returnType": "void"
+                    }
+                ],
+                "superClasses": [
+                    {
+                        "access": "public",
+                        "name": "QQuickPaintedItem"
+                    }
+                ]
+            }
+        ],
+        "inputFile": "ImageItem.h",
+        "outputRevision": 69
+    },
+    {
+        "classes": [
+            {
+                "classInfos": [
+                    {
+                        "name": "QML.Element",
+                        "value": "auto"
+                    }
+                ],
+                "className": "InputBackgroundImpl",
+                "lineNumber": 8,
+                "object": true,
+                "properties": [
+                    {
+                        "constant": false,
+                        "designable": true,
+                        "final": false,
+                        "index": 0,
+                        "member": "m_targetActiveFocus",
+                        "name": "targetActiveFocus",
+                        "notify": "targetActiveFocusChanged",
+                        "required": false,
+                        "scriptable": true,
+                        "stored": true,
+                        "type": "bool",
+                        "user": false
+                    },
+                    {
+                        "constant": false,
+                        "designable": true,
+                        "final": false,
+                        "index": 1,
+                        "member": "m_radius",
+                        "name": "radius",
+                        "notify": "radiusChanged",
+                        "required": false,
+                        "scriptable": true,
+                        "stored": true,
+                        "type": "int",
+                        "user": false
+                    },
+                    {
+                        "constant": false,
+                        "designable": true,
+                        "final": false,
+                        "index": 2,
+                        "member": "m_offsetY",
+                        "name": "offsetY",
+                        "notify": "offsetYChanged",
+                        "required": false,
+                        "scriptable": true,
+                        "stored": true,
+                        "type": "int",
+                        "user": false
+                    },
+                    {
+                        "constant": false,
+                        "designable": true,
+                        "final": false,
+                        "index": 3,
+                        "member": "m_endColor",
+                        "name": "endColor",
+                        "notify": "endColorChanged",
+                        "required": false,
+                        "scriptable": true,
+                        "stored": true,
+                        "type": "QColor",
+                        "user": false
+                    },
+                    {
+                        "constant": false,
+                        "designable": true,
+                        "final": false,
+                        "index": 4,
+                        "member": "m_defaultColor",
+                        "name": "defaultColor",
+                        "notify": "defaultColorChanged",
+                        "required": false,
+                        "scriptable": true,
+                        "stored": true,
+                        "type": "QColor",
+                        "user": false
+                    },
+                    {
+                        "constant": false,
+                        "designable": true,
+                        "final": false,
+                        "index": 5,
+                        "member": "m_borderWidth",
+                        "name": "borderWidth",
+                        "notify": "borderWidthChanged",
+                        "required": false,
+                        "scriptable": true,
+                        "stored": true,
+                        "type": "int",
+                        "user": false
+                    },
+                    {
+                        "constant": false,
+                        "designable": true,
+                        "final": false,
+                        "index": 6,
+                        "member": "m_gradientHeight",
+                        "name": "gradientHeight",
+                        "notify": "gradientHeightChanged",
+                        "required": false,
+                        "scriptable": true,
+                        "stored": true,
+                        "type": "int",
+                        "user": false
+                    }
+                ],
+                "qualifiedClassName": "InputBackgroundImpl",
+                "signals": [
+                    {
+                        "access": "public",
+                        "index": 0,
+                        "name": "targetActiveFocusChanged",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "index": 1,
+                        "name": "radiusChanged",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "index": 2,
+                        "name": "offsetYChanged",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "index": 3,
+                        "name": "endColorChanged",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "index": 4,
+                        "name": "defaultColorChanged",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "index": 5,
+                        "name": "borderWidthChanged",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "index": 6,
+                        "name": "gradientHeightChanged",
+                        "returnType": "void"
+                    }
+                ],
+                "superClasses": [
+                    {
+                        "access": "public",
+                        "name": "QQuickPaintedItem"
+                    }
+                ]
+            }
+        ],
+        "inputFile": "InputBackgroundImpl.h",
+        "outputRevision": 69
+    },
+    {
+        "classes": [
+            {
+                "classInfos": [
+                    {
+                        "name": "QML.Element",
+                        "value": "LineNumberModel"
+                    }
+                ],
+                "className": "LineNumberModel",
+                "lineNumber": 7,
+                "methods": [
+                    {
+                        "access": "public",
+                        "arguments": [
+                            {
+                                "name": "textDocument",
+                                "type": "QQuickTextDocument*"
+                            },
+                            {
+                                "name": "cursorPosition",
+                                "type": "int"
+                            }
+                        ],
+                        "index": 1,
+                        "name": "currentLineNumber",
+                        "returnType": "int"
+                    }
+                ],
+                "object": true,
+                "properties": [
+                    {
+                        "constant": false,
+                        "designable": true,
+                        "final": false,
+                        "index": 0,
+                        "name": "lineCount",
+                        "notify": "lineCountChanged",
+                        "read": "lineCount",
+                        "required": false,
+                        "scriptable": true,
+                        "stored": true,
+                        "type": "int",
+                        "user": false,
+                        "write": "setLineCount"
+                    }
+                ],
+                "qualifiedClassName": "LineNumberModel",
+                "signals": [
+                    {
+                        "access": "public",
+                        "index": 0,
+                        "name": "lineCountChanged",
+                        "returnType": "void"
+                    }
+                ],
+                "superClasses": [
+                    {
+                        "access": "public",
+                        "name": "QAbstractListModel"
+                    }
+                ]
+            }
+        ],
+        "inputFile": "LineNumberModel.h",
+        "outputRevision": 69
+    },
+    {
+        "classes": [
+            {
+                "classInfos": [
+                    {
+                        "name": "QML.Element",
+                        "value": "MenuData"
+                    },
+                    {
+                        "name": "QML.Singleton",
+                        "value": "true"
+                    }
+                ],
+                "className": "MenuData",
+                "lineNumber": 11,
+                "methods": [
+                    {
+                        "access": "public",
+                        "arguments": [
+                            {
+                                "name": "item",
+                                "type": "TMenuItem*"
+                            }
+                        ],
+                        "index": 3,
+                        "name": "onMenuActionTriggered",
+                        "returnType": "bool"
+                    },
+                    {
+                        "access": "public",
+                        "arguments": [
+                            {
+                                "name": "groupName",
+                                "type": "QString"
+                            }
+                        ],
+                        "index": 4,
+                        "name": "getGroup",
+                        "returnType": "const TMenuGroup*"
+                    },
+                    {
+                        "access": "public",
+                        "arguments": [
+                            {
+                                "name": "groupName",
+                                "type": "QString"
+                            },
+                            {
+                                "name": "environment",
+                                "type": "QString"
+                            }
+                        ],
+                        "index": 5,
+                        "name": "getGroup",
+                        "returnType": "const TMenuGroup*"
+                    },
+                    {
+                        "access": "public",
+                        "arguments": [
+                            {
+                                "name": "filePath",
+                                "type": "QString"
+                            }
+                        ],
+                        "index": 6,
+                        "name": "loadMenusFromFile",
+                        "returnType": "void"
+                    }
+                ],
+                "object": true,
+                "properties": [
+                    {
+                        "constant": false,
+                        "designable": true,
+                        "final": false,
+                        "index": 0,
+                        "name": "currentEnvironment",
+                        "notify": "environmentChanged",
+                        "read": "currentEnvironment",
+                        "required": false,
+                        "scriptable": true,
+                        "stored": true,
+                        "type": "QString",
+                        "user": false,
+                        "write": "setCurrentEnvironment"
+                    },
+                    {
+                        "constant": false,
+                        "designable": true,
+                        "final": false,
+                        "index": 1,
+                        "name": "availableEnvironments",
+                        "notify": "availableEnvironmentsChanged",
+                        "read": "availableEnvironments",
+                        "required": false,
+                        "scriptable": true,
+                        "stored": true,
+                        "type": "QStringList",
+                        "user": false
+                    }
+                ],
+                "qualifiedClassName": "MenuData",
+                "signals": [
+                    {
+                        "access": "public",
+                        "arguments": [
+                            {
+                                "name": "item",
+                                "type": "TMenuItem*"
+                            }
+                        ],
+                        "index": 0,
+                        "name": "menuActionDispatch",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "arguments": [
+                            {
+                                "name": "newEnvironment",
+                                "type": "QString"
+                            }
+                        ],
+                        "index": 1,
+                        "name": "environmentChanged",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "index": 2,
+                        "name": "availableEnvironmentsChanged",
+                        "returnType": "void"
+                    }
+                ],
+                "superClasses": [
+                    {
+                        "access": "public",
+                        "name": "QObject"
+                    },
+                    {
+                        "access": "public",
+                        "name": "Singleton<MenuData>"
+                    }
+                ]
+            }
+        ],
+        "inputFile": "MenuData.hpp",
+        "outputRevision": 69
+    },
+    {
+        "classes": [
+            {
+                "className": "TMenuGroup",
+                "lineNumber": 7,
+                "object": true,
+                "properties": [
+                    {
+                        "constant": true,
+                        "designable": true,
+                        "final": false,
+                        "index": 0,
+                        "name": "items",
+                        "read": "getItemList",
+                        "required": false,
+                        "scriptable": true,
+                        "stored": true,
+                        "type": "QQmlListProperty<TMenuItem>",
+                        "user": false
+                    }
+                ],
+                "qualifiedClassName": "TMenuGroup",
+                "superClasses": [
+                    {
+                        "access": "public",
+                        "name": "QObject"
+                    }
+                ]
+            }
+        ],
+        "inputFile": "MenuGroup.hpp",
+        "outputRevision": 69
+    },
+    {
+        "classes": [
+            {
+                "classInfos": [
+                    {
+                        "name": "QML.Element",
+                        "value": "TMenuItem"
+                    }
+                ],
+                "className": "TMenuItem",
+                "constructors": [
+                    {
+                        "access": "public",
+                        "arguments": [
+                            {
+                                "name": "parent",
+                                "type": "QObject*"
+                            }
+                        ],
+                        "index": 0,
+                        "name": "TMenuItem",
+                        "returnType": ""
+                    },
+                    {
+                        "access": "public",
+                        "index": 1,
+                        "isCloned": true,
+                        "name": "TMenuItem",
+                        "returnType": ""
+                    }
+                ],
+                "lineNumber": 9,
+                "methods": [
+                    {
+                        "access": "public",
+                        "index": 10,
+                        "name": "onTriggered",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "index": 11,
+                        "isConst": true,
+                        "name": "deepClone",
+                        "returnType": "QObject*"
+                    },
+                    {
+                        "access": "public",
+                        "arguments": [
+                            {
+                                "name": "text",
+                                "type": "QString"
+                            }
+                        ],
+                        "index": 12,
+                        "name": "getSubItemByText",
+                        "returnType": "TMenuItem*"
+                    }
+                ],
+                "object": true,
+                "properties": [
+                    {
+                        "constant": false,
+                        "designable": true,
+                        "final": false,
+                        "index": 0,
+                        "member": "m_text",
+                        "name": "text",
+                        "notify": "textChanged",
+                        "required": false,
+                        "scriptable": true,
+                        "stored": true,
+                        "type": "QString",
+                        "user": false
+                    },
+                    {
+                        "constant": false,
+                        "designable": true,
+                        "final": false,
+                        "index": 1,
+                        "member": "m_iconSource",
+                        "name": "iconSource",
+                        "notify": "iconSourceChanged",
+                        "required": false,
+                        "scriptable": true,
+                        "stored": true,
+                        "type": "QString",
+                        "user": false
+                    },
+                    {
+                        "constant": false,
+                        "designable": true,
+                        "final": false,
+                        "index": 2,
+                        "member": "m_displayMode",
+                        "name": "displayMode",
+                        "notify": "displayModeChanged",
+                        "required": false,
+                        "scriptable": true,
+                        "stored": true,
+                        "type": "QString",
+                        "user": false
+                    },
+                    {
+                        "constant": false,
+                        "designable": true,
+                        "final": false,
+                        "index": 3,
+                        "member": "m_actionCode",
+                        "name": "actionCode",
+                        "notify": "actionCodeChanged",
+                        "required": false,
+                        "scriptable": true,
+                        "stored": true,
+                        "type": "QString",
+                        "user": false
+                    },
+                    {
+                        "constant": false,
+                        "designable": true,
+                        "final": false,
+                        "index": 4,
+                        "member": "m_enabled",
+                        "name": "enabled",
+                        "notify": "enabledChanged",
+                        "required": false,
+                        "scriptable": true,
+                        "stored": true,
+                        "type": "bool",
+                        "user": false
+                    },
+                    {
+                        "constant": false,
+                        "designable": true,
+                        "final": false,
+                        "index": 5,
+                        "member": "m_checked",
+                        "name": "checked",
+                        "notify": "checkedChanged",
+                        "required": false,
+                        "scriptable": true,
+                        "stored": true,
+                        "type": "bool",
+                        "user": false
+                    },
+                    {
+                        "constant": false,
+                        "designable": true,
+                        "final": false,
+                        "index": 6,
+                        "member": "m_separator",
+                        "name": "separator",
+                        "notify": "separatorChanged",
+                        "required": false,
+                        "scriptable": true,
+                        "stored": true,
+                        "type": "bool",
+                        "user": false
+                    },
+                    {
+                        "constant": false,
+                        "designable": true,
+                        "final": false,
+                        "index": 7,
+                        "member": "m_isMenu",
+                        "name": "isMenu",
+                        "notify": "isMenuChanged",
+                        "required": false,
+                        "scriptable": true,
+                        "stored": true,
+                        "type": "bool",
+                        "user": false
+                    },
+                    {
+                        "constant": false,
+                        "designable": true,
+                        "final": false,
+                        "index": 8,
+                        "member": "m_otherData",
+                        "name": "otherData",
+                        "notify": "otherDataChanged",
+                        "required": false,
+                        "scriptable": true,
+                        "stored": true,
+                        "type": "QVariant",
+                        "user": false
+                    },
+                    {
+                        "constant": false,
+                        "designable": true,
+                        "final": false,
+                        "index": 9,
+                        "name": "items",
+                        "notify": "itemsChanged",
+                        "read": "getItemList",
+                        "required": false,
+                        "scriptable": true,
+                        "stored": true,
+                        "type": "QQmlListProperty<TMenuItem>",
+                        "user": false
+                    }
+                ],
+                "qualifiedClassName": "TMenuItem",
+                "signals": [
+                    {
+                        "access": "public",
+                        "index": 0,
+                        "name": "textChanged",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "index": 1,
+                        "name": "iconSourceChanged",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "index": 2,
+                        "name": "displayModeChanged",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "index": 3,
+                        "name": "actionCodeChanged",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "index": 4,
+                        "name": "enabledChanged",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "index": 5,
+                        "name": "checkedChanged",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "index": 6,
+                        "name": "separatorChanged",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "index": 7,
+                        "name": "isMenuChanged",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "index": 8,
+                        "name": "otherDataChanged",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "index": 9,
+                        "name": "itemsChanged",
+                        "returnType": "void"
+                    }
+                ],
+                "superClasses": [
+                    {
+                        "access": "public",
+                        "name": "BaseDBObject"
+                    }
+                ]
+            }
+        ],
+        "inputFile": "MenuItem.hpp",
+        "outputRevision": 69
+    },
+    {
+        "classes": [
+            {
+                "classInfos": [
+                    {
+                        "name": "QML.Element",
+                        "value": "R"
+                    },
+                    {
+                        "name": "QML.Singleton",
+                        "value": "true"
+                    }
+                ],
+                "className": "Resource",
+                "lineNumber": 8,
+                "methods": [
+                    {
+                        "access": "public",
+                        "arguments": [
+                            {
+                                "name": "path",
+                                "type": "QString"
+                            }
+                        ],
+                        "index": 2,
+                        "name": "resolvedUrl",
+                        "returnType": "QString"
+                    }
+                ],
+                "object": true,
+                "properties": [
+                    {
+                        "constant": false,
+                        "designable": true,
+                        "final": false,
+                        "index": 0,
+                        "member": "m_windowIcon",
+                        "name": "windowIcon",
+                        "notify": "windowIconChanged",
+                        "required": false,
+                        "scriptable": true,
+                        "stored": true,
+                        "type": "QUrl",
+                        "user": false
+                    },
+                    {
+                        "constant": false,
+                        "designable": true,
+                        "final": true,
+                        "index": 1,
+                        "name": "systemDark",
+                        "notify": "systemDarkChanged",
+                        "read": "systemDark",
+                        "required": false,
+                        "scriptable": true,
+                        "stored": true,
+                        "type": "bool",
+                        "user": false
+                    }
+                ],
+                "qualifiedClassName": "Resource",
+                "signals": [
+                    {
+                        "access": "public",
+                        "index": 0,
+                        "name": "windowIconChanged",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "index": 1,
+                        "name": "systemDarkChanged",
+                        "returnType": "void"
+                    }
+                ],
+                "superClasses": [
+                    {
+                        "access": "public",
+                        "name": "QObject"
+                    }
+                ]
+            }
+        ],
+        "inputFile": "Resource.h",
+        "outputRevision": 69
+    },
+    {
+        "classes": [
+            {
+                "classInfos": [
+                    {
+                        "name": "QML.Element",
+                        "value": "RoundRectangle"
+                    }
+                ],
+                "className": "RoundRectangle",
+                "lineNumber": 8,
+                "object": true,
+                "properties": [
+                    {
+                        "constant": false,
+                        "designable": true,
+                        "final": false,
+                        "index": 0,
+                        "member": "m_color",
+                        "name": "color",
+                        "notify": "colorChanged",
+                        "required": false,
+                        "scriptable": true,
+                        "stored": true,
+                        "type": "QColor",
+                        "user": false
+                    },
+                    {
+                        "constant": false,
+                        "designable": true,
+                        "final": false,
+                        "index": 1,
+                        "member": "m_radius",
+                        "name": "radius",
+                        "notify": "radiusChanged",
+                        "required": false,
+                        "scriptable": true,
+                        "stored": true,
+                        "type": "QList<int>",
+                        "user": false
+                    },
+                    {
+                        "constant": false,
+                        "designable": true,
+                        "final": false,
+                        "index": 2,
+                        "member": "m_borderWidth",
+                        "name": "borderWidth",
+                        "notify": "borderWidthChanged",
+                        "required": false,
+                        "scriptable": true,
+                        "stored": true,
+                        "type": "qreal",
+                        "user": false
+                    },
+                    {
+                        "constant": false,
+                        "designable": true,
+                        "final": false,
+                        "index": 3,
+                        "member": "m_borderColor",
+                        "name": "borderColor",
+                        "notify": "borderColorChanged",
+                        "required": false,
+                        "scriptable": true,
+                        "stored": true,
+                        "type": "QColor",
+                        "user": false
+                    },
+                    {
+                        "constant": false,
+                        "designable": true,
+                        "final": false,
+                        "index": 4,
+                        "member": "m_borderStyle",
+                        "name": "borderStyle",
+                        "notify": "borderStyleChanged",
+                        "required": false,
+                        "scriptable": true,
+                        "stored": true,
+                        "type": "Qt::PenStyle",
+                        "user": false
+                    },
+                    {
+                        "constant": false,
+                        "designable": true,
+                        "final": false,
+                        "index": 5,
+                        "member": "m_dashPattern",
+                        "name": "dashPattern",
+                        "notify": "dashPatternChanged",
+                        "required": false,
+                        "scriptable": true,
+                        "stored": true,
+                        "type": "QList<qreal>",
+                        "user": false
+                    }
+                ],
+                "qualifiedClassName": "RoundRectangle",
+                "signals": [
+                    {
+                        "access": "public",
+                        "index": 0,
+                        "name": "colorChanged",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "index": 1,
+                        "name": "radiusChanged",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "index": 2,
+                        "name": "borderWidthChanged",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "index": 3,
+                        "name": "borderColorChanged",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "index": 4,
+                        "name": "borderStyleChanged",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "index": 5,
+                        "name": "dashPatternChanged",
+                        "returnType": "void"
+                    }
+                ],
+                "superClasses": [
+                    {
+                        "access": "public",
+                        "name": "QQuickPaintedItem"
+                    }
+                ]
+            }
+        ],
+        "inputFile": "RoundRectangle.h",
+        "outputRevision": 69
+    },
+    {
+        "classes": [
+            {
+                "classInfos": [
+                    {
+                        "name": "QML.Element",
+                        "value": "SmoothUI"
+                    },
+                    {
+                        "name": "QML.Creatable",
+                        "value": "false"
+                    },
+                    {
+                        "name": "QML.UncreatableReason",
+                        "value": ""
+                    }
+                ],
+                "className": "SmoothUI",
+                "enums": [
+                    {
+                        "alias": "DarkMode",
+                        "isClass": false,
+                        "isFlag": true,
+                        "name": "DarkModes",
+                        "values": [
+                            "Light",
+                            "Dark",
+                            "System"
+                        ]
+                    }
+                ],
+                "lineNumber": 34,
+                "object": true,
+                "properties": [
+                    {
+                        "constant": false,
+                        "designable": true,
+                        "final": false,
+                        "index": 0,
+                        "member": "m_radius",
+                        "name": "radius",
+                        "notify": "radiusChanged",
+                        "required": false,
+                        "scriptable": true,
+                        "stored": true,
+                        "type": "int",
+                        "user": false
+                    },
+                    {
+                        "constant": false,
+                        "designable": true,
+                        "final": false,
+                        "index": 1,
+                        "member": "m_highlightMoveDuration",
+                        "name": "highlightMoveDuration",
+                        "notify": "highlightMoveDurationChanged",
+                        "required": false,
+                        "scriptable": true,
+                        "stored": true,
+                        "type": "int",
+                        "user": false
+                    },
+                    {
+                        "constant": false,
+                        "designable": true,
+                        "final": false,
+                        "index": 2,
+                        "member": "m_theme",
+                        "name": "theme",
+                        "notify": "themeChanged",
+                        "required": false,
+                        "scriptable": true,
+                        "stored": true,
+                        "type": "QVariant",
+                        "user": false
+                    },
+                    {
+                        "constant": false,
+                        "designable": true,
+                        "final": false,
+                        "index": 3,
+                        "member": "m_textColor",
+                        "name": "textColor",
+                        "notify": "textColorChanged",
+                        "required": false,
+                        "scriptable": true,
+                        "stored": true,
+                        "type": "QColor",
+                        "user": false
+                    },
+                    {
+                        "constant": false,
+                        "designable": true,
+                        "final": false,
+                        "index": 4,
+                        "member": "m_iconFamily",
+                        "name": "iconFamily",
+                        "notify": "iconFamilyChanged",
+                        "required": false,
+                        "scriptable": true,
+                        "stored": true,
+                        "type": "QString",
+                        "user": false
+                    },
+                    {
+                        "constant": false,
+                        "designable": true,
+                        "final": false,
+                        "index": 5,
+                        "member": "m_minimumHeight",
+                        "name": "minimumHeight",
+                        "notify": "minimumHeightChanged",
+                        "required": false,
+                        "scriptable": true,
+                        "stored": true,
+                        "type": "int",
+                        "user": false
+                    },
+                    {
+                        "constant": false,
+                        "designable": true,
+                        "final": true,
+                        "index": 6,
+                        "name": "dark",
+                        "notify": "darkChanged",
+                        "read": "dark",
+                        "required": false,
+                        "reset": "resetDark",
+                        "scriptable": true,
+                        "stored": true,
+                        "type": "bool",
+                        "user": false,
+                        "write": "setDark"
+                    },
+                    {
+                        "constant": false,
+                        "designable": true,
+                        "final": true,
+                        "index": 7,
+                        "name": "primaryColor",
+                        "notify": "primaryColorChanged",
+                        "read": "primaryColor",
+                        "required": false,
+                        "reset": "resetPrimaryColor",
+                        "scriptable": true,
+                        "stored": true,
+                        "type": "QVariant",
+                        "user": false,
+                        "write": "setPrimaryColor"
+                    }
+                ],
+                "qualifiedClassName": "SmoothUI",
+                "signals": [
+                    {
+                        "access": "public",
+                        "index": 0,
+                        "name": "radiusChanged",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "index": 1,
+                        "name": "highlightMoveDurationChanged",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "index": 2,
+                        "name": "themeChanged",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "index": 3,
+                        "name": "textColorChanged",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "index": 4,
+                        "name": "iconFamilyChanged",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "index": 5,
+                        "name": "minimumHeightChanged",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "index": 6,
+                        "name": "darkChanged",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "index": 7,
+                        "name": "primaryColorChanged",
+                        "returnType": "void"
+                    }
+                ],
+                "superClasses": [
+                    {
+                        "access": "public",
+                        "name": "QQuickAttachedPropertyPropagator"
+                    }
+                ]
+            }
+        ],
+        "inputFile": "SmoothUI.h",
+        "outputRevision": 69
+    },
+    {
+        "classes": [
+            {
+                "classInfos": [
+                    {
+                        "name": "QML.Element",
+                        "value": "StarterImpl"
+                    }
+                ],
+                "className": "StarterImpl",
+                "lineNumber": 10,
+                "methods": [
+                    {
+                        "access": "public",
+                        "arguments": [
+                            {
+                                "name": "appId",
+                                "type": "QString"
+                            }
+                        ],
+                        "index": 1,
+                        "name": "checkApplication",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "arguments": [
+                            {
+                                "name": "locale",
+                                "type": "QLocale"
+                            }
+                        ],
+                        "index": 2,
+                        "name": "init",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "index": 3,
+                        "isCloned": true,
+                        "name": "init",
+                        "returnType": "void"
+                    }
+                ],
+                "object": true,
+                "qualifiedClassName": "StarterImpl",
+                "signals": [
+                    {
+                        "access": "public",
+                        "arguments": [
+                            {
+                                "name": "args",
+                                "type": "QString"
+                            }
+                        ],
+                        "index": 0,
+                        "name": "handleDataChanged",
+                        "returnType": "void"
+                    }
+                ],
+                "superClasses": [
+                    {
+                        "access": "public",
+                        "name": "QObject"
+                    }
+                ]
+            }
+        ],
+        "inputFile": "StarterImpl.h",
+        "outputRevision": 69
+    },
+    {
+        "classes": [
+            {
+                "classInfos": [
+                    {
+                        "name": "QML.Element",
+                        "value": "SyntaxHighlighterImpl"
+                    }
+                ],
+                "className": "SyntaxHighlighterImpl",
+                "lineNumber": 8,
+                "methods": [
+                    {
+                        "access": "public",
+                        "arguments": [
+                            {
+                                "name": "start",
+                                "type": "int"
+                            },
+                            {
+                                "name": "count",
+                                "type": "int"
+                            },
+                            {
+                                "name": "format",
+                                "type": "QVariant"
+                            }
+                        ],
+                        "index": 2,
+                        "name": "setFormat",
+                        "returnType": "void"
+                    }
+                ],
+                "object": true,
+                "properties": [
+                    {
+                        "constant": false,
+                        "designable": true,
+                        "final": false,
+                        "index": 0,
+                        "name": "textDocument",
+                        "notify": "textDocumentChanged",
+                        "read": "textDocument",
+                        "required": false,
+                        "scriptable": true,
+                        "stored": true,
+                        "type": "QQuickTextDocument*",
+                        "user": false,
+                        "write": "setTextDocument"
+                    }
+                ],
+                "qualifiedClassName": "SyntaxHighlighterImpl",
+                "signals": [
+                    {
+                        "access": "public",
+                        "index": 0,
+                        "name": "textDocumentChanged",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "arguments": [
+                            {
+                                "name": "text",
+                                "type": "QVariant"
+                            }
+                        ],
+                        "index": 1,
+                        "name": "highlightBlockChanged",
+                        "returnType": "void"
+                    }
+                ],
+                "superClasses": [
+                    {
+                        "access": "public",
+                        "name": "QSyntaxHighlighter"
+                    }
+                ]
+            }
+        ],
+        "inputFile": "SyntaxHighlighterImpl.h",
+        "outputRevision": 69
+    },
+    {
+        "classes": [
+            {
+                "classInfos": [
+                    {
+                        "name": "QML.Element",
+                        "value": "auto"
+                    }
+                ],
+                "className": "TabBackgroundImpl",
+                "lineNumber": 8,
+                "object": true,
+                "properties": [
+                    {
+                        "constant": false,
+                        "designable": true,
+                        "final": false,
+                        "index": 0,
+                        "member": "m_color",
+                        "name": "color",
+                        "notify": "colorChanged",
+                        "required": false,
+                        "scriptable": true,
+                        "stored": true,
+                        "type": "QColor",
+                        "user": false
+                    },
+                    {
+                        "constant": false,
+                        "designable": true,
+                        "final": false,
+                        "index": 1,
+                        "member": "m_strokeColor",
+                        "name": "strokeColor",
+                        "notify": "strokeColorChanged",
+                        "required": false,
+                        "scriptable": true,
+                        "stored": true,
+                        "type": "QColor",
+                        "user": false
+                    },
+                    {
+                        "constant": false,
+                        "designable": true,
+                        "final": false,
+                        "index": 2,
+                        "member": "m_radius",
+                        "name": "radius",
+                        "notify": "radiusChanged",
+                        "required": false,
+                        "scriptable": true,
+                        "stored": true,
+                        "type": "int",
+                        "user": false
+                    }
+                ],
+                "qualifiedClassName": "TabBackgroundImpl",
+                "signals": [
+                    {
+                        "access": "public",
+                        "index": 0,
+                        "name": "colorChanged",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "index": 1,
+                        "name": "strokeColorChanged",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "index": 2,
+                        "name": "radiusChanged",
+                        "returnType": "void"
+                    }
+                ],
+                "superClasses": [
+                    {
+                        "access": "public",
+                        "name": "QQuickPaintedItem"
+                    }
+                ]
+            }
+        ],
+        "inputFile": "TabBackgroundImpl.h",
+        "outputRevision": 69
+    },
+    {
+        "classes": [
+            {
+                "classInfos": [
+                    {
+                        "name": "QML.Element",
+                        "value": "TextCharFormat"
+                    }
+                ],
+                "className": "TextCharFormat",
+                "lineNumber": 7,
+                "object": true,
+                "properties": [
+                    {
+                        "constant": false,
+                        "designable": true,
+                        "final": false,
+                        "index": 0,
+                        "name": "font",
+                        "notify": "fontChanged",
+                        "read": "font",
+                        "required": false,
+                        "scriptable": true,
+                        "stored": true,
+                        "type": "QFont",
+                        "user": false,
+                        "write": "setFont"
+                    },
+                    {
+                        "constant": false,
+                        "designable": true,
+                        "final": false,
+                        "index": 1,
+                        "name": "foreground",
+                        "notify": "foregroundChanged",
+                        "read": "foreground",
+                        "required": false,
+                        "scriptable": true,
+                        "stored": true,
+                        "type": "QVariant",
+                        "user": false,
+                        "write": "setForeground"
+                    }
+                ],
+                "qualifiedClassName": "TextCharFormat",
+                "signals": [
+                    {
+                        "access": "public",
+                        "index": 0,
+                        "name": "fontChanged",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "index": 1,
+                        "name": "foregroundChanged",
+                        "returnType": "void"
+                    }
+                ],
+                "superClasses": [
+                    {
+                        "access": "public",
+                        "name": "QObject"
+                    },
+                    {
+                        "access": "public",
+                        "name": "QTextCharFormat"
+                    }
+                ]
+            }
+        ],
+        "inputFile": "TextCharFormat.h",
+        "outputRevision": 69
+    },
+    {
+        "classes": [
+            {
+                "classInfos": [
+                    {
+                        "name": "QML.Element",
+                        "value": "Tools"
+                    },
+                    {
+                        "name": "QML.Singleton",
+                        "value": "true"
+                    }
+                ],
+                "className": "Tools",
+                "lineNumber": 8,
+                "methods": [
+                    {
+                        "access": "public",
+                        "arguments": [
+                            {
+                                "type": "QColor"
+                            },
+                            {
+                                "name": "alpha",
+                                "type": "qreal"
+                            }
+                        ],
+                        "index": 0,
+                        "name": "withOpacity",
+                        "returnType": "QColor"
+                    },
+                    {
+                        "access": "public",
+                        "index": 1,
+                        "name": "isWindows11OrGreater",
+                        "returnType": "bool"
+                    },
+                    {
+                        "access": "public",
+                        "arguments": [
+                            {
+                                "type": "QString"
+                            }
+                        ],
+                        "index": 2,
+                        "name": "isUrl",
+                        "returnType": "bool"
+                    },
+                    {
+                        "access": "public",
+                        "arguments": [
+                            {
+                                "name": "text",
+                                "type": "QString"
+                            }
+                        ],
+                        "index": 3,
+                        "name": "clipText",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "arguments": [
+                            {
+                                "name": "p",
+                                "type": "QObject*"
+                            }
+                        ],
+                        "index": 4,
+                        "name": "deleteLater",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "arguments": [
+                            {
+                                "name": "fileName",
+                                "type": "QString"
+                            }
+                        ],
+                        "index": 5,
+                        "name": "readFile",
+                        "returnType": "QString"
+                    },
+                    {
+                        "access": "public",
+                        "arguments": [
+                            {
+                                "name": "fileName",
+                                "type": "QString"
+                            },
+                            {
+                                "name": "content",
+                                "type": "QString"
+                            }
+                        ],
+                        "index": 6,
+                        "name": "writeFile",
+                        "returnType": "bool"
+                    },
+                    {
+                        "access": "public",
+                        "arguments": [
+                            {
+                                "name": "shape",
+                                "type": "Qt::CursorShape"
+                            }
+                        ],
+                        "index": 7,
+                        "name": "setOverrideCursor",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "index": 8,
+                        "name": "restoreOverrideCursor",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "index": 9,
+                        "name": "captureDesktop",
+                        "returnType": "QImage"
+                    },
+                    {
+                        "access": "public",
+                        "index": 10,
+                        "name": "cursorScreenIndex",
+                        "returnType": "int"
+                    }
+                ],
+                "object": true,
+                "qualifiedClassName": "Tools",
+                "superClasses": [
+                    {
+                        "access": "public",
+                        "name": "QObject"
+                    }
+                ]
+            }
+        ],
+        "inputFile": "Tools.h",
+        "outputRevision": 69
+    },
+    {
+        "classes": [
+            {
+                "classInfos": [
+                    {
+                        "name": "QML.Element",
+                        "value": "auto"
+                    }
+                ],
+                "className": "TourBackgroundImpl",
+                "lineNumber": 8,
+                "object": true,
+                "properties": [
+                    {
+                        "constant": false,
+                        "designable": true,
+                        "final": false,
+                        "index": 0,
+                        "member": "m_targetX",
+                        "name": "targetX",
+                        "notify": "targetXChanged",
+                        "required": false,
+                        "scriptable": true,
+                        "stored": true,
+                        "type": "int",
+                        "user": false
+                    },
+                    {
+                        "constant": false,
+                        "designable": true,
+                        "final": false,
+                        "index": 1,
+                        "member": "m_targetY",
+                        "name": "targetY",
+                        "notify": "targetYChanged",
+                        "required": false,
+                        "scriptable": true,
+                        "stored": true,
+                        "type": "int",
+                        "user": false
+                    },
+                    {
+                        "constant": false,
+                        "designable": true,
+                        "final": false,
+                        "index": 2,
+                        "member": "m_targetWidth",
+                        "name": "targetWidth",
+                        "notify": "targetWidthChanged",
+                        "required": false,
+                        "scriptable": true,
+                        "stored": true,
+                        "type": "int",
+                        "user": false
+                    },
+                    {
+                        "constant": false,
+                        "designable": true,
+                        "final": false,
+                        "index": 3,
+                        "member": "m_targetHeight",
+                        "name": "targetHeight",
+                        "notify": "targetHeightChanged",
+                        "required": false,
+                        "scriptable": true,
+                        "stored": true,
+                        "type": "int",
+                        "user": false
+                    },
+                    {
+                        "constant": false,
+                        "designable": true,
+                        "final": false,
+                        "index": 4,
+                        "member": "m_radius",
+                        "name": "radius",
+                        "notify": "radiusChanged",
+                        "required": false,
+                        "scriptable": true,
+                        "stored": true,
+                        "type": "int",
+                        "user": false
+                    },
+                    {
+                        "constant": false,
+                        "designable": true,
+                        "final": false,
+                        "index": 5,
+                        "member": "m_color",
+                        "name": "color",
+                        "notify": "colorChanged",
+                        "required": false,
+                        "scriptable": true,
+                        "stored": true,
+                        "type": "QColor",
+                        "user": false
+                    }
+                ],
+                "qualifiedClassName": "TourBackgroundImpl",
+                "signals": [
+                    {
+                        "access": "public",
+                        "index": 0,
+                        "name": "targetXChanged",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "index": 1,
+                        "name": "targetYChanged",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "index": 2,
+                        "name": "targetWidthChanged",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "index": 3,
+                        "name": "targetHeightChanged",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "index": 4,
+                        "name": "radiusChanged",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "index": 5,
+                        "name": "colorChanged",
+                        "returnType": "void"
+                    }
+                ],
+                "superClasses": [
+                    {
+                        "access": "public",
+                        "name": "QQuickPaintedItem"
+                    }
+                ]
+            }
+        ],
+        "inputFile": "TourBackgroundImpl.h",
+        "outputRevision": 69
+    },
+    {
+        "classes": [
+            {
+                "className": "TreeNode",
+                "lineNumber": 11,
+                "methods": [
+                    {
+                        "access": "public",
+                        "index": 5,
+                        "name": "hasChildren",
+                        "returnType": "bool"
+                    }
+                ],
+                "object": true,
+                "properties": [
+                    {
+                        "constant": false,
+                        "designable": true,
+                        "final": true,
+                        "index": 0,
+                        "name": "rowData",
+                        "notify": "rowDataChanged",
+                        "read": "rowData",
+                        "required": false,
+                        "scriptable": true,
+                        "stored": true,
+                        "type": "QVariantMap",
+                        "user": false
+                    },
+                    {
+                        "constant": false,
+                        "designable": true,
+                        "final": true,
+                        "index": 1,
+                        "name": "depth",
+                        "notify": "depthChanged",
+                        "read": "depth",
+                        "required": false,
+                        "scriptable": true,
+                        "stored": true,
+                        "type": "int",
+                        "user": false
+                    },
+                    {
+                        "constant": false,
+                        "designable": true,
+                        "final": true,
+                        "index": 2,
+                        "name": "expanded",
+                        "notify": "expandedChanged",
+                        "read": "expanded",
+                        "required": false,
+                        "scriptable": true,
+                        "stored": true,
+                        "type": "bool",
+                        "user": false
+                    },
+                    {
+                        "constant": false,
+                        "designable": true,
+                        "final": true,
+                        "index": 3,
+                        "name": "nodeParent",
+                        "notify": "nodeParentChanged",
+                        "read": "nodeParent",
+                        "required": false,
+                        "scriptable": true,
+                        "stored": true,
+                        "type": "TreeNode*",
+                        "user": false
+                    },
+                    {
+                        "constant": false,
+                        "designable": true,
+                        "final": true,
+                        "index": 4,
+                        "name": "nodeChildren",
+                        "notify": "nodeChildrenChanged",
+                        "read": "nodeChildren",
+                        "required": false,
+                        "scriptable": true,
+                        "stored": true,
+                        "type": "QList<QSharedPointer<TreeNode>>",
+                        "user": false
+                    }
+                ],
+                "qualifiedClassName": "TreeNode",
+                "signals": [
+                    {
+                        "access": "public",
+                        "index": 0,
+                        "name": "rowDataChanged",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "index": 1,
+                        "name": "depthChanged",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "index": 2,
+                        "name": "expandedChanged",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "index": 3,
+                        "name": "nodeParentChanged",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "index": 4,
+                        "name": "nodeChildrenChanged",
+                        "returnType": "void"
+                    }
+                ],
+                "superClasses": [
+                    {
+                        "access": "public",
+                        "name": "QObject"
+                    }
+                ]
+            },
+            {
+                "classInfos": [
+                    {
+                        "name": "QML.Element",
+                        "value": "auto"
+                    }
+                ],
+                "className": "TreeDataGridModel",
+                "lineNumber": 28,
+                "methods": [
+                    {
+                        "access": "public",
+                        "index": 3,
+                        "name": "clear",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "arguments": [
+                            {
+                                "name": "index",
+                                "type": "int"
+                            }
+                        ],
+                        "index": 4,
+                        "name": "get",
+                        "returnType": "QVariant"
+                    },
+                    {
+                        "access": "public",
+                        "arguments": [
+                            {
+                                "name": "rowIndex",
+                                "type": "int"
+                            }
+                        ],
+                        "index": 5,
+                        "name": "collapse",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "arguments": [
+                            {
+                                "name": "rowIndex",
+                                "type": "int"
+                            }
+                        ],
+                        "index": 6,
+                        "name": "expand",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "arguments": [
+                            {
+                                "name": "selectionModel",
+                                "type": "QItemSelectionModel*"
+                            },
+                            {
+                                "name": "startRow",
+                                "type": "int"
+                            },
+                            {
+                                "name": "endRow",
+                                "type": "int"
+                            }
+                        ],
+                        "index": 7,
+                        "name": "selectRange",
+                        "returnType": "void"
+                    }
+                ],
+                "object": true,
+                "properties": [
+                    {
+                        "constant": false,
+                        "designable": true,
+                        "final": false,
+                        "index": 0,
+                        "name": "count",
+                        "notify": "countChanged",
+                        "read": "count",
+                        "required": false,
+                        "scriptable": true,
+                        "stored": true,
+                        "type": "int",
+                        "user": false
+                    },
+                    {
+                        "constant": false,
+                        "designable": true,
+                        "final": false,
+                        "index": 1,
+                        "member": "m_sourceData",
+                        "name": "sourceData",
+                        "notify": "sourceDataChanged",
+                        "required": false,
+                        "scriptable": true,
+                        "stored": true,
+                        "type": "QList<QVariant>",
+                        "user": false
+                    },
+                    {
+                        "constant": false,
+                        "designable": true,
+                        "final": true,
+                        "index": 2,
+                        "name": "displayData",
+                        "notify": "displayDataChanged",
+                        "read": "displayData",
+                        "required": false,
+                        "scriptable": true,
+                        "stored": true,
+                        "type": "QList<QSharedPointer<TreeNode>>",
+                        "user": false
+                    }
+                ],
+                "qualifiedClassName": "TreeDataGridModel",
+                "signals": [
+                    {
+                        "access": "public",
+                        "index": 0,
+                        "name": "sourceDataChanged",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "index": 1,
+                        "name": "displayDataChanged",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "index": 2,
+                        "name": "countChanged",
+                        "returnType": "void"
+                    }
+                ],
+                "superClasses": [
+                    {
+                        "access": "public",
+                        "name": "QAbstractListModel"
+                    }
+                ]
+            }
+        ],
+        "inputFile": "TreeDataGridModel.h",
+        "outputRevision": 69
+    },
+    {
+        "classes": [
+            {
+                "classInfos": [
+                    {
+                        "name": "QML.Element",
+                        "value": "WatermarkImpl"
+                    }
+                ],
+                "className": "WatermarkImpl",
+                "lineNumber": 8,
+                "object": true,
+                "properties": [
+                    {
+                        "constant": false,
+                        "designable": true,
+                        "final": false,
+                        "index": 0,
+                        "member": "m_text",
+                        "name": "text",
+                        "notify": "textChanged",
+                        "required": false,
+                        "scriptable": true,
+                        "stored": true,
+                        "type": "QString",
+                        "user": false
+                    },
+                    {
+                        "constant": false,
+                        "designable": true,
+                        "final": false,
+                        "index": 1,
+                        "member": "m_gap",
+                        "name": "gap",
+                        "notify": "gapChanged",
+                        "required": false,
+                        "scriptable": true,
+                        "stored": true,
+                        "type": "QPoint",
+                        "user": false
+                    },
+                    {
+                        "constant": false,
+                        "designable": true,
+                        "final": false,
+                        "index": 2,
+                        "member": "m_offset",
+                        "name": "offset",
+                        "notify": "offsetChanged",
+                        "required": false,
+                        "scriptable": true,
+                        "stored": true,
+                        "type": "QPoint",
+                        "user": false
+                    },
+                    {
+                        "constant": false,
+                        "designable": true,
+                        "final": false,
+                        "index": 3,
+                        "member": "m_textColor",
+                        "name": "textColor",
+                        "notify": "textColorChanged",
+                        "required": false,
+                        "scriptable": true,
+                        "stored": true,
+                        "type": "QColor",
+                        "user": false
+                    },
+                    {
+                        "constant": false,
+                        "designable": true,
+                        "final": false,
+                        "index": 4,
+                        "member": "m_rotate",
+                        "name": "rotate",
+                        "notify": "rotateChanged",
+                        "required": false,
+                        "scriptable": true,
+                        "stored": true,
+                        "type": "int",
+                        "user": false
+                    },
+                    {
+                        "constant": false,
+                        "designable": true,
+                        "final": false,
+                        "index": 5,
+                        "member": "m_textSize",
+                        "name": "textSize",
+                        "notify": "textSizeChanged",
+                        "required": false,
+                        "scriptable": true,
+                        "stored": true,
+                        "type": "int",
+                        "user": false
+                    }
+                ],
+                "qualifiedClassName": "WatermarkImpl",
+                "signals": [
+                    {
+                        "access": "public",
+                        "index": 0,
+                        "name": "textChanged",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "index": 1,
+                        "name": "gapChanged",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "index": 2,
+                        "name": "offsetChanged",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "index": 3,
+                        "name": "textColorChanged",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "index": 4,
+                        "name": "rotateChanged",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "index": 5,
+                        "name": "textSizeChanged",
+                        "returnType": "void"
+                    }
+                ],
+                "superClasses": [
+                    {
+                        "access": "public",
+                        "name": "QQuickPaintedItem"
+                    }
+                ]
+            }
+        ],
+        "inputFile": "WatermarkImpl.h",
+        "outputRevision": 69
+    },
+    {
+        "classes": [
+            {
+                "classInfos": [
+                    {
+                        "name": "QML.Element",
+                        "value": "WindowOpacityFixer"
+                    }
+                ],
+                "className": "WindowOpacityFixer",
+                "lineNumber": 5,
+                "object": true,
+                "qualifiedClassName": "WindowOpacityFixer",
+                "superClasses": [
+                    {
+                        "access": "public",
+                        "name": "QQuickItem"
+                    }
+                ]
+            }
+        ],
+        "inputFile": "WindowOpacityFixer.h",
+        "outputRevision": 69
+    },
+    {
+        "classes": [
+            {
+                "classInfos": [
+                    {
+                        "name": "QML.Element",
+                        "value": "auto"
+                    }
+                ],
+                "className": "ParallaxViewType",
+                "enums": [
+                    {
+                        "alias": "SourceOffsetKind",
+                        "isClass": false,
+                        "isFlag": true,
+                        "name": "SourceOffsetKinds",
+                        "values": [
+                            "Absolute",
+                            "Relative"
+                        ]
+                    }
+                ],
+                "lineNumber": 6,
+                "object": true,
+                "qualifiedClassName": "ParallaxViewType",
+                "superClasses": [
+                    {
+                        "access": "public",
+                        "name": "QObject"
+                    }
+                ]
+            },
+            {
+                "classInfos": [
+                    {
+                        "name": "QML.Element",
+                        "value": "auto"
+                    }
+                ],
+                "className": "TabViewType",
+                "enums": [
+                    {
+                        "alias": "TabWidthBehavior",
+                        "isClass": false,
+                        "isFlag": true,
+                        "name": "TabWidthBehaviors",
+                        "values": [
+                            "Equal",
+                            "SizeToContent",
+                            "Compact"
+                        ]
+                    },
+                    {
+                        "alias": "CloseButtonVisibility",
+                        "isClass": false,
+                        "isFlag": true,
+                        "name": "CloseButtonVisibilitys",
+                        "values": [
+                            "Never",
+                            "Always",
+                            "OnHover"
+                        ]
+                    }
+                ],
+                "lineNumber": 15,
+                "object": true,
+                "qualifiedClassName": "TabViewType",
+                "superClasses": [
+                    {
+                        "access": "public",
+                        "name": "QObject"
+                    }
+                ]
+            },
+            {
+                "classInfos": [
+                    {
+                        "name": "QML.Element",
+                        "value": "auto"
+                    }
+                ],
+                "className": "TimelineType",
+                "enums": [
+                    {
+                        "alias": "Mode",
+                        "isClass": false,
+                        "isFlag": true,
+                        "name": "Modes",
+                        "values": [
+                            "Left",
+                            "Right",
+                            "Alternate"
+                        ]
+                    }
+                ],
+                "lineNumber": 28,
+                "object": true,
+                "qualifiedClassName": "TimelineType",
+                "superClasses": [
+                    {
+                        "access": "public",
+                        "name": "QObject"
+                    }
+                ]
+            },
+            {
+                "classInfos": [
+                    {
+                        "name": "QML.Element",
+                        "value": "auto"
+                    }
+                ],
+                "className": "WindowType",
+                "enums": [
+                    {
+                        "alias": "LaunchMode",
+                        "isClass": false,
+                        "isFlag": true,
+                        "name": "LaunchModes",
+                        "values": [
+                            "Standard",
+                            "SingleTask",
+                            "SingleInstance"
+                        ]
+                    }
+                ],
+                "lineNumber": 37,
+                "object": true,
+                "qualifiedClassName": "WindowType",
+                "superClasses": [
+                    {
+                        "access": "public",
+                        "name": "QObject"
+                    }
+                ]
+            },
+            {
+                "classInfos": [
+                    {
+                        "name": "QML.Element",
+                        "value": "auto"
+                    }
+                ],
+                "className": "WindowEffectType",
+                "enums": [
+                    {
+                        "alias": "EffectMode",
+                        "isClass": false,
+                        "isFlag": true,
+                        "name": "EffectModes",
+                        "values": [
+                            "Normal",
+                            "Mica",
+                            "Acrylic",
+                            "MicaAlt"
+                        ]
+                    }
+                ],
+                "lineNumber": 46,
+                "object": true,
+                "qualifiedClassName": "WindowEffectType",
+                "superClasses": [
+                    {
+                        "access": "public",
+                        "name": "QObject"
+                    }
+                ]
+            },
+            {
+                "classInfos": [
+                    {
+                        "name": "QML.Element",
+                        "value": "auto"
+                    }
+                ],
+                "className": "NavigationViewType",
+                "enums": [
+                    {
+                        "alias": "DisplayMode",
+                        "isClass": false,
+                        "isFlag": true,
+                        "name": "DisplayModes",
+                        "values": [
+                            "Open",
+                            "Compact",
+                            "Minimal",
+                            "Auto",
+                            "Top"
+                        ]
+                    }
+                ],
+                "lineNumber": 56,
+                "object": true,
+                "qualifiedClassName": "NavigationViewType",
+                "superClasses": [
+                    {
+                        "access": "public",
+                        "name": "QObject"
+                    }
+                ]
+            },
+            {
+                "classInfos": [
+                    {
+                        "name": "QML.Element",
+                        "value": "auto"
+                    }
+                ],
+                "className": "TimePickerType",
+                "enums": [
+                    {
+                        "isClass": false,
+                        "isFlag": true,
+                        "name": "HourFormat",
+                        "values": [
+                            "H",
+                            "HH"
+                        ]
+                    }
+                ],
+                "lineNumber": 71,
+                "object": true,
+                "qualifiedClassName": "TimePickerType",
+                "superClasses": [
+                    {
+                        "access": "public",
+                        "name": "QObject"
+                    }
+                ]
+            },
+            {
+                "classInfos": [
+                    {
+                        "name": "QML.Element",
+                        "value": "auto"
+                    }
+                ],
+                "className": "DatePickerType",
+                "enums": [
+                    {
+                        "isClass": false,
+                        "isFlag": true,
+                        "name": "DatePickerField",
+                        "values": [
+                            "Day",
+                            "Month",
+                            "Year"
+                        ]
+                    }
+                ],
+                "lineNumber": 83,
+                "object": true,
+                "qualifiedClassName": "DatePickerType",
+                "superClasses": [
+                    {
+                        "access": "public",
+                        "name": "QObject"
+                    }
+                ]
+            },
+            {
+                "classInfos": [
+                    {
+                        "name": "QML.Element",
+                        "value": "auto"
+                    }
+                ],
+                "className": "NumberBoxType",
+                "enums": [
+                    {
+                        "isClass": false,
+                        "isFlag": true,
+                        "name": "PlacementMode",
+                        "values": [
+                            "Inline",
+                            "Compact"
+                        ]
+                    }
+                ],
+                "lineNumber": 96,
+                "object": true,
+                "qualifiedClassName": "NumberBoxType",
+                "superClasses": [
+                    {
+                        "access": "public",
+                        "name": "QObject"
+                    }
+                ]
+            },
+            {
+                "classInfos": [
+                    {
+                        "name": "QML.Element",
+                        "value": "auto"
+                    }
+                ],
+                "className": "InfoBarType",
+                "enums": [
+                    {
+                        "isClass": false,
+                        "isFlag": true,
+                        "name": "Severity",
+                        "values": [
+                            "Info",
+                            "Warning",
+                            "Error",
+                            "Success"
+                        ]
+                    }
+                ],
+                "lineNumber": 105,
+                "object": true,
+                "qualifiedClassName": "InfoBarType",
+                "superClasses": [
+                    {
+                        "access": "public",
+                        "name": "QObject"
+                    }
+                ]
+            }
+        ],
+        "inputFile": "def.h",
+        "outputRevision": 69
+    }
+]

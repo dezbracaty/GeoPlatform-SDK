@@ -1,0 +1,330 @@
+#pragma once
+
+#include <cstddef>
+#include <cstdint>
+#include <memory>
+#include <string>
+#include <vector>
+
+namespace libslicer {
+
+inline constexpr std::uint32_t invalid_toolpath_id = 0xffffffffu;
+inline constexpr std::uint16_t invalid_toolpath_small_id = 0xffffu;
+inline constexpr std::uint32_t toolpath_schema_version = 3u;
+
+struct ToolpathPoint
+{
+    float x{0.0f};
+    float y{0.0f};
+    float z{0.0f};
+};
+
+struct ToolpathColorValue
+{
+    float red{1.0f};
+    float green{1.0f};
+    float blue{1.0f};
+    float alpha{1.0f};
+};
+
+enum class ToolpathMotionKind : std::uint8_t
+{
+    Travel = 0,
+    Extrusion,
+    Wipe
+};
+
+enum class ToolpathExtrusionRole : std::uint8_t
+{
+    None = 0,
+    InnerWall,
+    OuterWall,
+    OverhangWall,
+    SparseInfill,
+    InternalSolidInfill,
+    TopSurface,
+    BottomSurface,
+    Ironing,
+    Bridge,
+    InternalBridge,
+    GapInfill,
+    Skirt,
+    Brim,
+    Support,
+    SupportInterface,
+    SupportTransition,
+    WipeTower,
+    Custom,
+    Mixed,
+    ContinuousFiberContour,
+    ContinuousFiberInfill,
+    ResinInfill
+};
+
+enum class ToolpathEventKind : std::uint8_t
+{
+    Seam = 0,
+    ToolChange,
+    ColorChange,
+    Pause,
+    CustomGCode
+};
+
+enum class ToolpathColorSource : std::uint8_t
+{
+    Unknown = 0,
+    Filament,
+    ColorChange,
+    Custom
+};
+
+enum class ToolpathViewType : std::uint8_t
+{
+    Summary = 0,
+    FeatureType,
+    Filament,
+    Speed,
+    ActualSpeed,
+    Acceleration,
+    Jerk,
+    LayerHeight,
+    LineWidth,
+    VolumetricFlow,
+    ActualVolumetricFlow,
+    LayerTime,
+    LayerTimeLogarithmic,
+    FanSpeed,
+    Temperature,
+    PressureAdvance
+};
+
+enum class ToolpathOptionKind : std::uint8_t
+{
+    Travel = 0,
+    Wipe,
+    Seam
+};
+
+struct ToolpathTool
+{
+    std::uint16_t id{invalid_toolpath_small_id};
+    std::uint16_t primary_filament_id{invalid_toolpath_small_id};
+    ToolpathPoint offset_mm;
+    float nozzle_diameter_mm{0.0f};
+};
+
+struct ToolpathFilament
+{
+    std::uint16_t id{invalid_toolpath_small_id};
+    std::uint16_t tool_id{invalid_toolpath_small_id};
+    ToolpathColorValue color;
+    float diameter_mm{0.0f};
+    float density_g_cm3{0.0f};
+    float cost_per_kg{0.0f};
+};
+
+struct ToolpathColor
+{
+    std::uint16_t id{invalid_toolpath_small_id};
+    std::uint16_t filament_id{invalid_toolpath_small_id};
+    ToolpathColorSource source{ToolpathColorSource::Unknown};
+    ToolpathColorValue color;
+    std::string name;
+};
+
+// A normalized, directly drawable segment. Processor-only vertices such as
+// actual-speed and arc subdivisions are absorbed by libslicer and never exposed
+// as a special public state.
+enum class ToolpathDepositionKind : std::uint8_t { None, Thermoplastic, ContinuousFiberPowered, ContinuousFiberPassive };
+enum class ToolpathFiberPhase : std::uint8_t { None, Approach, Prefeed, Ready, Landing, Powered, Cut, Tail, Depleted, Finish, Complete };
+
+struct ToolpathSegment
+{
+    std::uint64_t id{0};
+    std::uint64_t run_id{0};
+    std::uint32_t source_command_id{0};
+    std::uint32_t layer_index{0};
+    std::uint32_t object_id{invalid_toolpath_id};
+    std::uint32_t instance_id{invalid_toolpath_id};
+    std::uint16_t tool_id{invalid_toolpath_small_id};
+    std::uint16_t filament_id{invalid_toolpath_small_id};
+    std::uint16_t color_id{invalid_toolpath_small_id};
+    ToolpathMotionKind motion{ToolpathMotionKind::Travel};
+    ToolpathDepositionKind deposition{ToolpathDepositionKind::None};
+    ToolpathFiberPhase fiber_phase{ToolpathFiberPhase::None};
+    std::uint64_t fiber_occurrence{0};
+    float fiber_feed_delta_mm{0.0f};
+    float deposited_path_length_mm{0.0f};
+    // Deposition role is also valid for passive continuous-fiber Travel.
+    ToolpathExtrusionRole extrusion_role{ToolpathExtrusionRole::None};
+    ToolpathPoint start_mm;
+    ToolpathPoint end_mm;
+    float extrusion_delta_mm{0.0f};
+    float nominal_speed_mm_s{0.0f};
+    float actual_speed_mm_s{0.0f};
+    float width_mm{0.0f};
+    float height_mm{0.0f};
+    float mm3_per_mm{0.0f};
+    float print_z_mm{0.0f};
+    float duration_seconds{0.0f};
+    float layer_duration_seconds{0.0f};
+    float fan_speed_percent{0.0f};
+    float temperature_c{0.0f};
+    float pressure_advance{0.0f};
+    float acceleration_mm_s2{0.0f};
+    float jerk_mm_s{0.0f};
+};
+
+struct ToolpathLayer
+{
+    std::uint32_t index{0};
+    std::size_t segment_begin{0};
+    std::size_t segment_count{0};
+    std::size_t event_begin{0};
+    std::size_t event_count{0};
+    float print_z_mm{0.0f};
+    float height_mm{0.0f};
+    float duration_seconds{0.0f};
+};
+
+struct ToolpathEvent
+{
+    ToolpathEventKind kind{ToolpathEventKind::CustomGCode};
+    std::size_t after_segment{0};
+    std::uint32_t source_command_id{0};
+    std::uint32_t layer_index{0};
+    std::uint16_t tool_id{invalid_toolpath_small_id};
+    std::uint16_t filament_id{invalid_toolpath_small_id};
+    ToolpathPoint position_mm;
+    float print_z_mm{0.0f};
+    float time_seconds{0.0f};
+    std::string message;
+};
+
+struct ToolpathBounds
+{
+    ToolpathPoint minimum;
+    ToolpathPoint maximum;
+    bool valid{false};
+};
+
+struct ToolpathFeatureStatistics
+{
+    ToolpathExtrusionRole role{ToolpathExtrusionRole::None};
+    std::size_t render_segment_count{0};
+    std::size_t path_count{0};
+    double length_mm{0.0};
+    double extrusion_volume_mm3{0.0};
+    double duration_seconds{0.0};
+    double filament_length_m{0.0};
+    double filament_weight_g{0.0};
+};
+
+struct ToolpathOptionStatistics
+{
+    ToolpathOptionKind kind{ToolpathOptionKind::Travel};
+    std::size_t occurrence_count{0};
+    double duration_seconds{0.0};
+    double distance_mm{0.0};
+};
+
+struct ToolpathFilamentUsage
+{
+    std::uint16_t filament_id{invalid_toolpath_small_id};
+    double model_volume_mm3{0.0};
+    double support_volume_mm3{0.0};
+    double flushed_volume_mm3{0.0};
+    double tower_volume_mm3{0.0};
+    double total_volume_mm3{0.0};
+};
+
+struct ToolpathStatistics
+{
+    std::size_t total_layers{0};
+    std::size_t logical_motion_count{0};
+    std::size_t render_segment_count{0};
+    double total_time_seconds{0.0};
+    double total_extrusion_mm{0.0};
+    double total_fiber_feed_mm{0.0}; // powered + prefeed, never passive geometry twice
+    double total_fiber_prefeed_mm{0.0};
+    double total_fiber_deposited_path_mm{0.0};
+    double total_extrusion_volume_mm3{0.0};
+    double total_print_distance_mm{0.0};
+    double total_travel_distance_mm{0.0};
+    double total_filament_length_mm{0.0};
+    double total_filament_weight_g{0.0};
+    double total_filament_cost{0.0};
+    std::size_t total_filament_changes{0};
+    std::size_t total_tool_changes{0};
+    float min_speed_mm_s{0.0f};
+    float max_speed_mm_s{0.0f};
+    float min_actual_speed_mm_s{0.0f};
+    float max_actual_speed_mm_s{0.0f};
+    float min_layer_height_mm{0.0f};
+    float max_layer_height_mm{0.0f};
+    float min_width_mm{0.0f};
+    float max_width_mm{0.0f};
+    float min_volumetric_flow_mm3_s{0.0f};
+    float max_volumetric_flow_mm3_s{0.0f};
+    float min_actual_volumetric_flow_mm3_s{0.0f};
+    float max_actual_volumetric_flow_mm3_s{0.0f};
+    float min_layer_time_seconds{0.0f};
+    float max_layer_time_seconds{0.0f};
+    float min_fan_speed_percent{0.0f};
+    float max_fan_speed_percent{0.0f};
+    float min_temperature_c{0.0f};
+    float max_temperature_c{0.0f};
+    float min_pressure_advance{0.0f};
+    float max_pressure_advance{0.0f};
+    float min_acceleration_mm_s2{0.0f};
+    float max_acceleration_mm_s2{0.0f};
+    float min_jerk_mm_s{0.0f};
+    float max_jerk_mm_s{0.0f};
+    std::vector<ToolpathFeatureStatistics> features;
+    std::vector<ToolpathOptionStatistics> options;
+    std::vector<ToolpathFilamentUsage> filament_usage;
+};
+
+enum class FiberDiagnosticKind : std::uint8_t { RejectedPath, OriginalContourRegion, MissingContourRegion, ContourCandidate, RoundedContourCandidate };
+
+struct FiberFillDiagnosticPath
+{
+    std::vector<ToolpathPoint> points;
+    std::string reason;
+    bool contour{false};
+    std::uint32_t layer_index{0};
+    std::size_t object_index{0};
+    std::size_t instance_index{0};
+    double source_length_mm{0.0};
+    FiberDiagnosticKind kind{FiberDiagnosticKind::RejectedPath};
+    // Each region record has one outer loop followed by its holes; loops are closed.
+    std::vector<std::vector<ToolpathPoint>> boundaries;
+    // Independent triangle vertices for missing-region fill, with holes excluded.
+    std::vector<ToolpathPoint> triangles;
+    std::size_t policy_group_id{0};
+    std::size_t component_id{0};
+};
+
+struct ToolpathPreview
+{
+    std::uint32_t schema_version{toolpath_schema_version};
+    std::string source_path;
+    // Optional structured metadata for non-G-code previews such as an
+    // algorithm audit. Renderers ignore it; UI bridges may expose it.
+    std::string metadata_json;
+    // Fiber diagnostic paths and regions, NOT print moves; excluded from bounds/statistics/G-code.
+    std::vector<FiberFillDiagnosticPath> fiber_fill_diagnostics;
+    std::vector<ToolpathLayer> layers;
+    std::vector<ToolpathSegment> segments;
+    std::vector<ToolpathEvent> events;
+    std::vector<ToolpathTool> tools;
+    std::vector<ToolpathFilament> filaments;
+    std::vector<ToolpathColor> colors;
+    std::vector<ToolpathViewType> supported_view_types;
+    ToolpathStatistics statistics;
+    ToolpathBounds bounds;
+};
+
+using ToolpathPreviewPtr = std::shared_ptr<const ToolpathPreview>;
+
+} // namespace libslicer

@@ -1,0 +1,895 @@
+[
+    {
+        "classes": [
+            {
+                "className": "TextureNode",
+                "lineNumber": 17,
+                "object": true,
+                "qualifiedClassName": "TextureNode",
+                "signals": [
+                    {
+                        "access": "public",
+                        "arguments": [
+                            {
+                                "name": "frameId",
+                                "type": "GPlatform::Rendering::FrameId"
+                            }
+                        ],
+                        "index": 0,
+                        "name": "frameAcquired",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "arguments": [
+                            {
+                                "name": "frameId",
+                                "type": "GPlatform::Rendering::FrameId"
+                            }
+                        ],
+                        "index": 1,
+                        "name": "framePresented",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "index": 2,
+                        "name": "pendingNewTexture",
+                        "returnType": "void"
+                    }
+                ],
+                "slots": [
+                    {
+                        "access": "public",
+                        "index": 3,
+                        "name": "newFrame",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "index": 4,
+                        "name": "prepareNode",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "index": 5,
+                        "name": "releaseRetiredFrames",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "arguments": [
+                            {
+                                "name": "renderSession",
+                                "type": "std::shared_ptr<GPlatform::Rendering::IRendererSession>"
+                            }
+                        ],
+                        "index": 6,
+                        "name": "setRenderSession",
+                        "returnType": "void"
+                    }
+                ],
+                "superClasses": [
+                    {
+                        "access": "public",
+                        "name": "QObject"
+                    },
+                    {
+                        "access": "public",
+                        "name": "QSGSimpleTextureNode"
+                    }
+                ]
+            }
+        ],
+        "inputFile": "textureNode.hpp",
+        "outputRevision": 69
+    },
+    {
+        "classes": [
+            {
+                "classInfos": [
+                    {
+                        "name": "QML.Element",
+                        "value": "ThreadRendererQmlItem"
+                    }
+                ],
+                "className": "ThreadRendererQmlItem",
+                "enums": [
+                    {
+                        "isClass": true,
+                        "isFlag": false,
+                        "name": "RenderingMode",
+                        "values": [
+                            "Standard",
+                            "Wireframe",
+                            "Simplified",
+                            "Highlight"
+                        ]
+                    },
+                    {
+                        "isClass": true,
+                        "isFlag": false,
+                        "name": "RendererRole",
+                        "values": [
+                            "Compatibility",
+                            "Prepare",
+                            "Preview",
+                            "Realistic"
+                        ]
+                    }
+                ],
+                "lineNumber": 73,
+                "methods": [
+                    {
+                        "access": "public",
+                        "index": 12,
+                        "name": "activateView",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "arguments": [
+                            {
+                                "name": "source",
+                                "type": "ThreadRendererQmlItem*"
+                            }
+                        ],
+                        "index": 13,
+                        "name": "copyCameraStateFrom",
+                        "returnType": "bool"
+                    }
+                ],
+                "object": true,
+                "properties": [
+                    {
+                        "constant": false,
+                        "designable": true,
+                        "final": false,
+                        "index": 0,
+                        "name": "viewId",
+                        "notify": "viewIdChanged",
+                        "read": "getViewId",
+                        "required": false,
+                        "scriptable": true,
+                        "stored": true,
+                        "type": "qulonglong",
+                        "user": false
+                    },
+                    {
+                        "constant": false,
+                        "designable": true,
+                        "final": false,
+                        "index": 1,
+                        "name": "fpsMonitor",
+                        "notify": "fpsMonitorChanged",
+                        "read": "getFpsMonitor",
+                        "required": false,
+                        "scriptable": true,
+                        "stored": true,
+                        "type": "FPSMonitor*",
+                        "user": false
+                    },
+                    {
+                        "constant": false,
+                        "designable": true,
+                        "final": false,
+                        "index": 2,
+                        "name": "renderingMode",
+                        "notify": "renderingModeChanged",
+                        "read": "getRenderingMode",
+                        "required": false,
+                        "scriptable": true,
+                        "stored": true,
+                        "type": "RenderingMode",
+                        "user": false,
+                        "write": "setRenderingMode"
+                    },
+                    {
+                        "constant": false,
+                        "designable": true,
+                        "final": false,
+                        "index": 3,
+                        "name": "rendererRole",
+                        "notify": "rendererRoleChanged",
+                        "read": "getRendererRole",
+                        "required": false,
+                        "scriptable": true,
+                        "stored": true,
+                        "type": "RendererRole",
+                        "user": false,
+                        "write": "setRendererRole"
+                    },
+                    {
+                        "constant": false,
+                        "designable": true,
+                        "final": false,
+                        "index": 4,
+                        "name": "resolvedBackendId",
+                        "notify": "resolvedBackendIdChanged",
+                        "read": "getResolvedBackendId",
+                        "required": false,
+                        "scriptable": true,
+                        "stored": true,
+                        "type": "QString",
+                        "user": false
+                    },
+                    {
+                        "constant": false,
+                        "designable": true,
+                        "final": false,
+                        "index": 5,
+                        "name": "renderActive",
+                        "notify": "renderActiveChanged",
+                        "read": "isRenderActive",
+                        "required": false,
+                        "scriptable": true,
+                        "stored": true,
+                        "type": "bool",
+                        "user": false,
+                        "write": "setRenderActive"
+                    },
+                    {
+                        "constant": false,
+                        "designable": true,
+                        "final": false,
+                        "index": 6,
+                        "name": "isFrameReady",
+                        "notify": "frameReadyChanged",
+                        "read": "isFrameReady",
+                        "required": false,
+                        "scriptable": true,
+                        "stored": true,
+                        "type": "bool",
+                        "user": false
+                    },
+                    {
+                        "constant": false,
+                        "designable": true,
+                        "final": false,
+                        "index": 7,
+                        "name": "hasPresentedFrame",
+                        "notify": "hasPresentedFrameChanged",
+                        "read": "hasPresentedFrame",
+                        "required": false,
+                        "scriptable": true,
+                        "stored": true,
+                        "type": "bool",
+                        "user": false
+                    }
+                ],
+                "qualifiedClassName": "ThreadRendererQmlItem",
+                "signals": [
+                    {
+                        "access": "public",
+                        "index": 0,
+                        "name": "fpsMonitorChanged",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "index": 1,
+                        "name": "renderingModeChanged",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "index": 2,
+                        "name": "rendererRoleChanged",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "index": 3,
+                        "name": "resolvedBackendIdChanged",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "index": 4,
+                        "name": "renderActiveChanged",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "arguments": [
+                            {
+                                "name": "active",
+                                "type": "bool"
+                            }
+                        ],
+                        "index": 5,
+                        "name": "presentationActiveChanged",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "index": 6,
+                        "name": "frameReadyChanged",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "index": 7,
+                        "name": "hasPresentedFrameChanged",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "index": 8,
+                        "name": "viewIdChanged",
+                        "returnType": "void"
+                    }
+                ],
+                "slots": [
+                    {
+                        "access": "private",
+                        "index": 9,
+                        "name": "onFramePreparationStarted",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "private",
+                        "index": 10,
+                        "name": "onFramePreparationFinished",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "private",
+                        "arguments": [
+                            {
+                                "name": "screen",
+                                "type": "QScreen*"
+                            }
+                        ],
+                        "index": 11,
+                        "name": "onScreenChanged",
+                        "returnType": "void"
+                    }
+                ],
+                "superClasses": [
+                    {
+                        "access": "public",
+                        "name": "QQuickItem"
+                    }
+                ]
+            }
+        ],
+        "inputFile": "threadRenderQmlItem.hpp",
+        "outputRevision": 69
+    },
+    {
+        "classes": [
+            {
+                "classInfos": [
+                    {
+                        "name": "QML.Element",
+                        "value": "auto"
+                    }
+                ],
+                "className": "CircularReveal",
+                "lineNumber": 9,
+                "methods": [
+                    {
+                        "access": "public",
+                        "arguments": [
+                            {
+                                "name": "w",
+                                "type": "int"
+                            },
+                            {
+                                "name": "h",
+                                "type": "int"
+                            },
+                            {
+                                "name": "center",
+                                "type": "QPoint"
+                            },
+                            {
+                                "name": "radius",
+                                "type": "int"
+                            },
+                            {
+                                "name": "dark",
+                                "type": "bool"
+                            }
+                        ],
+                        "index": 5,
+                        "name": "start",
+                        "returnType": "void"
+                    }
+                ],
+                "object": true,
+                "properties": [
+                    {
+                        "constant": false,
+                        "designable": true,
+                        "final": false,
+                        "index": 0,
+                        "name": "target",
+                        "notify": "targetChanged",
+                        "read": "target",
+                        "required": false,
+                        "scriptable": true,
+                        "stored": true,
+                        "type": "QQuickItem*",
+                        "user": false,
+                        "write": "setTarget"
+                    },
+                    {
+                        "constant": false,
+                        "designable": true,
+                        "final": false,
+                        "index": 1,
+                        "name": "radius",
+                        "notify": "radiusChanged",
+                        "read": "radius",
+                        "required": false,
+                        "scriptable": true,
+                        "stored": true,
+                        "type": "int",
+                        "user": false,
+                        "write": "setRadius"
+                    }
+                ],
+                "qualifiedClassName": "CircularReveal",
+                "signals": [
+                    {
+                        "access": "public",
+                        "index": 0,
+                        "name": "imageChanged",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "index": 1,
+                        "name": "animationFinished",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "index": 2,
+                        "name": "targetChanged",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "index": 3,
+                        "name": "radiusChanged",
+                        "returnType": "void"
+                    }
+                ],
+                "slots": [
+                    {
+                        "access": "public",
+                        "index": 4,
+                        "name": "handleGrabResult",
+                        "returnType": "void"
+                    }
+                ],
+                "superClasses": [
+                    {
+                        "access": "public",
+                        "name": "QQuickPaintedItem"
+                    }
+                ]
+            }
+        ],
+        "inputFile": "CircularReveal.h",
+        "outputRevision": 69
+    },
+    {
+        "classes": [
+            {
+                "classInfos": [
+                    {
+                        "name": "QML.Element",
+                        "value": "FPSMonitor"
+                    },
+                    {
+                        "name": "QML.Singleton",
+                        "value": "true"
+                    }
+                ],
+                "className": "FPSMonitorQml",
+                "lineNumber": 13,
+                "methods": [
+                    {
+                        "access": "public",
+                        "index": 3,
+                        "name": "reset",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "index": 4,
+                        "isConst": true,
+                        "name": "getPerformanceReport",
+                        "returnType": "QString"
+                    },
+                    {
+                        "access": "public",
+                        "index": 5,
+                        "name": "recordFrame",
+                        "returnType": "void"
+                    }
+                ],
+                "object": true,
+                "properties": [
+                    {
+                        "constant": false,
+                        "designable": true,
+                        "final": false,
+                        "index": 0,
+                        "name": "currentFPS",
+                        "notify": "fpsChanged",
+                        "read": "currentFPS",
+                        "required": false,
+                        "scriptable": true,
+                        "stored": true,
+                        "type": "double",
+                        "user": false
+                    },
+                    {
+                        "constant": false,
+                        "designable": true,
+                        "final": false,
+                        "index": 1,
+                        "name": "averageFPS",
+                        "notify": "fpsChanged",
+                        "read": "averageFPS",
+                        "required": false,
+                        "scriptable": true,
+                        "stored": true,
+                        "type": "double",
+                        "user": false
+                    },
+                    {
+                        "constant": false,
+                        "designable": true,
+                        "final": false,
+                        "index": 2,
+                        "name": "minFPS",
+                        "notify": "fpsChanged",
+                        "read": "minFPS",
+                        "required": false,
+                        "scriptable": true,
+                        "stored": true,
+                        "type": "double",
+                        "user": false
+                    },
+                    {
+                        "constant": false,
+                        "designable": true,
+                        "final": false,
+                        "index": 3,
+                        "name": "maxFPS",
+                        "notify": "fpsChanged",
+                        "read": "maxFPS",
+                        "required": false,
+                        "scriptable": true,
+                        "stored": true,
+                        "type": "double",
+                        "user": false
+                    },
+                    {
+                        "constant": false,
+                        "designable": true,
+                        "final": false,
+                        "index": 4,
+                        "name": "frameTime",
+                        "notify": "frameTimeChanged",
+                        "read": "frameTime",
+                        "required": false,
+                        "scriptable": true,
+                        "stored": true,
+                        "type": "double",
+                        "user": false
+                    },
+                    {
+                        "constant": false,
+                        "designable": true,
+                        "final": false,
+                        "index": 5,
+                        "name": "droppedFrames",
+                        "notify": "droppedFramesChanged",
+                        "read": "droppedFrames",
+                        "required": false,
+                        "scriptable": true,
+                        "stored": true,
+                        "type": "int",
+                        "user": false
+                    }
+                ],
+                "qualifiedClassName": "FPSMonitorQml",
+                "signals": [
+                    {
+                        "access": "public",
+                        "index": 0,
+                        "name": "fpsChanged",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "index": 1,
+                        "name": "frameTimeChanged",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "index": 2,
+                        "name": "droppedFramesChanged",
+                        "returnType": "void"
+                    }
+                ],
+                "superClasses": [
+                    {
+                        "access": "public",
+                        "name": "QObject"
+                    }
+                ]
+            },
+            {
+                "classInfos": [
+                    {
+                        "name": "QML.Element",
+                        "value": "RefreshRateManager"
+                    },
+                    {
+                        "name": "QML.Singleton",
+                        "value": "true"
+                    }
+                ],
+                "className": "RefreshRateManagerQml",
+                "lineNumber": 91,
+                "object": true,
+                "properties": [
+                    {
+                        "constant": false,
+                        "designable": true,
+                        "final": false,
+                        "index": 0,
+                        "name": "refreshRate",
+                        "notify": "refreshRateChanged",
+                        "read": "refreshRate",
+                        "required": false,
+                        "scriptable": true,
+                        "stored": true,
+                        "type": "int",
+                        "user": false
+                    }
+                ],
+                "qualifiedClassName": "RefreshRateManagerQml",
+                "signals": [
+                    {
+                        "access": "public",
+                        "index": 0,
+                        "name": "refreshRateChanged",
+                        "returnType": "void"
+                    }
+                ],
+                "superClasses": [
+                    {
+                        "access": "public",
+                        "name": "QObject"
+                    }
+                ]
+            }
+        ],
+        "inputFile": "FPSMonitorQml.hpp",
+        "outputRevision": 69
+    },
+    {
+        "classes": [
+            {
+                "classInfos": [
+                    {
+                        "name": "QML.Element",
+                        "value": "auto"
+                    }
+                ],
+                "className": "OrcaViewNavigator",
+                "lineNumber": 10,
+                "object": true,
+                "properties": [
+                    {
+                        "constant": false,
+                        "designable": true,
+                        "final": false,
+                        "index": 0,
+                        "name": "viewDirection",
+                        "notify": "viewDirectionChanged",
+                        "read": "viewDirection",
+                        "required": false,
+                        "scriptable": true,
+                        "stored": true,
+                        "type": "QVector3D",
+                        "user": false,
+                        "write": "setViewDirection"
+                    },
+                    {
+                        "constant": false,
+                        "designable": true,
+                        "final": false,
+                        "index": 1,
+                        "name": "viewUp",
+                        "notify": "viewUpChanged",
+                        "read": "viewUp",
+                        "required": false,
+                        "scriptable": true,
+                        "stored": true,
+                        "type": "QVector3D",
+                        "user": false,
+                        "write": "setViewUp"
+                    }
+                ],
+                "qualifiedClassName": "OrcaViewNavigator",
+                "signals": [
+                    {
+                        "access": "public",
+                        "index": 0,
+                        "name": "viewDirectionChanged",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "index": 1,
+                        "name": "viewUpChanged",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "arguments": [
+                            {
+                                "name": "direction",
+                                "type": "QVector3D"
+                            }
+                        ],
+                        "index": 2,
+                        "name": "directionActivated",
+                        "returnType": "void"
+                    }
+                ],
+                "superClasses": [
+                    {
+                        "access": "public",
+                        "name": "QQuickPaintedItem"
+                    }
+                ]
+            }
+        ],
+        "inputFile": "OrcaViewNavigator.hpp",
+        "outputRevision": 69
+    },
+    {
+        "classes": [
+            {
+                "classInfos": [
+                    {
+                        "name": "QML.Element",
+                        "value": "auto"
+                    }
+                ],
+                "className": "RefreshRateController",
+                "enums": [
+                    {
+                        "isClass": false,
+                        "isFlag": false,
+                        "name": "RefreshMode",
+                        "values": [
+                            "Auto",
+                            "FollowDisplay",
+                            "Fixed"
+                        ]
+                    }
+                ],
+                "lineNumber": 14,
+                "methods": [
+                    {
+                        "access": "public",
+                        "index": 4,
+                        "isConst": true,
+                        "name": "getAvailableRefreshRates",
+                        "returnType": "QList<int>"
+                    }
+                ],
+                "object": true,
+                "properties": [
+                    {
+                        "constant": false,
+                        "designable": true,
+                        "final": false,
+                        "index": 0,
+                        "name": "currentRefreshRate",
+                        "notify": "refreshRateChanged",
+                        "read": "currentRefreshRate",
+                        "required": false,
+                        "scriptable": true,
+                        "stored": true,
+                        "type": "int",
+                        "user": false
+                    },
+                    {
+                        "constant": false,
+                        "designable": true,
+                        "final": false,
+                        "index": 1,
+                        "name": "screenRefreshRate",
+                        "notify": "screenRefreshRateChanged",
+                        "read": "screenRefreshRate",
+                        "required": false,
+                        "scriptable": true,
+                        "stored": true,
+                        "type": "int",
+                        "user": false
+                    },
+                    {
+                        "constant": false,
+                        "designable": true,
+                        "final": false,
+                        "index": 2,
+                        "name": "mode",
+                        "notify": "modeChanged",
+                        "read": "mode",
+                        "required": false,
+                        "scriptable": true,
+                        "stored": true,
+                        "type": "int",
+                        "user": false,
+                        "write": "setMode"
+                    },
+                    {
+                        "constant": false,
+                        "designable": true,
+                        "final": false,
+                        "index": 3,
+                        "name": "fixedRate",
+                        "notify": "fixedRateChanged",
+                        "read": "fixedRate",
+                        "required": false,
+                        "scriptable": true,
+                        "stored": true,
+                        "type": "int",
+                        "user": false,
+                        "write": "setFixedRate"
+                    }
+                ],
+                "qualifiedClassName": "RefreshRateController",
+                "signals": [
+                    {
+                        "access": "public",
+                        "index": 0,
+                        "name": "refreshRateChanged",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "index": 1,
+                        "name": "screenRefreshRateChanged",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "index": 2,
+                        "name": "modeChanged",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "index": 3,
+                        "name": "fixedRateChanged",
+                        "returnType": "void"
+                    }
+                ],
+                "superClasses": [
+                    {
+                        "access": "public",
+                        "name": "QObject"
+                    }
+                ]
+            }
+        ],
+        "inputFile": "RefreshRateController.hpp",
+        "outputRevision": 69
+    }
+]
