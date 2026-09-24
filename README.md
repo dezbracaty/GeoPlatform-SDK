@@ -12,7 +12,10 @@ arm64/
     ├── include/
     ├── lib/
     │   └── cmake/GPlatformSDK/
-    ├── resources/
+    ├── share/
+    ├── objects/
+    ├── tools/
+    ├── metadata/
     ├── sdk-build.json
     └── sdk-manifest.json
 ```
