@@ -1,4 +1,4 @@
-c++: warning: argument unused during compilation: '-c' [-Wunused-command-line-argument]
+clang++: warning: argument unused during compilation: '-c' [-Wunused-command-line-argument]
 #define KDDOCKWIDGETS_STATICLIB 1
 #define KDDW_FRONTEND_QT 1
 #define KDDW_FRONTEND_QTQUICK 1
