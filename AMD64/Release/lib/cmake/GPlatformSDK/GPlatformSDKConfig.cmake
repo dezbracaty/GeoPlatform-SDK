@@ -1,7 +1,7 @@
 include_guard(GLOBAL)
 get_filename_component(_GPLATFORM_SDK_ROOT "${CMAKE_CURRENT_LIST_DIR}/../../.." ABSOLUTE)
 include(CMakeFindDependencyMacro)
-find_dependency(Qt6 6.11.2 EXACT COMPONENTS Core Gui Qml Quick QuickControls2 Network Quick3D Concurrent Multimedia Widgets OpenGL OpenGLWidgets Sql )
+find_dependency(Qt6 COMPONENTS Core Gui Qml Quick QuickControls2 Network Quick3D Concurrent Multimedia Widgets OpenGL OpenGLWidgets Sql )
 find_dependency(Threads)
 find_dependency(OpenGL)
 include("${CMAKE_CURRENT_LIST_DIR}/GPlatformSDKTargets.cmake")

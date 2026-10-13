@@ -56,7 +56,7 @@
   "lib/archives/GPlatform/Tr.lib": "1658977066fdbf142e7267d5c0c478108d0f462ba7d35ecb5687fb9360f8c850",
   "lib/archives/GPlatform/TransDB.lib": "efebcccfbe2b81c9bdddffce05c28b158b1790d9945805d92a8fd913b866bdcb",
   "lib/archives/GPlatform/Utils.lib": "ca5389bfdb103763d5454b3e29d92056fe8a91d4e4e60d65b824acd2942a5cb6",
-  "lib/cmake/GPlatformSDK/GPlatformSDKConfig.cmake": "f076929bb3f0ccf7f35467edc5dcf56b67135dc9b5aefcd9395a0854ff9916e0",
+  "lib/cmake/GPlatformSDK/GPlatformSDKConfig.cmake": "c77f08f9e2b39e82e6db3614c463e6112279d83ee18a55fd2fd1e6208793b41c",
   "lib/cmake/GPlatformSDK/GPlatformSDKTargets.cmake": "1739bf9f2980a26046a4a8a1a1fac6c2ce22783b50f3e9d07fd200d5061ee39e",
   "lib/cmake/GPlatformSDK/ModuleRegistration.cmake": "e6903cb63647c81275f2b52d5a4f8edaabd8f2d2dfb7d794e90942a8e5e1d440",
   "lib/cmake/GPlatformSDK/RendererModuleBoundaries.cmake": "e135462110d6f59b1e9c2a34d32ec6521458ebd24bf90a6b71bc63cbc56c49d7",
