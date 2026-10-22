@@ -1,0 +1,88 @@
+{
+  "CMAKE_BUILD_TYPE": "Release",
+  "CMAKE_CXX_COMPILER_ID": "AppleClang",
+  "CMAKE_CXX_COMPILER_VERSION": "21.0.0.21000327",
+  "CMAKE_MSVC_RUNTIME_LIBRARY": "",
+  "CMAKE_OSX_DEPLOYMENT_TARGET": "15.0",
+  "CMAKE_SYSTEM_NAME": "Darwin",
+  "DEPENDENCIES": {
+    "BREAKPAD_ACTUAL_BUILD_TYPE": "Release",
+    "BREAKPAD_BUILD_TYPE": "Release",
+    "BREAKPAD_EXPECTED_SHA256": "81555be3595e25e8be0fe6dd34e9490beba224296e0a8a858341e7bced67674d",
+    "BREAKPAD_VERSION": "2023.06.01",
+    "CEREAL_SHA256": "71642cb54658e98c8f07a0f0d08bf9766f1c3771496936f6014169d3726d9657",
+    "CEREAL_VERSION": "1.3.0",
+    "EIGEN3_ACTUAL_BUILD_TYPE": "Release",
+    "EIGEN3_BUILD_TYPE": "Release",
+    "EIGEN3_EXPECTED_SHA256": "8586084f71f9bde545ee7fa6d00288b264a2b7ac3607b974e54d13e7162c1c72",
+    "EIGEN3_VERSION": "3.4.0",
+    "EMBREE_ACTUAL_BUILD_TYPE": "Release",
+    "EMBREE_BUILD_TYPE": "Release",
+    "EMBREE_EXPECTED_SHA256": "acb517b0ea0f4b442235d5331b69f96192c28da6aca5d5dde0cbe40799638d5c",
+    "EMBREE_VERSION": "4.4.0",
+    "ENABLE_BREAKPAD": "ON",
+    "FILAMENT_EXPECTED_SHA256": "731b5fe71844e82e2ee45b891b05b9c07599fabccd297033275d90baefe97021",
+    "FILAMENT_VERSION": "1.75.0",
+    "GPLATFORM_ENABLE_FILAMENT": "ON",
+    "GPLATFORM_ENABLE_LIBSLICER": "ON",
+    "GPLATFORM_OCCT_VERSION": "7.8.1",
+    "LIBSLICER_BUILD_TYPE": "Release",
+    "OCCT_ACTUAL_BUILD_TYPE": "Release",
+    "OCCT_BUILD_TYPE": "Release",
+    "OCCT_EXPECTED_SHA256": "7321af48c34dc253bf8aae3f0430e8cb10976961d534d8509e72516978aa82f5",
+    "RTTR_ACTUAL_BUILD_TYPE": "Release",
+    "RTTR_BUILD_TYPE": "Release",
+    "RTTR_EXPECTED_SHA256": "058554f8644450185fd881a6598f9dee7ef85785cbc2bb5a5526a43225aa313f",
+    "RTTR_VERSION": "0.9.6",
+    "SMOOTHUI_BUILD_STATIC_LIB": "ON",
+    "SPDLOG_ACTUAL_BUILD_TYPE": "Release",
+    "SPDLOG_BUILD_TYPE": "Release",
+    "SPDLOG_EXPECTED_SHA256": "d8862955c6d74e5846b3f580b1605d2428b11d97a410d86e2fb13e857cd3a744",
+    "SPDLOG_VERSION": "1.17.0",
+    "VTK_ACTUAL_BUILD_TYPE": "Release",
+    "VTK_BUILD_TYPE": "Release",
+    "VTK_EXPECTED_SHA256": "04ae86246b9557c6b61afbc534a6df099244fbc8f3937f82e6bc0570953af87d",
+    "VTK_VERSION": "9.5.0"
+  },
+  "GPLATFORM_SDK_ARCH": "arm64",
+  "Qt6_VERSION": "6.9.3",
+  "SDK_FORMAT": 2,
+  "SOURCE_INPUTS": {
+    "OrcaSlicer": {
+      "content_sha256": "4ca56f0c43027c0da87eabdf84be1bb90c52ed6424213f679bb641525021d395",
+      "diff_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "dirty": false,
+      "revision": "0cdaad07ae17e65a944633ce2c333b0f184030c2"
+    },
+    "SmoothUI": {
+      "content_sha256": "dded10e7c026893252633bef43cabea2c2d14eeeb855baca24b7aabdd5d93369",
+      "diff_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "dirty": false,
+      "revision": "bb796a216b736a6a70a9a58d95f2284be8913f44"
+    },
+    "SmoothUIDock": {
+      "content_sha256": "a8ec973cc56d588373207a4537650a500c1e83611dce1a3bbdab86cc0065a96f",
+      "diff_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "dirty": false,
+      "revision": "27b918d35673d013fb026a65f3b1b497aeef2143"
+    },
+    "SmoothUIDock/KDDockWidgets": {
+      "content_sha256": "2afbb6b13659fcc9819cabae3218599879136caeb10098f3c52647e52748fe84",
+      "diff_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "dirty": false,
+      "revision": "b2d189c677e15c391999f56ebb3683a08cc86f63"
+    }
+  },
+  "SOURCE_REVISIONS": {
+    "OrcaSlicer": "0cdaad07ae17e65a944633ce2c333b0f184030c2",
+    "SmoothUI": "bb796a216b736a6a70a9a58d95f2284be8913f44",
+    "SmoothUIDock": "27b918d35673d013fb026a65f3b1b497aeef2143",
+    "SmoothUIDock/KDDockWidgets": "b2d189c677e15c391999f56ebb3683a08cc86f63"
+  },
+  "SOURCE_STATE": {
+    "DIFF_SHA256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "DIRTY": false,
+    "HEAD": "4d82a10a5d6a85ec6a2946f0c0fe866a155a8fd6",
+    "MERGE_HEAD": ""
+  }
+}
