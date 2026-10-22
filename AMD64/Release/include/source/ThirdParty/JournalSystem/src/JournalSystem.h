@@ -25,6 +25,8 @@ class Server;
 // scheduling intentionally live in the Python caller.
 class JOURNALSYSTEM_EXPORT JournalSystem final : public QObject {
     Q_OBJECT
+    Q_PROPERTY(quint16 serverPort READ serverPort NOTIFY listeningChanged)
+    Q_PROPERTY(QString listenError READ listenError NOTIFY listeningChanged)
 
 public:
     using ActionInvoker = std::function<bool(
@@ -38,6 +40,8 @@ public:
 
     QString version() const;
     int init(quint16 port = 9999);
+    quint16 serverPort() const;
+    QString listenError() const;
     void setActionInvoker(ActionInvoker invoker);
     void setDbStateProvider(QString serializationFormat,
                             DbStateProvider provider);
@@ -48,6 +52,9 @@ public:
     void startRecording();
     QJsonArray stopRecording();
     bool executeEntry(const JournalEntry& entry, QString* error = nullptr);
+
+signals:
+    void listeningChanged();
 
 protected:
     bool eventFilter(QObject* watched, QEvent* event) override;
