@@ -16,7 +16,7 @@
                             }
                         ],
                         "index": 0,
-                        "lineNumber": 47,
+                        "lineNumber": 58,
                         "name": "frameAcquired",
                         "returnType": "void"
                     },
@@ -26,41 +26,38 @@
                             {
                                 "name": "frameId",
                                 "type": "GPlatform::Rendering::FrameId"
+                            },
+                            {
+                                "name": "presentedAtNs",
+                                "type": "qint64"
                             }
                         ],
                         "index": 1,
-                        "lineNumber": 50,
+                        "lineNumber": 61,
                         "name": "framePresented",
-                        "returnType": "void"
-                    },
-                    {
-                        "access": "public",
-                        "index": 2,
-                        "lineNumber": 51,
-                        "name": "pendingNewTexture",
                         "returnType": "void"
                     }
                 ],
                 "slots": [
                     {
                         "access": "public",
-                        "index": 3,
-                        "lineNumber": 54,
-                        "name": "newFrame",
-                        "returnType": "void"
-                    },
-                    {
-                        "access": "public",
-                        "index": 4,
-                        "lineNumber": 56,
+                        "index": 2,
+                        "lineNumber": 64,
                         "name": "prepareNode",
                         "returnType": "void"
                     },
                     {
                         "access": "public",
-                        "index": 5,
-                        "lineNumber": 57,
+                        "index": 3,
+                        "lineNumber": 65,
                         "name": "releaseRetiredFrames",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "index": 4,
+                        "lineNumber": 66,
+                        "name": "detachPresentation",
                         "returnType": "void"
                     },
                     {
@@ -71,8 +68,8 @@
                                 "type": "std::shared_ptr<GPlatform::Rendering::IRendererSession>"
                             }
                         ],
-                        "index": 6,
-                        "lineNumber": 59,
+                        "index": 5,
+                        "lineNumber": 68,
                         "name": "setRenderSession",
                         "returnType": "void"
                     }
@@ -106,7 +103,7 @@
                     {
                         "isClass": true,
                         "isFlag": false,
-                        "lineNumber": 105,
+                        "lineNumber": 107,
                         "name": "RenderingMode",
                         "values": [
                             "Standard",
@@ -118,7 +115,7 @@
                     {
                         "isClass": true,
                         "isFlag": false,
-                        "lineNumber": 113,
+                        "lineNumber": 115,
                         "name": "RendererRole",
                         "values": [
                             "Compatibility",
@@ -128,12 +125,12 @@
                         ]
                     }
                 ],
-                "lineNumber": 73,
+                "lineNumber": 74,
                 "methods": [
                     {
                         "access": "public",
-                        "index": 12,
-                        "lineNumber": 139,
+                        "index": 14,
+                        "lineNumber": 141,
                         "name": "activateView",
                         "returnType": "void"
                     },
@@ -145,8 +142,8 @@
                                 "type": "ThreadRendererQmlItem*"
                             }
                         ],
-                        "index": 13,
-                        "lineNumber": 140,
+                        "index": 15,
+                        "lineNumber": 142,
                         "name": "copyCameraStateFrom",
                         "returnType": "bool"
                     }
@@ -158,7 +155,7 @@
                         "designable": true,
                         "final": false,
                         "index": 0,
-                        "lineNumber": 77,
+                        "lineNumber": 78,
                         "name": "viewId",
                         "notify": "viewIdChanged",
                         "override": false,
@@ -175,7 +172,7 @@
                         "designable": true,
                         "final": false,
                         "index": 1,
-                        "lineNumber": 80,
+                        "lineNumber": 81,
                         "name": "fpsMonitor",
                         "notify": "fpsMonitorChanged",
                         "override": false,
@@ -192,7 +189,7 @@
                         "designable": true,
                         "final": false,
                         "index": 2,
-                        "lineNumber": 83,
+                        "lineNumber": 84,
                         "name": "renderingMode",
                         "notify": "renderingModeChanged",
                         "override": false,
@@ -210,7 +207,7 @@
                         "designable": true,
                         "final": false,
                         "index": 3,
-                        "lineNumber": 87,
+                        "lineNumber": 88,
                         "name": "rendererRole",
                         "notify": "rendererRoleChanged",
                         "override": false,
@@ -228,7 +225,7 @@
                         "designable": true,
                         "final": false,
                         "index": 4,
-                        "lineNumber": 91,
+                        "lineNumber": 92,
                         "name": "resolvedBackendId",
                         "notify": "resolvedBackendIdChanged",
                         "override": false,
@@ -245,7 +242,7 @@
                         "designable": true,
                         "final": false,
                         "index": 5,
-                        "lineNumber": 95,
+                        "lineNumber": 96,
                         "name": "renderActive",
                         "notify": "renderActiveChanged",
                         "override": false,
@@ -263,7 +260,7 @@
                         "designable": true,
                         "final": false,
                         "index": 6,
-                        "lineNumber": 98,
+                        "lineNumber": 99,
                         "name": "isFrameReady",
                         "notify": "frameReadyChanged",
                         "override": false,
@@ -280,7 +277,7 @@
                         "designable": true,
                         "final": false,
                         "index": 7,
-                        "lineNumber": 101,
+                        "lineNumber": 102,
                         "name": "hasPresentedFrame",
                         "notify": "hasPresentedFrameChanged",
                         "override": false,
@@ -291,6 +288,23 @@
                         "type": "bool",
                         "user": false,
                         "virtual": false
+                    },
+                    {
+                        "constant": false,
+                        "designable": true,
+                        "final": false,
+                        "index": 8,
+                        "lineNumber": 103,
+                        "name": "renderingError",
+                        "notify": "renderingErrorChanged",
+                        "override": false,
+                        "read": "renderingError",
+                        "required": false,
+                        "scriptable": true,
+                        "stored": true,
+                        "type": "QString",
+                        "user": false,
+                        "virtual": false
                     }
                 ],
                 "qualifiedClassName": "ThreadRendererQmlItem",
@@ -298,35 +312,35 @@
                     {
                         "access": "public",
                         "index": 0,
-                        "lineNumber": 165,
+                        "lineNumber": 169,
                         "name": "fpsMonitorChanged",
                         "returnType": "void"
                     },
                     {
                         "access": "public",
                         "index": 1,
-                        "lineNumber": 166,
+                        "lineNumber": 170,
                         "name": "renderingModeChanged",
                         "returnType": "void"
                     },
                     {
                         "access": "public",
                         "index": 2,
-                        "lineNumber": 167,
+                        "lineNumber": 171,
                         "name": "rendererRoleChanged",
                         "returnType": "void"
                     },
                     {
                         "access": "public",
                         "index": 3,
-                        "lineNumber": 168,
+                        "lineNumber": 172,
                         "name": "resolvedBackendIdChanged",
                         "returnType": "void"
                     },
                     {
                         "access": "public",
                         "index": 4,
-                        "lineNumber": 169,
+                        "lineNumber": 173,
                         "name": "renderActiveChanged",
                         "returnType": "void"
                     },
@@ -339,28 +353,35 @@
                             }
                         ],
                         "index": 5,
-                        "lineNumber": 170,
+                        "lineNumber": 174,
                         "name": "presentationActiveChanged",
                         "returnType": "void"
                     },
                     {
                         "access": "public",
                         "index": 6,
-                        "lineNumber": 171,
+                        "lineNumber": 175,
                         "name": "frameReadyChanged",
                         "returnType": "void"
                     },
                     {
                         "access": "public",
                         "index": 7,
-                        "lineNumber": 172,
+                        "lineNumber": 176,
                         "name": "hasPresentedFrameChanged",
                         "returnType": "void"
                     },
                     {
                         "access": "public",
                         "index": 8,
-                        "lineNumber": 173,
+                        "lineNumber": 177,
+                        "name": "renderingErrorChanged",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "index": 9,
+                        "lineNumber": 178,
                         "name": "viewIdChanged",
                         "returnType": "void"
                     }
@@ -368,15 +389,22 @@
                 "slots": [
                     {
                         "access": "private",
-                        "index": 9,
-                        "lineNumber": 151,
+                        "index": 10,
+                        "lineNumber": 152,
+                        "name": "onFrameReady",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "private",
+                        "index": 11,
+                        "lineNumber": 155,
                         "name": "onFramePreparationStarted",
                         "returnType": "void"
                     },
                     {
                         "access": "private",
-                        "index": 10,
-                        "lineNumber": 152,
+                        "index": 12,
+                        "lineNumber": 156,
                         "name": "onFramePreparationFinished",
                         "returnType": "void"
                     },
@@ -388,8 +416,8 @@
                                 "type": "QScreen*"
                             }
                         ],
-                        "index": 11,
-                        "lineNumber": 155,
+                        "index": 13,
+                        "lineNumber": 159,
                         "name": "onScreenChanged",
                         "returnType": "void"
                     }

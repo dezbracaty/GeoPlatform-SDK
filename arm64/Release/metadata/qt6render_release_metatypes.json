@@ -25,36 +25,34 @@
                             {
                                 "name": "frameId",
                                 "type": "GPlatform::Rendering::FrameId"
+                            },
+                            {
+                                "name": "presentedAtNs",
+                                "type": "qint64"
                             }
                         ],
                         "index": 1,
                         "name": "framePresented",
-                        "returnType": "void"
-                    },
-                    {
-                        "access": "public",
-                        "index": 2,
-                        "name": "pendingNewTexture",
                         "returnType": "void"
                     }
                 ],
                 "slots": [
                     {
                         "access": "public",
-                        "index": 3,
-                        "name": "newFrame",
-                        "returnType": "void"
-                    },
-                    {
-                        "access": "public",
-                        "index": 4,
+                        "index": 2,
                         "name": "prepareNode",
                         "returnType": "void"
                     },
                     {
                         "access": "public",
-                        "index": 5,
+                        "index": 3,
                         "name": "releaseRetiredFrames",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "index": 4,
+                        "name": "detachPresentation",
                         "returnType": "void"
                     },
                     {
@@ -65,7 +63,7 @@
                                 "type": "std::shared_ptr<GPlatform::Rendering::IRendererSession>"
                             }
                         ],
-                        "index": 6,
+                        "index": 5,
                         "name": "setRenderSession",
                         "returnType": "void"
                     }
@@ -119,11 +117,11 @@
                         ]
                     }
                 ],
-                "lineNumber": 73,
+                "lineNumber": 74,
                 "methods": [
                     {
                         "access": "public",
-                        "index": 12,
+                        "index": 14,
                         "name": "activateView",
                         "returnType": "void"
                     },
@@ -135,7 +133,7 @@
                                 "type": "ThreadRendererQmlItem*"
                             }
                         ],
-                        "index": 13,
+                        "index": 15,
                         "name": "copyCameraStateFrom",
                         "returnType": "bool"
                     }
@@ -256,6 +254,20 @@
                         "stored": true,
                         "type": "bool",
                         "user": false
+                    },
+                    {
+                        "constant": false,
+                        "designable": true,
+                        "final": false,
+                        "index": 8,
+                        "name": "renderingError",
+                        "notify": "renderingErrorChanged",
+                        "read": "renderingError",
+                        "required": false,
+                        "scriptable": true,
+                        "stored": true,
+                        "type": "QString",
+                        "user": false
                     }
                 ],
                 "qualifiedClassName": "ThreadRendererQmlItem",
@@ -317,6 +329,12 @@
                     {
                         "access": "public",
                         "index": 8,
+                        "name": "renderingErrorChanged",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "index": 9,
                         "name": "viewIdChanged",
                         "returnType": "void"
                     }
@@ -324,13 +342,19 @@
                 "slots": [
                     {
                         "access": "private",
-                        "index": 9,
+                        "index": 10,
+                        "name": "onFrameReady",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "private",
+                        "index": 11,
                         "name": "onFramePreparationStarted",
                         "returnType": "void"
                     },
                     {
                         "access": "private",
-                        "index": 10,
+                        "index": 12,
                         "name": "onFramePreparationFinished",
                         "returnType": "void"
                     },
@@ -342,7 +366,7 @@
                                 "type": "QScreen*"
                             }
                         ],
-                        "index": 11,
+                        "index": 13,
                         "name": "onScreenChanged",
                         "returnType": "void"
                     }

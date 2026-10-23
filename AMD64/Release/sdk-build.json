@@ -47,9 +47,15 @@
   "GPLATFORM_SDK_ARCH": "AMD64",
   "Qt6_VERSION": "6.11.2",
   "SDK_FORMAT": 2,
+  "SOURCE_MODIFIED": {
+    "OrcaSlicer": false,
+    "SmoothUI": false,
+    "SmoothUIDock": false,
+    "SmoothUIDock/KDDockWidgets": false
+  },
   "SOURCE_REVISIONS": {
-    "OrcaSlicer": "21c2fd87f1e502c1f2274e377c9e862b37426dd4",
-    "SmoothUI": "8a306d1e5d4fcd20301bbe181dd4c8e3ce62a16d",
+    "OrcaSlicer": "e2177ef703ae43833d9c98d3c2d7c7f5c1d2cbe7",
+    "SmoothUI": "54664b45f761ce0ab876c1cffc414e38b529d997",
     "SmoothUIDock": "3a1c09d640d1a87ca7058ca00c5b10afcb213926",
     "SmoothUIDock/KDDockWidgets": "b2d189c677e15c391999f56ebb3683a08cc86f63"
   }

@@ -14,6 +14,8 @@ public:
     void sendFrame(const QByteArray& payload);
     bool drainWrites(int timeoutMs = 1000);
     bool isListening() const { return m_server->isListening(); }
+    quint16 serverPort() const { return m_server->serverPort(); }
+    QString errorString() const { return m_server->errorString(); }
 
 signals:
     void frameReceived(const QByteArray& payload);

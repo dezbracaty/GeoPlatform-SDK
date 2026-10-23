@@ -49,16 +49,16 @@
   "SDK_FORMAT": 2,
   "SOURCE_INPUTS": {
     "OrcaSlicer": {
-      "content_sha256": "4ca56f0c43027c0da87eabdf84be1bb90c52ed6424213f679bb641525021d395",
+      "content_sha256": "bcf1f5227dcbc76a790e1a51e239c7edc4895fa61316ba207ea4c6e1c2e22945",
       "diff_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
       "dirty": false,
-      "revision": "0cdaad07ae17e65a944633ce2c333b0f184030c2"
+      "revision": "3ca34334a87e214744f4b53b90ebedc46fa4aef0"
     },
     "SmoothUI": {
-      "content_sha256": "dded10e7c026893252633bef43cabea2c2d14eeeb855baca24b7aabdd5d93369",
+      "content_sha256": "e92913a101987feeb0f73e588506e006a03f41f52aaeef300ece986f546d72c7",
       "diff_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
       "dirty": false,
-      "revision": "bb796a216b736a6a70a9a58d95f2284be8913f44"
+      "revision": "aad0ff2035abd1ecd1fc320621fd26dd95227935"
     },
     "SmoothUIDock": {
       "content_sha256": "a8ec973cc56d588373207a4537650a500c1e83611dce1a3bbdab86cc0065a96f",
@@ -73,16 +73,22 @@
       "revision": "b2d189c677e15c391999f56ebb3683a08cc86f63"
     }
   },
+  "SOURCE_MODIFIED": {
+    "OrcaSlicer": false,
+    "SmoothUI": false,
+    "SmoothUIDock": false,
+    "SmoothUIDock/KDDockWidgets": false
+  },
   "SOURCE_REVISIONS": {
-    "OrcaSlicer": "0cdaad07ae17e65a944633ce2c333b0f184030c2",
-    "SmoothUI": "bb796a216b736a6a70a9a58d95f2284be8913f44",
+    "OrcaSlicer": "3ca34334a87e214744f4b53b90ebedc46fa4aef0",
+    "SmoothUI": "aad0ff2035abd1ecd1fc320621fd26dd95227935",
     "SmoothUIDock": "27b918d35673d013fb026a65f3b1b497aeef2143",
     "SmoothUIDock/KDDockWidgets": "b2d189c677e15c391999f56ebb3683a08cc86f63"
   },
   "SOURCE_STATE": {
     "DIFF_SHA256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
     "DIRTY": false,
-    "HEAD": "4d82a10a5d6a85ec6a2946f0c0fe866a155a8fd6",
+    "HEAD": "085c463468e0fe820c466c59dff81ac38d5c4734",
     "MERGE_HEAD": ""
   }
 }
