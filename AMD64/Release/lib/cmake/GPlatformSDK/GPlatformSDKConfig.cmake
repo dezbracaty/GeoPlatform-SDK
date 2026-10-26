@@ -1,7 +1,7 @@
 include_guard(GLOBAL)
 get_filename_component(_GPLATFORM_SDK_ROOT "${CMAKE_CURRENT_LIST_DIR}/../../.." ABSOLUTE)
 include(CMakeFindDependencyMacro)
-find_dependency(Qt6 COMPONENTS Core Gui Qml Quick QuickControls2 Network Quick3D Concurrent Multimedia Widgets OpenGL OpenGLWidgets Sql )
+find_dependency(Qt6 6.11.2 EXACT COMPONENTS Core Gui Qml Quick QuickControls2 Network Quick3D Concurrent Multimedia Widgets OpenGL OpenGLWidgets Sql )
 find_dependency(Threads)
 find_dependency(OpenGL)
 include("${CMAKE_CURRENT_LIST_DIR}/GPlatformSDKTargets.cmake")
@@ -16,12 +16,17 @@ set(HOTLOAD_ENABLED OFF CACHE BOOL "Enable application QML hot reload")
 set(TR_PO2MO_SCRIPT "${_GPLATFORM_SDK_ROOT}/tools/po2mo.py")
 set(TR_EXTRACT_SCRIPT "${_GPLATFORM_SDK_ROOT}/tools/tr_extract.py")
 function(gplatform_add_renderer_resources target)
-  set(_studio "${_GPLATFORM_SDK_ROOT}/share/renderer/print_studio.png")
-  set_source_files_properties("${FILAMENT_SHOWCASE_MONKEY_OBJ}" PROPERTIES QT_RESOURCE_ALIAS "monkey.obj")
-  set_source_files_properties("${FILAMENT_SHOWCASE_PILLARS_HDR}" PROPERTIES QT_RESOURCE_ALIAS "pillars_2k.hdr")
-  set_source_files_properties("${_studio}" PROPERTIES QT_RESOURCE_ALIAS "print_studio.png")
-  qt_add_resources(${target} gplatform_renderer_showcase_fixture PREFIX "/startup-tests/renderers" FILES
-    "${FILAMENT_SHOWCASE_MONKEY_OBJ}" "${FILAMENT_SHOWCASE_PILLARS_HDR}" "${_studio}")
+  set_source_files_properties("${_GPLATFORM_SDK_ROOT}/share/renderer/pillars_2k.hdr" PROPERTIES QT_RESOURCE_ALIAS "pillars_2k.hdr")
+  set_source_files_properties("${_GPLATFORM_SDK_ROOT}/share/renderer/studio_light.png" PROPERTIES QT_RESOURCE_ALIAS "studio_light.png")
+  set_source_files_properties("${_GPLATFORM_SDK_ROOT}/share/renderer/studio_dark.png" PROPERTIES QT_RESOURCE_ALIAS "studio_dark.png")
+  set_source_files_properties("${_GPLATFORM_SDK_ROOT}/share/renderer/monkey.obj" PROPERTIES QT_RESOURCE_ALIAS "monkey.obj")
+  qt_add_resources(${target} gplatform_renderer_showcase_fixture
+    PREFIX "/startup-tests/renderers" FILES
+    "${_GPLATFORM_SDK_ROOT}/share/renderer/pillars_2k.hdr"
+    "${_GPLATFORM_SDK_ROOT}/share/renderer/studio_light.png"
+    "${_GPLATFORM_SDK_ROOT}/share/renderer/studio_dark.png"
+    "${_GPLATFORM_SDK_ROOT}/share/renderer/monkey.obj"
+  )
 endfunction()
 set_property(GLOBAL PROPERTY GPLATFORM_RENDERER_BACKEND_TARGETS "RendererBackendVtk;RendererBackendFilament")
 function(_gplatform_validate_framework)

@@ -1,7 +1,7 @@
 {
   "CMAKE_BUILD_TYPE": "Release",
   "CMAKE_CXX_COMPILER_ID": "MSVC",
-  "CMAKE_CXX_COMPILER_VERSION": "19.44.35226.0",
+  "CMAKE_CXX_COMPILER_VERSION": "19.44.35228.0",
   "CMAKE_MSVC_RUNTIME_LIBRARY": "",
   "CMAKE_OSX_DEPLOYMENT_TARGET": "",
   "CMAKE_SYSTEM_NAME": "Windows",
@@ -47,6 +47,32 @@
   "GPLATFORM_SDK_ARCH": "AMD64",
   "Qt6_VERSION": "6.11.2",
   "SDK_FORMAT": 2,
+  "SOURCE_INPUTS": {
+    "OrcaSlicer": {
+      "content_sha256": "bcf1f5227dcbc76a790e1a51e239c7edc4895fa61316ba207ea4c6e1c2e22945",
+      "diff_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "dirty": false,
+      "revision": "3ca34334a87e214744f4b53b90ebedc46fa4aef0"
+    },
+    "SmoothUI": {
+      "content_sha256": "e92913a101987feeb0f73e588506e006a03f41f52aaeef300ece986f546d72c7",
+      "diff_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "dirty": false,
+      "revision": "aad0ff2035abd1ecd1fc320621fd26dd95227935"
+    },
+    "SmoothUIDock": {
+      "content_sha256": "a8ec973cc56d588373207a4537650a500c1e83611dce1a3bbdab86cc0065a96f",
+      "diff_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "dirty": false,
+      "revision": "27b918d35673d013fb026a65f3b1b497aeef2143"
+    },
+    "SmoothUIDock/KDDockWidgets": {
+      "content_sha256": "2afbb6b13659fcc9819cabae3218599879136caeb10098f3c52647e52748fe84",
+      "diff_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "dirty": false,
+      "revision": "b2d189c677e15c391999f56ebb3683a08cc86f63"
+    }
+  },
   "SOURCE_MODIFIED": {
     "OrcaSlicer": false,
     "SmoothUI": false,
@@ -54,9 +80,15 @@
     "SmoothUIDock/KDDockWidgets": false
   },
   "SOURCE_REVISIONS": {
-    "OrcaSlicer": "e2177ef703ae43833d9c98d3c2d7c7f5c1d2cbe7",
-    "SmoothUI": "54664b45f761ce0ab876c1cffc414e38b529d997",
-    "SmoothUIDock": "3a1c09d640d1a87ca7058ca00c5b10afcb213926",
+    "OrcaSlicer": "3ca34334a87e214744f4b53b90ebedc46fa4aef0",
+    "SmoothUI": "aad0ff2035abd1ecd1fc320621fd26dd95227935",
+    "SmoothUIDock": "27b918d35673d013fb026a65f3b1b497aeef2143",
     "SmoothUIDock/KDDockWidgets": "b2d189c677e15c391999f56ebb3683a08cc86f63"
+  },
+  "SOURCE_STATE": {
+    "DIFF_SHA256": "10a4d337d2aa7c00da9c4814ed21478e6be63601128b1dbcd971b0397bcbafe1",
+    "DIRTY": true,
+    "HEAD": "0244d902e934f258760e38c691f8c80827655555",
+    "MERGE_HEAD": ""
   }
 }

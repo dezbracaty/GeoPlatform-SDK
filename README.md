@@ -59,3 +59,21 @@ python cmake/sdk/publish_sdk.py --export build-Release/sdk-export --output <导�
 发布时先提交并推送 SDK 产物及 Git LFS 对象，再更新 App 仓库中的子模块指针。
 根目录 README 属于仓库说明，不参与构建产物清单。
 应用修改与 SDK 共享的类布局或虚函数接口后，需要发布配套 SDK；当前不保证跨此类修改的二进制兼容性。
+
+
+## Actor surface picking update (Windows)
+
+The AMD64/Release package is paired with the ActorDB pure-virtual picking
+contract and the concrete primitive/GLB surface implementations. The matching
+producer source is commit 0244d902 on branch fix/actor-surface-picking-windows
+of dezbracaty/GPlatform. The recorded dirty source state retains the local
+libslicer cache-path override; the package does not claim a clean producer tree.
+
+Validation: Windows compilation/linking, PrimitivePickCheck, deployment retry,
+and actual window selection/clear/re-pick scenarios. Selection-box following
+during dragging remains a separate known issue.
+
+The arm64/Release slot is unchanged. It has not been rebuilt or validated
+against the changed App actor layouts. macOS consumers need a matching SDK
+rebuild before using this App change; Windows validation does not establish
+macOS binary compatibility.
