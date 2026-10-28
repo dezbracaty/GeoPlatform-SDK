@@ -25,9 +25,9 @@ App 中的挂载路径为 `ThirdParty/libs/GPlatformSDK/`。
 只按 `<架构>/<构建类型>/` 区分产物；版本由 App 的子模块提交指针锁定，不设置版本、平台或工具链目录。
 `sdk-build.json` 记录实际编译环境，`sdk-manifest.json` 记录交付文件的 SHA-256。
 
-本轮仅验收 `AMD64/Release`：Windows、MSVC 19.44.35226、Qt 6.11.2、SDK 格式 2。
+本次更新并验收 `arm64/Release` 和 `x86_64/Release`：macOS 15+、AppleClang 21、Qt 6.9.3、SDK 格式 2。两种架构的主工程测试各 134 项通过；arm64 独立 App 使用导出的 SDK 编译通过，3 项扩展检查通过。Intel 测试通过 Apple Silicon 上的 Rosetta 运行。`AMD64/Release` 保留此前的 Windows 产物，本次未重新编译或验收该槽位。
 内部库及其公开头文件、生成头文件、资源来自同一次主项目构建；App 的第三方源码版本和依赖输入必须与 `sdk-build.json` 匹配。
-本仓库以当前格式 2 产物重新建立交付历史，旧 Windows/macOS 完整 SDK 不再保留在活动仓库历史中。旧消费者记录的 SDK SHA 需要从迁移归档恢复；新的 macOS 或 Debug 槽须在相应平台重新构建、打包及验收后提供。
+本仓库以当前格式 2 产物重新建立交付历史，旧 Windows/macOS 完整 SDK 不再保留在活动仓库历史中。旧消费者记录的 SDK SHA 需要从迁移归档恢复；其他架构或 Debug 槽须在相应平台重新构建、打包及验收后提供。
 Qt 由应用开发环境单独提供；需要使用匹配的架构、构建类型和兼容工具链。
 
 ## 获取二进制
@@ -40,7 +40,7 @@ git submodule update --init --recursive
 git -C ThirdParty/libs/GPlatformSDK lfs pull
 ```
 
-仅下载 GitHub 的源码 ZIP 不能代替上述步骤。编译方法见 [App README](https://github.com/dezbracaty/GeoPlatform-App/tree/fix/sdk-packaging-restart#readme)。
+仅下载 GitHub 的源码 ZIP 不能代替上述步骤。编译方法见 [App README](https://github.com/dezbracaty/GeoPlatform-App/tree/feature/gplatform-ui#readme)。
 本仓库不包含用于重编私有模块的源码工程。
 
 ## 产物维护
