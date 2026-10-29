@@ -49,10 +49,10 @@
   "SDK_FORMAT": 2,
   "SOURCE_INPUTS": {
     "OrcaSlicer": {
-      "content_sha256": "3611a563b7500aa9dda91bd6509a51ef8b162bae3b461186664b7ba2e5de21f8",
+      "content_sha256": "1a04bcb0d8949c2a6fd2b2b1369cde4da2fbe3818338ea6b6ff271c7d7c0ccbb",
       "diff_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
       "dirty": false,
-      "revision": "a755f344b6be40c69f6d8d8424a1b1d6ded3d217"
+      "revision": "54a752828d610887039bd6e98253a6449380cfa4"
     },
     "SmoothUI": {
       "content_sha256": "77bc11814d2f9afe0ca52f5f7badfd742774fd475ea2a0e80867bfdae37c0882",
@@ -80,15 +80,15 @@
     "SmoothUIDock/KDDockWidgets": false
   },
   "SOURCE_REVISIONS": {
-    "OrcaSlicer": "a755f344b6be40c69f6d8d8424a1b1d6ded3d217",
+    "OrcaSlicer": "54a752828d610887039bd6e98253a6449380cfa4",
     "SmoothUI": "fa4e4ce9cb0eed20ab019ad247465762a0b6fa8c",
     "SmoothUIDock": "0ef2365585071f28ff6f584d272547958dc69022",
     "SmoothUIDock/KDDockWidgets": "b2d189c677e15c391999f56ebb3683a08cc86f63"
   },
   "SOURCE_STATE": {
-    "DIFF_SHA256": "0b8414f6ba7f19fbe18e62cb5689bc629cb7689460a520298b0c0f6451a6a834",
-    "DIRTY": true,
-    "HEAD": "0815ae5ab9b1e4a6820a16489171a4d2c07beb0f",
+    "DIFF_SHA256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "DIRTY": false,
+    "HEAD": "0340925c063a2060b013f8fc7cfa102306693cf2",
     "MERGE_HEAD": ""
   }
 }
