@@ -49,22 +49,22 @@
   "SDK_FORMAT": 2,
   "SOURCE_INPUTS": {
     "OrcaSlicer": {
-      "content_sha256": "bcf1f5227dcbc76a790e1a51e239c7edc4895fa61316ba207ea4c6e1c2e22945",
+      "content_sha256": "3611a563b7500aa9dda91bd6509a51ef8b162bae3b461186664b7ba2e5de21f8",
       "diff_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
       "dirty": false,
-      "revision": "3ca34334a87e214744f4b53b90ebedc46fa4aef0"
+      "revision": "a755f344b6be40c69f6d8d8424a1b1d6ded3d217"
     },
     "SmoothUI": {
-      "content_sha256": "e92913a101987feeb0f73e588506e006a03f41f52aaeef300ece986f546d72c7",
+      "content_sha256": "77bc11814d2f9afe0ca52f5f7badfd742774fd475ea2a0e80867bfdae37c0882",
       "diff_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
       "dirty": false,
-      "revision": "aad0ff2035abd1ecd1fc320621fd26dd95227935"
+      "revision": "fa4e4ce9cb0eed20ab019ad247465762a0b6fa8c"
     },
     "SmoothUIDock": {
-      "content_sha256": "a8ec973cc56d588373207a4537650a500c1e83611dce1a3bbdab86cc0065a96f",
+      "content_sha256": "ca3c2b2cc877bda47154eff038537e0a4252c7358ada4ddc4771098868fc6157",
       "diff_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
       "dirty": false,
-      "revision": "27b918d35673d013fb026a65f3b1b497aeef2143"
+      "revision": "0ef2365585071f28ff6f584d272547958dc69022"
     },
     "SmoothUIDock/KDDockWidgets": {
       "content_sha256": "2afbb6b13659fcc9819cabae3218599879136caeb10098f3c52647e52748fe84",
@@ -80,15 +80,15 @@
     "SmoothUIDock/KDDockWidgets": false
   },
   "SOURCE_REVISIONS": {
-    "OrcaSlicer": "3ca34334a87e214744f4b53b90ebedc46fa4aef0",
-    "SmoothUI": "aad0ff2035abd1ecd1fc320621fd26dd95227935",
-    "SmoothUIDock": "27b918d35673d013fb026a65f3b1b497aeef2143",
+    "OrcaSlicer": "a755f344b6be40c69f6d8d8424a1b1d6ded3d217",
+    "SmoothUI": "fa4e4ce9cb0eed20ab019ad247465762a0b6fa8c",
+    "SmoothUIDock": "0ef2365585071f28ff6f584d272547958dc69022",
     "SmoothUIDock/KDDockWidgets": "b2d189c677e15c391999f56ebb3683a08cc86f63"
   },
   "SOURCE_STATE": {
-    "DIFF_SHA256": "10a4d337d2aa7c00da9c4814ed21478e6be63601128b1dbcd971b0397bcbafe1",
+    "DIFF_SHA256": "84ee98dde3ae0011f572d442d7b1955bcfde4b4068d4ad77fd0a418bd24ccb10",
     "DIRTY": true,
-    "HEAD": "0244d902e934f258760e38c691f8c80827655555",
+    "HEAD": "0815ae5ab9b1e4a6820a16489171a4d2c07beb0f",
     "MERGE_HEAD": ""
   }
 }
