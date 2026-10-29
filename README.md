@@ -25,7 +25,7 @@ App 中的挂载路径为 `ThirdParty/libs/GPlatformSDK/`。
 只按 `<架构>/<构建类型>/` 区分产物；版本由 App 的子模块提交指针锁定，不设置版本、平台或工具链目录。
 `sdk-build.json` 记录实际编译环境，`sdk-manifest.json` 记录交付文件的 SHA-256。
 
-本次更新 `arm64/Release` 和 `x86_64/Release`：macOS 15+、AppleClang 21、Qt 6.9.3、SDK 格式 2。产物来自主仓库 `0340925c063a2060b013f8fc7cfa102306693cf2`，配套 App 包含浮动打印配置面板和设备控制页；Orca 源码固定为 `54a752828d610887039bd6e98253a6449380cfa4`。两套包的文件清单、二进制架构和源码输入已校验一致。`AMD64/Release` 保留此前的 Windows 产物，本次未重新编译或验收该槽位。
+本次更新 `arm64/Release` 和 `x86_64/Release`：macOS 15+、AppleClang 21、Qt 6.9.3、SDK 格式 2。产物来自主仓库 `ed1a460ddc41ed72a385e524e39b059bc73dbf69`，配套 App 包含浮动打印配置面板和设备控制页；Orca 源码固定为 `54a752828d610887039bd6e98253a6449380cfa4`。两套包的文件清单、二进制架构和源码输入已校验一致。`AMD64/Release` 保留此前的 Windows 产物，本次未重新编译或验收该槽位。
 内部库及其公开头文件、生成头文件、资源来自同一次主项目构建；App 的第三方源码版本和依赖输入必须与 `sdk-build.json` 匹配。
 本仓库以当前格式 2 产物重新建立交付历史，旧 Windows/macOS 完整 SDK 不再保留在活动仓库历史中。旧消费者记录的 SDK SHA 需要从迁移归档恢复；其他架构或 Debug 槽须在相应平台重新构建、打包及验收后提供。
 Qt 由应用开发环境单独提供；需要使用匹配的架构、构建类型和兼容工具链。
