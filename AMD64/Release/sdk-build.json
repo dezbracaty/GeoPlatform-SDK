@@ -1,7 +1,7 @@
 {
   "CMAKE_BUILD_TYPE": "Release",
   "CMAKE_CXX_COMPILER_ID": "MSVC",
-  "CMAKE_CXX_COMPILER_VERSION": "19.44.35228.0",
+  "CMAKE_CXX_COMPILER_VERSION": "19.44.35226.0",
   "CMAKE_MSVC_RUNTIME_LIBRARY": "",
   "CMAKE_OSX_DEPLOYMENT_TARGET": "",
   "CMAKE_SYSTEM_NAME": "Windows",
@@ -49,25 +49,25 @@
   "SDK_FORMAT": 2,
   "SOURCE_INPUTS": {
     "OrcaSlicer": {
-      "content_sha256": "3611a563b7500aa9dda91bd6509a51ef8b162bae3b461186664b7ba2e5de21f8",
+      "content_sha256": "c2719e7522d76d95ee30088c2b3d6586974d328bdca575bb59e0b9214e8393ec",
       "diff_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
       "dirty": false,
-      "revision": "a755f344b6be40c69f6d8d8424a1b1d6ded3d217"
+      "revision": "af9015d8ebfb51ca025a56dae638f378e6d8b9f8"
     },
     "SmoothUI": {
-      "content_sha256": "77bc11814d2f9afe0ca52f5f7badfd742774fd475ea2a0e80867bfdae37c0882",
+      "content_sha256": "ca37bb3ce55940fa2e9c3527de910d5679734d0e8ace26964649078b611fc8f2",
       "diff_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
       "dirty": false,
       "revision": "fa4e4ce9cb0eed20ab019ad247465762a0b6fa8c"
     },
     "SmoothUIDock": {
-      "content_sha256": "ca3c2b2cc877bda47154eff038537e0a4252c7358ada4ddc4771098868fc6157",
+      "content_sha256": "94437360819dde46322dc8a5493b34283206bdae8ba72cbab26a51f17b0a3812",
       "diff_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
       "dirty": false,
       "revision": "0ef2365585071f28ff6f584d272547958dc69022"
     },
     "SmoothUIDock/KDDockWidgets": {
-      "content_sha256": "2afbb6b13659fcc9819cabae3218599879136caeb10098f3c52647e52748fe84",
+      "content_sha256": "2deceb831ed4298392e4ac3c9032c03825da04cb6b7008658330e60fc42eb848",
       "diff_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
       "dirty": false,
       "revision": "b2d189c677e15c391999f56ebb3683a08cc86f63"
@@ -80,15 +80,15 @@
     "SmoothUIDock/KDDockWidgets": false
   },
   "SOURCE_REVISIONS": {
-    "OrcaSlicer": "a755f344b6be40c69f6d8d8424a1b1d6ded3d217",
+    "OrcaSlicer": "af9015d8ebfb51ca025a56dae638f378e6d8b9f8",
     "SmoothUI": "fa4e4ce9cb0eed20ab019ad247465762a0b6fa8c",
     "SmoothUIDock": "0ef2365585071f28ff6f584d272547958dc69022",
     "SmoothUIDock/KDDockWidgets": "b2d189c677e15c391999f56ebb3683a08cc86f63"
   },
   "SOURCE_STATE": {
-    "DIFF_SHA256": "84ee98dde3ae0011f572d442d7b1955bcfde4b4068d4ad77fd0a418bd24ccb10",
-    "DIRTY": true,
-    "HEAD": "0815ae5ab9b1e4a6820a16489171a4d2c07beb0f",
+    "DIFF_SHA256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "DIRTY": false,
+    "HEAD": "b678333e15759715aab2c5ee4edb4a51a6a416bb",
     "MERGE_HEAD": ""
   }
 }
