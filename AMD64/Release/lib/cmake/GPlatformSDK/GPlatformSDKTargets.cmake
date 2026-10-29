@@ -111,7 +111,7 @@ add_library(Utils STATIC IMPORTED)
 
 set_target_properties(Utils PROPERTIES
   INTERFACE_INCLUDE_DIRECTORIES "${_GPLATFORM_SDK_ROOT}/include/source/Core/src/Utils/include"
-  INTERFACE_LINK_LIBRARIES "Qt6::Core;Qt6::Gui;BaseTypes;AppDB;\$<LINK_ONLY:VTK::CommonCore>;\$<LINK_ONLY:VTK::CommonDataModel>;\$<LINK_ONLY:VTK::IOGeometry>;\$<LINK_ONLY:VTK::IOPLY>;\$<LINK_ONLY:VTK::IOImport>;\$<LINK_ONLY:VTK::IOCore>;\$<LINK_ONLY:VTK::FiltersCore>"
+  INTERFACE_LINK_LIBRARIES "Qt6::Core;Qt6::Gui;BaseTypes;AppDB;\$<LINK_ONLY:VTK::CommonCore>;\$<LINK_ONLY:VTK::CommonDataModel>;\$<LINK_ONLY:VTK::IOGeometry>;\$<LINK_ONLY:VTK::IOPLY>;\$<LINK_ONLY:VTK::IOImport>;\$<LINK_ONLY:VTK::IOCore>;\$<LINK_ONLY:VTK::FiltersCore>;\$<LINK_ONLY:VTK::vtksys>"
 )
 
 # Create imported target FacetPaintingCore
