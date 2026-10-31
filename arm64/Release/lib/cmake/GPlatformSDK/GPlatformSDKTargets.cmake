@@ -51,6 +51,7 @@ add_library(Tr STATIC IMPORTED)
 
 set_target_properties(Tr PROPERTIES
   INTERFACE_COMPILE_FEATURES "cxx_std_17"
+  INTERFACE_COMPILE_OPTIONS "\$<\$<COMPILE_LANG_AND_ID:CXX,MSVC>:/utf-8>"
   INTERFACE_INCLUDE_DIRECTORIES "${_GPLATFORM_SDK_ROOT}/include/source/ThirdParty/Tr/include"
 )
 
