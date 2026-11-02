@@ -19,7 +19,7 @@ set(CMAKE_IMPORT_FILE_VERSION 1)
 set(_cmake_targets_defined "")
 set(_cmake_targets_not_defined "")
 set(_cmake_expected_targets "")
-foreach(_cmake_expected_target IN ITEMS Tr TransDB JournalSystem GPlatformRendererBackendSDK RendererBackendComposition Foundation GPlatformQmlRegistration Utils FacetPaintingCore Parametric RendererModelProjection RendererBackendVtk RendererBackendFilament Render Render_resources_1 Renderplugin Render_tooling Renderplugin_init)
+foreach(_cmake_expected_target IN ITEMS Tr TransDB JournalSystem GPlatformRendererBackendSDK RendererBackendComposition Foundation GPlatformQmlRegistration Utils FacetPaintingCore Parametric RendererModelProjection RendererBackendVtk RendererBackendFilament Render Render_resources_1 Renderplugin Render_tooling Renderplugin_init SmoothUI SmoothUI_resources_1 SmoothUIplugin SmoothUI_tooling SmoothUI_resources_2 SmoothUIplugin_init SmoothUI_resources_3 SmoothUIImpl SmoothUIImpl_resources_1 SmoothUIImplplugin SmoothUIImpl_tooling SmoothUIImpl_resources_2 SmoothUIImpl_resources_3 SmoothUIImplplugin_init SmoothUIControls SmoothUIControls_resources_1 SmoothUIControlsplugin SmoothUIControls_tooling SmoothUIControls_resources_2 SmoothUIControls_resources_3 SmoothUIControlsplugin_init SmoothUIControls_resources_4 SmoothUIDock SmoothUIDock_resources_1 SmoothUIDockplugin SmoothUIDock_tooling SmoothUIDock_resources_2 SmoothUIDockplugin_init kddockwidgets kddw_coverage_options GPlatformUi)
   list(APPEND _cmake_expected_targets "${_cmake_expected_target}")
   if(TARGET "${_cmake_expected_target}")
     list(APPEND _cmake_targets_defined "${_cmake_expected_target}")
@@ -216,6 +216,319 @@ set_target_properties(Renderplugin_init PROPERTIES
   _is_qt_propagated_object_library "TRUE"
 )
 
+# Create imported target SmoothUI
+add_library(SmoothUI STATIC IMPORTED)
+
+set_target_properties(SmoothUI PROPERTIES
+  INTERFACE_LINK_LIBRARIES "\$<LINK_ONLY:Qt6::Qml>;\$<\$<AND:\$<NOT:\$<STREQUAL:\$<TARGET_PROPERTY:TYPE>,STATIC_LIBRARY>>,\$<NOT:\$<BOOL:\$<TARGET_PROPERTY:Qt6::Platform,_qt_link_order_matters>>>,\$<NOT:\$<BOOL:\$<TARGET_PROPERTY:_qt_object_libraries_finalizer_mode>>>,\$<BOOL:TRUE>>:\$<TARGET_OBJECTS:SmoothUI_resources_1>>;SmoothUI_resources_1;\$<LINK_ONLY:Qt6::Qml>;\$<LINK_ONLY:Qt6::Core>;\$<\$<AND:\$<NOT:\$<STREQUAL:\$<TARGET_PROPERTY:TYPE>,STATIC_LIBRARY>>,\$<NOT:\$<BOOL:\$<TARGET_PROPERTY:Qt6::Platform,_qt_link_order_matters>>>,\$<NOT:\$<BOOL:\$<TARGET_PROPERTY:_qt_object_libraries_finalizer_mode>>>,\$<BOOL:TRUE>>:\$<TARGET_OBJECTS:SmoothUI_resources_2>>;SmoothUI_resources_2;\$<LINK_ONLY:Qt6::Core>;\$<LINK_ONLY:Qt6::Quick>;\$<LINK_ONLY:Qt6::QuickControls2>;\$<LINK_ONLY:SmoothUIImpl>;\$<LINK_ONLY:SmoothUIControls>;\$<LINK_ONLY:SmoothUIImplplugin>;\$<LINK_ONLY:SmoothUIControlsplugin>;\$<\$<AND:\$<NOT:\$<STREQUAL:\$<TARGET_PROPERTY:TYPE>,STATIC_LIBRARY>>,\$<NOT:\$<BOOL:\$<TARGET_PROPERTY:Qt6::Platform,_qt_link_order_matters>>>,\$<NOT:\$<BOOL:\$<TARGET_PROPERTY:_qt_object_libraries_finalizer_mode>>>,\$<BOOL:TRUE>>:\$<TARGET_OBJECTS:SmoothUI_resources_3>>;SmoothUI_resources_3"
+  INTERFACE_LINK_OPTIONS "\$<\$<AND:\$<NOT:\$<STREQUAL:\$<TARGET_PROPERTY:TYPE>,STATIC_LIBRARY>>,\$<BOOL:\$<TARGET_PROPERTY:Qt6::Platform,_qt_link_order_matters>>,\$<BOOL:\$<GENEX_EVAL:\$<TARGET_PROPERTY:Qt6::Platform,_qt_cmp0099_policy_check>>>,\$<BOOL:TRUE>>:\$<TARGET_OBJECTS:SmoothUI_resources_1>>;\$<\$<AND:\$<NOT:\$<STREQUAL:\$<TARGET_PROPERTY:TYPE>,STATIC_LIBRARY>>,\$<BOOL:\$<TARGET_PROPERTY:Qt6::Platform,_qt_link_order_matters>>,\$<BOOL:\$<GENEX_EVAL:\$<TARGET_PROPERTY:Qt6::Platform,_qt_cmp0099_policy_check>>>,\$<BOOL:TRUE>>:\$<TARGET_OBJECTS:SmoothUI_resources_2>>;\$<\$<AND:\$<NOT:\$<STREQUAL:\$<TARGET_PROPERTY:TYPE>,STATIC_LIBRARY>>,\$<BOOL:\$<TARGET_PROPERTY:Qt6::Platform,_qt_link_order_matters>>,\$<BOOL:\$<GENEX_EVAL:\$<TARGET_PROPERTY:Qt6::Platform,_qt_cmp0099_policy_check>>>,\$<BOOL:TRUE>>:\$<TARGET_OBJECTS:SmoothUI_resources_3>>"
+  INTERFACE_SOURCES "\$<\$<BOOL:\$<TARGET_PROPERTY:QT_CONSUMES_METATYPES>>:${_GPLATFORM_SDK_ROOT}/metadata/qt6smoothui_metatypes.json>;\$<\$<AND:\$<NOT:\$<STREQUAL:\$<TARGET_PROPERTY:TYPE>,STATIC_LIBRARY>>,\$<BOOL:\$<TARGET_PROPERTY:Qt6::Platform,_qt_link_order_matters>>,\$<NOT:\$<BOOL:\$<GENEX_EVAL:\$<TARGET_PROPERTY:Qt6::Platform,_qt_cmp0099_policy_check>>>>,\$<NOT:\$<BOOL:\$<TARGET_PROPERTY:_qt_object_libraries_finalizer_mode>>>,\$<BOOL:TRUE>>:\$<TARGET_OBJECTS:SmoothUI_resources_1>>;\$<\$<AND:\$<NOT:\$<STREQUAL:\$<TARGET_PROPERTY:TYPE>,STATIC_LIBRARY>>,\$<BOOL:\$<TARGET_PROPERTY:Qt6::Platform,_qt_link_order_matters>>,\$<NOT:\$<BOOL:\$<GENEX_EVAL:\$<TARGET_PROPERTY:Qt6::Platform,_qt_cmp0099_policy_check>>>>,\$<NOT:\$<BOOL:\$<TARGET_PROPERTY:_qt_object_libraries_finalizer_mode>>>,\$<BOOL:TRUE>>:\$<TARGET_OBJECTS:SmoothUI_resources_2>>;\$<\$<AND:\$<NOT:\$<STREQUAL:\$<TARGET_PROPERTY:TYPE>,STATIC_LIBRARY>>,\$<BOOL:\$<TARGET_PROPERTY:Qt6::Platform,_qt_link_order_matters>>,\$<NOT:\$<BOOL:\$<GENEX_EVAL:\$<TARGET_PROPERTY:Qt6::Platform,_qt_cmp0099_policy_check>>>>,\$<NOT:\$<BOOL:\$<TARGET_PROPERTY:_qt_object_libraries_finalizer_mode>>>,\$<BOOL:TRUE>>:\$<TARGET_OBJECTS:SmoothUI_resources_3>>"
+  _qt_qml_backing_library_and_plugin_are_same_target "FALSE"
+  _qt_qml_module_class_name "SmoothUIPlugin"
+  _qt_qml_module_has_plugin "TRUE"
+  _qt_qml_module_installed_plugin_target "SmoothUIplugin"
+  _qt_qml_module_installed_qmldir_path ""
+  _qt_qml_module_is_backing_target "TRUE"
+  _qt_qml_module_plugin_target "SmoothUIplugin"
+  _qt_qml_module_target_path "SmoothUI"
+  _qt_qml_module_uri "SmoothUI"
+  _qt_qml_module_version "1.0"
+)
+
+# Create imported target SmoothUI_resources_1
+add_library(SmoothUI_resources_1 OBJECT IMPORTED)
+
+set_target_properties(SmoothUI_resources_1 PROPERTIES
+  INTERFACE_LINK_LIBRARIES "Qt6::Core;\$<LINK_ONLY:Qt6::Platform>"
+  _is_qt_propagated_object_library "TRUE"
+)
+
+# Create imported target SmoothUIplugin
+add_library(SmoothUIplugin STATIC IMPORTED)
+
+set_target_properties(SmoothUIplugin PROPERTIES
+  INTERFACE_LINK_LIBRARIES "\$<LINK_ONLY:Qt6::Qml>;\$<LINK_ONLY:SmoothUI>;\$<LINK_ONLY:SmoothUI>;\$<\$<AND:\$<NOT:\$<STREQUAL:\$<TARGET_PROPERTY:TYPE>,STATIC_LIBRARY>>,\$<NOT:\$<BOOL:\$<TARGET_PROPERTY:Qt6::Platform,_qt_link_order_matters>>>,\$<NOT:\$<BOOL:\$<TARGET_PROPERTY:_qt_object_libraries_finalizer_mode>>>,\$<BOOL:TRUE>>:\$<TARGET_OBJECTS:SmoothUIplugin_init>>;SmoothUIplugin_init;\$<LINK_ONLY:\$<\$<BOOL:QT_IS_PLUGIN_GENEX>:SmoothUIControlsplugin>>;\$<LINK_ONLY:\$<\$<BOOL:QT_IS_PLUGIN_GENEX>:SmoothUIImplplugin>>"
+  INTERFACE_LINK_OPTIONS "\$<\$<AND:\$<NOT:\$<STREQUAL:\$<TARGET_PROPERTY:TYPE>,STATIC_LIBRARY>>,\$<BOOL:\$<TARGET_PROPERTY:Qt6::Platform,_qt_link_order_matters>>,\$<BOOL:\$<GENEX_EVAL:\$<TARGET_PROPERTY:Qt6::Platform,_qt_cmp0099_policy_check>>>,\$<BOOL:TRUE>>:\$<TARGET_OBJECTS:SmoothUIplugin_init>>"
+  INTERFACE_SOURCES "\$<\$<BOOL:\$<TARGET_PROPERTY:QT_CONSUMES_METATYPES>>:${_GPLATFORM_SDK_ROOT}/metadata/qt6smoothui_metatypes.json>;\$<\$<AND:\$<NOT:\$<STREQUAL:\$<TARGET_PROPERTY:TYPE>,STATIC_LIBRARY>>,\$<BOOL:\$<TARGET_PROPERTY:Qt6::Platform,_qt_link_order_matters>>,\$<NOT:\$<BOOL:\$<GENEX_EVAL:\$<TARGET_PROPERTY:Qt6::Platform,_qt_cmp0099_policy_check>>>>,\$<NOT:\$<BOOL:\$<TARGET_PROPERTY:_qt_object_libraries_finalizer_mode>>>,\$<BOOL:TRUE>>:\$<TARGET_OBJECTS:SmoothUIplugin_init>>"
+  _qt_qml_backing_library_and_plugin_are_same_target "FALSE"
+  _qt_qml_module_backing_target "SmoothUI"
+  _qt_qml_module_class_name "SmoothUIPlugin"
+  _qt_qml_module_is_plugin_target "TRUE"
+  _qt_qml_module_plugin_has_backing_library "TRUE"
+  _qt_qml_module_target_path "SmoothUI"
+  _qt_qml_module_uri "SmoothUI"
+  _qt_qml_module_version "1.0"
+)
+
+# Create imported target SmoothUI_tooling
+add_library(SmoothUI_tooling INTERFACE IMPORTED)
+
+# Create imported target SmoothUI_resources_2
+add_library(SmoothUI_resources_2 OBJECT IMPORTED)
+
+set_target_properties(SmoothUI_resources_2 PROPERTIES
+  INTERFACE_LINK_LIBRARIES "Qt6::Core;\$<LINK_ONLY:Qt6::Platform>"
+  _is_qt_propagated_object_library "TRUE"
+)
+
+# Create imported target SmoothUIplugin_init
+add_library(SmoothUIplugin_init OBJECT IMPORTED)
+
+set_target_properties(SmoothUIplugin_init PROPERTIES
+  INTERFACE_LINK_LIBRARIES "\$<LINK_ONLY:Qt6::Core>;\$<LINK_ONLY:Qt6::Platform>"
+  INTERFACE_SOURCES "\$<\$<BOOL:\$<TARGET_PROPERTY:QT_CONSUMES_METATYPES>>:${_GPLATFORM_SDK_ROOT}/metadata/qt6smoothuiplugin_init_metatypes.json>"
+  _is_qt_plugin_init_target "TRUE"
+  _is_qt_propagated_object_library "TRUE"
+)
+
+# Create imported target SmoothUI_resources_3
+add_library(SmoothUI_resources_3 OBJECT IMPORTED)
+
+set_target_properties(SmoothUI_resources_3 PROPERTIES
+  INTERFACE_LINK_LIBRARIES "Qt6::Core;\$<LINK_ONLY:Qt6::Platform>"
+  _is_qt_propagated_object_library "TRUE"
+)
+
+# Create imported target SmoothUIImpl
+add_library(SmoothUIImpl STATIC IMPORTED)
+
+set_target_properties(SmoothUIImpl PROPERTIES
+  INTERFACE_INCLUDE_DIRECTORIES "${_GPLATFORM_SDK_ROOT}/include/SmoothUI"
+  INTERFACE_LINK_LIBRARIES "\$<LINK_ONLY:Qt6::Qml>;\$<\$<AND:\$<NOT:\$<STREQUAL:\$<TARGET_PROPERTY:TYPE>,STATIC_LIBRARY>>,\$<NOT:\$<BOOL:\$<TARGET_PROPERTY:Qt6::Platform,_qt_link_order_matters>>>,\$<NOT:\$<BOOL:\$<TARGET_PROPERTY:_qt_object_libraries_finalizer_mode>>>,\$<BOOL:TRUE>>:\$<TARGET_OBJECTS:SmoothUIImpl_resources_1>>;SmoothUIImpl_resources_1;\$<LINK_ONLY:Qt6::Qml>;\$<LINK_ONLY:Qt6::Core>;\$<\$<AND:\$<NOT:\$<STREQUAL:\$<TARGET_PROPERTY:TYPE>,STATIC_LIBRARY>>,\$<NOT:\$<BOOL:\$<TARGET_PROPERTY:Qt6::Platform,_qt_link_order_matters>>>,\$<NOT:\$<BOOL:\$<TARGET_PROPERTY:_qt_object_libraries_finalizer_mode>>>,\$<BOOL:TRUE>>:\$<TARGET_OBJECTS:SmoothUIImpl_resources_2>>;SmoothUIImpl_resources_2;\$<\$<AND:\$<NOT:\$<STREQUAL:\$<TARGET_PROPERTY:TYPE>,STATIC_LIBRARY>>,\$<NOT:\$<BOOL:\$<TARGET_PROPERTY:Qt6::Platform,_qt_link_order_matters>>>,\$<NOT:\$<BOOL:\$<TARGET_PROPERTY:_qt_object_libraries_finalizer_mode>>>,\$<BOOL:TRUE>>:\$<TARGET_OBJECTS:SmoothUIImpl_resources_3>>;SmoothUIImpl_resources_3;\$<LINK_ONLY:Qt6::Quick>;\$<LINK_ONLY:Qt6::QuickControls2>;\$<LINK_ONLY:Qt6::QmlPrivate>"
+  INTERFACE_LINK_OPTIONS "\$<\$<AND:\$<NOT:\$<STREQUAL:\$<TARGET_PROPERTY:TYPE>,STATIC_LIBRARY>>,\$<BOOL:\$<TARGET_PROPERTY:Qt6::Platform,_qt_link_order_matters>>,\$<BOOL:\$<GENEX_EVAL:\$<TARGET_PROPERTY:Qt6::Platform,_qt_cmp0099_policy_check>>>,\$<BOOL:TRUE>>:\$<TARGET_OBJECTS:SmoothUIImpl_resources_1>>;\$<\$<AND:\$<NOT:\$<STREQUAL:\$<TARGET_PROPERTY:TYPE>,STATIC_LIBRARY>>,\$<BOOL:\$<TARGET_PROPERTY:Qt6::Platform,_qt_link_order_matters>>,\$<BOOL:\$<GENEX_EVAL:\$<TARGET_PROPERTY:Qt6::Platform,_qt_cmp0099_policy_check>>>,\$<BOOL:TRUE>>:\$<TARGET_OBJECTS:SmoothUIImpl_resources_2>>;\$<\$<AND:\$<NOT:\$<STREQUAL:\$<TARGET_PROPERTY:TYPE>,STATIC_LIBRARY>>,\$<BOOL:\$<TARGET_PROPERTY:Qt6::Platform,_qt_link_order_matters>>,\$<BOOL:\$<GENEX_EVAL:\$<TARGET_PROPERTY:Qt6::Platform,_qt_cmp0099_policy_check>>>,\$<BOOL:TRUE>>:\$<TARGET_OBJECTS:SmoothUIImpl_resources_3>>"
+  INTERFACE_SOURCES "\$<\$<BOOL:\$<TARGET_PROPERTY:QT_CONSUMES_METATYPES>>:${_GPLATFORM_SDK_ROOT}/metadata/qt6smoothuiimpl_metatypes.json>;\$<\$<AND:\$<NOT:\$<STREQUAL:\$<TARGET_PROPERTY:TYPE>,STATIC_LIBRARY>>,\$<BOOL:\$<TARGET_PROPERTY:Qt6::Platform,_qt_link_order_matters>>,\$<NOT:\$<BOOL:\$<GENEX_EVAL:\$<TARGET_PROPERTY:Qt6::Platform,_qt_cmp0099_policy_check>>>>,\$<NOT:\$<BOOL:\$<TARGET_PROPERTY:_qt_object_libraries_finalizer_mode>>>,\$<BOOL:TRUE>>:\$<TARGET_OBJECTS:SmoothUIImpl_resources_1>>;\$<\$<AND:\$<NOT:\$<STREQUAL:\$<TARGET_PROPERTY:TYPE>,STATIC_LIBRARY>>,\$<BOOL:\$<TARGET_PROPERTY:Qt6::Platform,_qt_link_order_matters>>,\$<NOT:\$<BOOL:\$<GENEX_EVAL:\$<TARGET_PROPERTY:Qt6::Platform,_qt_cmp0099_policy_check>>>>,\$<NOT:\$<BOOL:\$<TARGET_PROPERTY:_qt_object_libraries_finalizer_mode>>>,\$<BOOL:TRUE>>:\$<TARGET_OBJECTS:SmoothUIImpl_resources_2>>;\$<\$<AND:\$<NOT:\$<STREQUAL:\$<TARGET_PROPERTY:TYPE>,STATIC_LIBRARY>>,\$<BOOL:\$<TARGET_PROPERTY:Qt6::Platform,_qt_link_order_matters>>,\$<NOT:\$<BOOL:\$<GENEX_EVAL:\$<TARGET_PROPERTY:Qt6::Platform,_qt_cmp0099_policy_check>>>>,\$<NOT:\$<BOOL:\$<TARGET_PROPERTY:_qt_object_libraries_finalizer_mode>>>,\$<BOOL:TRUE>>:\$<TARGET_OBJECTS:SmoothUIImpl_resources_3>>"
+  _qt_qml_backing_library_and_plugin_are_same_target "FALSE"
+  _qt_qml_module_class_name "SmoothUI_implPlugin"
+  _qt_qml_module_has_plugin "TRUE"
+  _qt_qml_module_installed_plugin_target "SmoothUIImplplugin"
+  _qt_qml_module_installed_qmldir_path ""
+  _qt_qml_module_is_backing_target "TRUE"
+  _qt_qml_module_plugin_target "SmoothUIImplplugin"
+  _qt_qml_module_target_path "SmoothUI/impl"
+  _qt_qml_module_uri "SmoothUI.impl"
+  _qt_qml_module_version "1.0"
+)
+
+# Create imported target SmoothUIImpl_resources_1
+add_library(SmoothUIImpl_resources_1 OBJECT IMPORTED)
+
+set_target_properties(SmoothUIImpl_resources_1 PROPERTIES
+  INTERFACE_LINK_LIBRARIES "Qt6::Core;\$<LINK_ONLY:Qt6::Platform>"
+  _is_qt_propagated_object_library "TRUE"
+)
+
+# Create imported target SmoothUIImplplugin
+add_library(SmoothUIImplplugin STATIC IMPORTED)
+
+set_target_properties(SmoothUIImplplugin PROPERTIES
+  INTERFACE_LINK_LIBRARIES "\$<LINK_ONLY:Qt6::Qml>;\$<LINK_ONLY:SmoothUIImpl>;\$<LINK_ONLY:SmoothUIImpl>;\$<\$<AND:\$<NOT:\$<STREQUAL:\$<TARGET_PROPERTY:TYPE>,STATIC_LIBRARY>>,\$<NOT:\$<BOOL:\$<TARGET_PROPERTY:Qt6::Platform,_qt_link_order_matters>>>,\$<NOT:\$<BOOL:\$<TARGET_PROPERTY:_qt_object_libraries_finalizer_mode>>>,\$<BOOL:TRUE>>:\$<TARGET_OBJECTS:SmoothUIImplplugin_init>>;SmoothUIImplplugin_init"
+  INTERFACE_LINK_OPTIONS "\$<\$<AND:\$<NOT:\$<STREQUAL:\$<TARGET_PROPERTY:TYPE>,STATIC_LIBRARY>>,\$<BOOL:\$<TARGET_PROPERTY:Qt6::Platform,_qt_link_order_matters>>,\$<BOOL:\$<GENEX_EVAL:\$<TARGET_PROPERTY:Qt6::Platform,_qt_cmp0099_policy_check>>>,\$<BOOL:TRUE>>:\$<TARGET_OBJECTS:SmoothUIImplplugin_init>>"
+  INTERFACE_SOURCES "\$<\$<BOOL:\$<TARGET_PROPERTY:QT_CONSUMES_METATYPES>>:${_GPLATFORM_SDK_ROOT}/metadata/qt6smoothuiimpl_metatypes.json>;\$<\$<AND:\$<NOT:\$<STREQUAL:\$<TARGET_PROPERTY:TYPE>,STATIC_LIBRARY>>,\$<BOOL:\$<TARGET_PROPERTY:Qt6::Platform,_qt_link_order_matters>>,\$<NOT:\$<BOOL:\$<GENEX_EVAL:\$<TARGET_PROPERTY:Qt6::Platform,_qt_cmp0099_policy_check>>>>,\$<NOT:\$<BOOL:\$<TARGET_PROPERTY:_qt_object_libraries_finalizer_mode>>>,\$<BOOL:TRUE>>:\$<TARGET_OBJECTS:SmoothUIImplplugin_init>>"
+  _qt_qml_backing_library_and_plugin_are_same_target "FALSE"
+  _qt_qml_module_backing_target "SmoothUIImpl"
+  _qt_qml_module_class_name "SmoothUI_implPlugin"
+  _qt_qml_module_is_plugin_target "TRUE"
+  _qt_qml_module_plugin_has_backing_library "TRUE"
+  _qt_qml_module_target_path "SmoothUI/impl"
+  _qt_qml_module_uri "SmoothUI.impl"
+  _qt_qml_module_version "1.0"
+)
+
+# Create imported target SmoothUIImpl_tooling
+add_library(SmoothUIImpl_tooling INTERFACE IMPORTED)
+
+# Create imported target SmoothUIImpl_resources_2
+add_library(SmoothUIImpl_resources_2 OBJECT IMPORTED)
+
+set_target_properties(SmoothUIImpl_resources_2 PROPERTIES
+  INTERFACE_LINK_LIBRARIES "Qt6::Core;\$<LINK_ONLY:Qt6::Platform>"
+  _is_qt_propagated_object_library "TRUE"
+)
+
+# Create imported target SmoothUIImpl_resources_3
+add_library(SmoothUIImpl_resources_3 OBJECT IMPORTED)
+
+set_target_properties(SmoothUIImpl_resources_3 PROPERTIES
+  INTERFACE_LINK_LIBRARIES "Qt6::Core;\$<LINK_ONLY:Qt6::Platform>"
+  _is_qt_propagated_object_library "TRUE"
+)
+
+# Create imported target SmoothUIImplplugin_init
+add_library(SmoothUIImplplugin_init OBJECT IMPORTED)
+
+set_target_properties(SmoothUIImplplugin_init PROPERTIES
+  INTERFACE_LINK_LIBRARIES "\$<LINK_ONLY:Qt6::Core>;\$<LINK_ONLY:Qt6::Platform>"
+  INTERFACE_SOURCES "\$<\$<BOOL:\$<TARGET_PROPERTY:QT_CONSUMES_METATYPES>>:${_GPLATFORM_SDK_ROOT}/metadata/qt6smoothuiimplplugin_init_metatypes.json>"
+  _is_qt_plugin_init_target "TRUE"
+  _is_qt_propagated_object_library "TRUE"
+)
+
+# Create imported target SmoothUIControls
+add_library(SmoothUIControls STATIC IMPORTED)
+
+set_target_properties(SmoothUIControls PROPERTIES
+  INTERFACE_LINK_LIBRARIES "\$<LINK_ONLY:Qt6::Qml>;\$<\$<AND:\$<NOT:\$<STREQUAL:\$<TARGET_PROPERTY:TYPE>,STATIC_LIBRARY>>,\$<NOT:\$<BOOL:\$<TARGET_PROPERTY:Qt6::Platform,_qt_link_order_matters>>>,\$<NOT:\$<BOOL:\$<TARGET_PROPERTY:_qt_object_libraries_finalizer_mode>>>,\$<BOOL:TRUE>>:\$<TARGET_OBJECTS:SmoothUIControls_resources_1>>;SmoothUIControls_resources_1;\$<LINK_ONLY:Qt6::Qml>;\$<LINK_ONLY:Qt6::Core>;\$<\$<AND:\$<NOT:\$<STREQUAL:\$<TARGET_PROPERTY:TYPE>,STATIC_LIBRARY>>,\$<NOT:\$<BOOL:\$<TARGET_PROPERTY:Qt6::Platform,_qt_link_order_matters>>>,\$<NOT:\$<BOOL:\$<TARGET_PROPERTY:_qt_object_libraries_finalizer_mode>>>,\$<BOOL:TRUE>>:\$<TARGET_OBJECTS:SmoothUIControls_resources_2>>;SmoothUIControls_resources_2;\$<\$<AND:\$<NOT:\$<STREQUAL:\$<TARGET_PROPERTY:TYPE>,STATIC_LIBRARY>>,\$<NOT:\$<BOOL:\$<TARGET_PROPERTY:Qt6::Platform,_qt_link_order_matters>>>,\$<NOT:\$<BOOL:\$<TARGET_PROPERTY:_qt_object_libraries_finalizer_mode>>>,\$<BOOL:TRUE>>:\$<TARGET_OBJECTS:SmoothUIControls_resources_3>>;SmoothUIControls_resources_3;\$<\$<AND:\$<NOT:\$<STREQUAL:\$<TARGET_PROPERTY:TYPE>,STATIC_LIBRARY>>,\$<NOT:\$<BOOL:\$<TARGET_PROPERTY:Qt6::Platform,_qt_link_order_matters>>>,\$<NOT:\$<BOOL:\$<TARGET_PROPERTY:_qt_object_libraries_finalizer_mode>>>,\$<BOOL:TRUE>>:\$<TARGET_OBJECTS:SmoothUIControls_resources_4>>;SmoothUIControls_resources_4;\$<LINK_ONLY:Qt6::Quick>;\$<LINK_ONLY:Qt6::QuickControls2>;\$<LINK_ONLY:SmoothUIImpl>;\$<LINK_ONLY:SmoothUIImplplugin>"
+  INTERFACE_LINK_OPTIONS "\$<\$<AND:\$<NOT:\$<STREQUAL:\$<TARGET_PROPERTY:TYPE>,STATIC_LIBRARY>>,\$<BOOL:\$<TARGET_PROPERTY:Qt6::Platform,_qt_link_order_matters>>,\$<BOOL:\$<GENEX_EVAL:\$<TARGET_PROPERTY:Qt6::Platform,_qt_cmp0099_policy_check>>>,\$<BOOL:TRUE>>:\$<TARGET_OBJECTS:SmoothUIControls_resources_1>>;\$<\$<AND:\$<NOT:\$<STREQUAL:\$<TARGET_PROPERTY:TYPE>,STATIC_LIBRARY>>,\$<BOOL:\$<TARGET_PROPERTY:Qt6::Platform,_qt_link_order_matters>>,\$<BOOL:\$<GENEX_EVAL:\$<TARGET_PROPERTY:Qt6::Platform,_qt_cmp0099_policy_check>>>,\$<BOOL:TRUE>>:\$<TARGET_OBJECTS:SmoothUIControls_resources_2>>;\$<\$<AND:\$<NOT:\$<STREQUAL:\$<TARGET_PROPERTY:TYPE>,STATIC_LIBRARY>>,\$<BOOL:\$<TARGET_PROPERTY:Qt6::Platform,_qt_link_order_matters>>,\$<BOOL:\$<GENEX_EVAL:\$<TARGET_PROPERTY:Qt6::Platform,_qt_cmp0099_policy_check>>>,\$<BOOL:TRUE>>:\$<TARGET_OBJECTS:SmoothUIControls_resources_3>>;\$<\$<AND:\$<NOT:\$<STREQUAL:\$<TARGET_PROPERTY:TYPE>,STATIC_LIBRARY>>,\$<BOOL:\$<TARGET_PROPERTY:Qt6::Platform,_qt_link_order_matters>>,\$<BOOL:\$<GENEX_EVAL:\$<TARGET_PROPERTY:Qt6::Platform,_qt_cmp0099_policy_check>>>,\$<BOOL:TRUE>>:\$<TARGET_OBJECTS:SmoothUIControls_resources_4>>"
+  INTERFACE_SOURCES "\$<\$<BOOL:\$<TARGET_PROPERTY:QT_CONSUMES_METATYPES>>:${_GPLATFORM_SDK_ROOT}/metadata/qt6smoothuicontrols_metatypes.json>;\$<\$<AND:\$<NOT:\$<STREQUAL:\$<TARGET_PROPERTY:TYPE>,STATIC_LIBRARY>>,\$<BOOL:\$<TARGET_PROPERTY:Qt6::Platform,_qt_link_order_matters>>,\$<NOT:\$<BOOL:\$<GENEX_EVAL:\$<TARGET_PROPERTY:Qt6::Platform,_qt_cmp0099_policy_check>>>>,\$<NOT:\$<BOOL:\$<TARGET_PROPERTY:_qt_object_libraries_finalizer_mode>>>,\$<BOOL:TRUE>>:\$<TARGET_OBJECTS:SmoothUIControls_resources_1>>;\$<\$<AND:\$<NOT:\$<STREQUAL:\$<TARGET_PROPERTY:TYPE>,STATIC_LIBRARY>>,\$<BOOL:\$<TARGET_PROPERTY:Qt6::Platform,_qt_link_order_matters>>,\$<NOT:\$<BOOL:\$<GENEX_EVAL:\$<TARGET_PROPERTY:Qt6::Platform,_qt_cmp0099_policy_check>>>>,\$<NOT:\$<BOOL:\$<TARGET_PROPERTY:_qt_object_libraries_finalizer_mode>>>,\$<BOOL:TRUE>>:\$<TARGET_OBJECTS:SmoothUIControls_resources_2>>;\$<\$<AND:\$<NOT:\$<STREQUAL:\$<TARGET_PROPERTY:TYPE>,STATIC_LIBRARY>>,\$<BOOL:\$<TARGET_PROPERTY:Qt6::Platform,_qt_link_order_matters>>,\$<NOT:\$<BOOL:\$<GENEX_EVAL:\$<TARGET_PROPERTY:Qt6::Platform,_qt_cmp0099_policy_check>>>>,\$<NOT:\$<BOOL:\$<TARGET_PROPERTY:_qt_object_libraries_finalizer_mode>>>,\$<BOOL:TRUE>>:\$<TARGET_OBJECTS:SmoothUIControls_resources_3>>;\$<\$<AND:\$<NOT:\$<STREQUAL:\$<TARGET_PROPERTY:TYPE>,STATIC_LIBRARY>>,\$<BOOL:\$<TARGET_PROPERTY:Qt6::Platform,_qt_link_order_matters>>,\$<NOT:\$<BOOL:\$<GENEX_EVAL:\$<TARGET_PROPERTY:Qt6::Platform,_qt_cmp0099_policy_check>>>>,\$<NOT:\$<BOOL:\$<TARGET_PROPERTY:_qt_object_libraries_finalizer_mode>>>,\$<BOOL:TRUE>>:\$<TARGET_OBJECTS:SmoothUIControls_resources_4>>"
+  _qt_qml_backing_library_and_plugin_are_same_target "FALSE"
+  _qt_qml_module_class_name "SmoothUI_ControlsPlugin"
+  _qt_qml_module_has_plugin "TRUE"
+  _qt_qml_module_installed_plugin_target "SmoothUIControlsplugin"
+  _qt_qml_module_installed_qmldir_path ""
+  _qt_qml_module_is_backing_target "TRUE"
+  _qt_qml_module_plugin_target "SmoothUIControlsplugin"
+  _qt_qml_module_target_path "SmoothUI/Controls"
+  _qt_qml_module_uri "SmoothUI.Controls"
+  _qt_qml_module_version "1.0"
+)
+
+# Create imported target SmoothUIControls_resources_1
+add_library(SmoothUIControls_resources_1 OBJECT IMPORTED)
+
+set_target_properties(SmoothUIControls_resources_1 PROPERTIES
+  INTERFACE_LINK_LIBRARIES "Qt6::Core;\$<LINK_ONLY:Qt6::Platform>"
+  _is_qt_propagated_object_library "TRUE"
+)
+
+# Create imported target SmoothUIControlsplugin
+add_library(SmoothUIControlsplugin STATIC IMPORTED)
+
+set_target_properties(SmoothUIControlsplugin PROPERTIES
+  INTERFACE_LINK_LIBRARIES "\$<LINK_ONLY:Qt6::Qml>;\$<LINK_ONLY:SmoothUIControls>;\$<LINK_ONLY:SmoothUIControls>;\$<\$<AND:\$<NOT:\$<STREQUAL:\$<TARGET_PROPERTY:TYPE>,STATIC_LIBRARY>>,\$<NOT:\$<BOOL:\$<TARGET_PROPERTY:Qt6::Platform,_qt_link_order_matters>>>,\$<NOT:\$<BOOL:\$<TARGET_PROPERTY:_qt_object_libraries_finalizer_mode>>>,\$<BOOL:TRUE>>:\$<TARGET_OBJECTS:SmoothUIControlsplugin_init>>;SmoothUIControlsplugin_init;\$<LINK_ONLY:\$<\$<BOOL:QT_IS_PLUGIN_GENEX>:SmoothUIImplplugin>>"
+  INTERFACE_LINK_OPTIONS "\$<\$<AND:\$<NOT:\$<STREQUAL:\$<TARGET_PROPERTY:TYPE>,STATIC_LIBRARY>>,\$<BOOL:\$<TARGET_PROPERTY:Qt6::Platform,_qt_link_order_matters>>,\$<BOOL:\$<GENEX_EVAL:\$<TARGET_PROPERTY:Qt6::Platform,_qt_cmp0099_policy_check>>>,\$<BOOL:TRUE>>:\$<TARGET_OBJECTS:SmoothUIControlsplugin_init>>"
+  INTERFACE_SOURCES "\$<\$<BOOL:\$<TARGET_PROPERTY:QT_CONSUMES_METATYPES>>:${_GPLATFORM_SDK_ROOT}/metadata/qt6smoothuicontrols_metatypes.json>;\$<\$<AND:\$<NOT:\$<STREQUAL:\$<TARGET_PROPERTY:TYPE>,STATIC_LIBRARY>>,\$<BOOL:\$<TARGET_PROPERTY:Qt6::Platform,_qt_link_order_matters>>,\$<NOT:\$<BOOL:\$<GENEX_EVAL:\$<TARGET_PROPERTY:Qt6::Platform,_qt_cmp0099_policy_check>>>>,\$<NOT:\$<BOOL:\$<TARGET_PROPERTY:_qt_object_libraries_finalizer_mode>>>,\$<BOOL:TRUE>>:\$<TARGET_OBJECTS:SmoothUIControlsplugin_init>>"
+  _qt_qml_backing_library_and_plugin_are_same_target "FALSE"
+  _qt_qml_module_backing_target "SmoothUIControls"
+  _qt_qml_module_class_name "SmoothUI_ControlsPlugin"
+  _qt_qml_module_is_plugin_target "TRUE"
+  _qt_qml_module_plugin_has_backing_library "TRUE"
+  _qt_qml_module_target_path "SmoothUI/Controls"
+  _qt_qml_module_uri "SmoothUI.Controls"
+  _qt_qml_module_version "1.0"
+)
+
+# Create imported target SmoothUIControls_tooling
+add_library(SmoothUIControls_tooling INTERFACE IMPORTED)
+
+# Create imported target SmoothUIControls_resources_2
+add_library(SmoothUIControls_resources_2 OBJECT IMPORTED)
+
+set_target_properties(SmoothUIControls_resources_2 PROPERTIES
+  INTERFACE_LINK_LIBRARIES "Qt6::Core;\$<LINK_ONLY:Qt6::Platform>"
+  _is_qt_propagated_object_library "TRUE"
+)
+
+# Create imported target SmoothUIControls_resources_3
+add_library(SmoothUIControls_resources_3 OBJECT IMPORTED)
+
+set_target_properties(SmoothUIControls_resources_3 PROPERTIES
+  INTERFACE_LINK_LIBRARIES "Qt6::Core;\$<LINK_ONLY:Qt6::Platform>"
+  _is_qt_propagated_object_library "TRUE"
+)
+
+# Create imported target SmoothUIControlsplugin_init
+add_library(SmoothUIControlsplugin_init OBJECT IMPORTED)
+
+set_target_properties(SmoothUIControlsplugin_init PROPERTIES
+  INTERFACE_LINK_LIBRARIES "\$<LINK_ONLY:Qt6::Core>;\$<LINK_ONLY:Qt6::Platform>"
+  INTERFACE_SOURCES "\$<\$<BOOL:\$<TARGET_PROPERTY:QT_CONSUMES_METATYPES>>:${_GPLATFORM_SDK_ROOT}/metadata/qt6smoothuicontrolsplugin_init_metatypes.json>"
+  _is_qt_plugin_init_target "TRUE"
+  _is_qt_propagated_object_library "TRUE"
+)
+
+# Create imported target SmoothUIControls_resources_4
+add_library(SmoothUIControls_resources_4 OBJECT IMPORTED)
+
+set_target_properties(SmoothUIControls_resources_4 PROPERTIES
+  INTERFACE_LINK_LIBRARIES "Qt6::Core;\$<LINK_ONLY:Qt6::Platform>"
+  _is_qt_propagated_object_library "TRUE"
+)
+
+# Create imported target SmoothUIDock
+add_library(SmoothUIDock STATIC IMPORTED)
+
+set_target_properties(SmoothUIDock PROPERTIES
+  INTERFACE_LINK_LIBRARIES "\$<LINK_ONLY:Qt6::Qml>;\$<\$<AND:\$<NOT:\$<STREQUAL:\$<TARGET_PROPERTY:TYPE>,STATIC_LIBRARY>>,\$<NOT:\$<BOOL:\$<TARGET_PROPERTY:Qt6::Platform,_qt_link_order_matters>>>,\$<NOT:\$<BOOL:\$<TARGET_PROPERTY:_qt_object_libraries_finalizer_mode>>>,\$<BOOL:TRUE>>:\$<TARGET_OBJECTS:SmoothUIDock_resources_1>>;SmoothUIDock_resources_1;\$<LINK_ONLY:Qt6::Qml>;\$<LINK_ONLY:Qt6::Core>;\$<\$<AND:\$<NOT:\$<STREQUAL:\$<TARGET_PROPERTY:TYPE>,STATIC_LIBRARY>>,\$<NOT:\$<BOOL:\$<TARGET_PROPERTY:Qt6::Platform,_qt_link_order_matters>>>,\$<NOT:\$<BOOL:\$<TARGET_PROPERTY:_qt_object_libraries_finalizer_mode>>>,\$<BOOL:TRUE>>:\$<TARGET_OBJECTS:SmoothUIDock_resources_2>>;SmoothUIDock_resources_2;\$<LINK_ONLY:Qt6::Quick>;\$<LINK_ONLY:Qt6::QuickPrivate>;\$<LINK_ONLY:Qt6::Widgets>;\$<LINK_ONLY:Qt6::WidgetsPrivate>;\$<LINK_ONLY:Qt6::QuickControls2>;\$<LINK_ONLY:SmoothUI>;\$<LINK_ONLY:SmoothUIImpl>;\$<LINK_ONLY:SmoothUIControls>;\$<LINK_ONLY:kddockwidgets>;\$<LINK_ONLY:SmoothUIplugin>;\$<LINK_ONLY:SmoothUIImplplugin>;\$<LINK_ONLY:SmoothUIControlsplugin>"
+  INTERFACE_LINK_OPTIONS "\$<\$<AND:\$<NOT:\$<STREQUAL:\$<TARGET_PROPERTY:TYPE>,STATIC_LIBRARY>>,\$<BOOL:\$<TARGET_PROPERTY:Qt6::Platform,_qt_link_order_matters>>,\$<BOOL:\$<GENEX_EVAL:\$<TARGET_PROPERTY:Qt6::Platform,_qt_cmp0099_policy_check>>>,\$<BOOL:TRUE>>:\$<TARGET_OBJECTS:SmoothUIDock_resources_1>>;\$<\$<AND:\$<NOT:\$<STREQUAL:\$<TARGET_PROPERTY:TYPE>,STATIC_LIBRARY>>,\$<BOOL:\$<TARGET_PROPERTY:Qt6::Platform,_qt_link_order_matters>>,\$<BOOL:\$<GENEX_EVAL:\$<TARGET_PROPERTY:Qt6::Platform,_qt_cmp0099_policy_check>>>,\$<BOOL:TRUE>>:\$<TARGET_OBJECTS:SmoothUIDock_resources_2>>"
+  INTERFACE_SOURCES "\$<\$<BOOL:\$<TARGET_PROPERTY:QT_CONSUMES_METATYPES>>:${_GPLATFORM_SDK_ROOT}/metadata/qt6smoothuidock_metatypes.json>;\$<\$<AND:\$<NOT:\$<STREQUAL:\$<TARGET_PROPERTY:TYPE>,STATIC_LIBRARY>>,\$<BOOL:\$<TARGET_PROPERTY:Qt6::Platform,_qt_link_order_matters>>,\$<NOT:\$<BOOL:\$<GENEX_EVAL:\$<TARGET_PROPERTY:Qt6::Platform,_qt_cmp0099_policy_check>>>>,\$<NOT:\$<BOOL:\$<TARGET_PROPERTY:_qt_object_libraries_finalizer_mode>>>,\$<BOOL:TRUE>>:\$<TARGET_OBJECTS:SmoothUIDock_resources_1>>;\$<\$<AND:\$<NOT:\$<STREQUAL:\$<TARGET_PROPERTY:TYPE>,STATIC_LIBRARY>>,\$<BOOL:\$<TARGET_PROPERTY:Qt6::Platform,_qt_link_order_matters>>,\$<NOT:\$<BOOL:\$<GENEX_EVAL:\$<TARGET_PROPERTY:Qt6::Platform,_qt_cmp0099_policy_check>>>>,\$<NOT:\$<BOOL:\$<TARGET_PROPERTY:_qt_object_libraries_finalizer_mode>>>,\$<BOOL:TRUE>>:\$<TARGET_OBJECTS:SmoothUIDock_resources_2>>"
+  _qt_qml_backing_library_and_plugin_are_same_target "FALSE"
+  _qt_qml_module_class_name "SmoothUIDockPlugin"
+  _qt_qml_module_has_plugin "TRUE"
+  _qt_qml_module_installed_plugin_target "SmoothUIDockplugin"
+  _qt_qml_module_installed_qmldir_path ""
+  _qt_qml_module_is_backing_target "TRUE"
+  _qt_qml_module_plugin_target "SmoothUIDockplugin"
+  _qt_qml_module_target_path "SmoothUIDock"
+  _qt_qml_module_uri "SmoothUIDock"
+  _qt_qml_module_version "1.0"
+)
+
+# Create imported target SmoothUIDock_resources_1
+add_library(SmoothUIDock_resources_1 OBJECT IMPORTED)
+
+set_target_properties(SmoothUIDock_resources_1 PROPERTIES
+  INTERFACE_LINK_LIBRARIES "Qt6::Core;\$<LINK_ONLY:Qt6::Platform>"
+  _is_qt_propagated_object_library "TRUE"
+)
+
+# Create imported target SmoothUIDockplugin
+add_library(SmoothUIDockplugin STATIC IMPORTED)
+
+set_target_properties(SmoothUIDockplugin PROPERTIES
+  INTERFACE_LINK_LIBRARIES "\$<LINK_ONLY:Qt6::Qml>;\$<LINK_ONLY:SmoothUIDock>;\$<LINK_ONLY:SmoothUIDock>;\$<\$<AND:\$<NOT:\$<STREQUAL:\$<TARGET_PROPERTY:TYPE>,STATIC_LIBRARY>>,\$<NOT:\$<BOOL:\$<TARGET_PROPERTY:Qt6::Platform,_qt_link_order_matters>>>,\$<NOT:\$<BOOL:\$<TARGET_PROPERTY:_qt_object_libraries_finalizer_mode>>>,\$<BOOL:TRUE>>:\$<TARGET_OBJECTS:SmoothUIDockplugin_init>>;SmoothUIDockplugin_init;\$<LINK_ONLY:\$<\$<BOOL:QT_IS_PLUGIN_GENEX>:SmoothUIplugin>>;\$<LINK_ONLY:\$<\$<BOOL:QT_IS_PLUGIN_GENEX>:SmoothUIControlsplugin>>;\$<LINK_ONLY:\$<\$<BOOL:QT_IS_PLUGIN_GENEX>:SmoothUIImplplugin>>"
+  INTERFACE_LINK_OPTIONS "\$<\$<AND:\$<NOT:\$<STREQUAL:\$<TARGET_PROPERTY:TYPE>,STATIC_LIBRARY>>,\$<BOOL:\$<TARGET_PROPERTY:Qt6::Platform,_qt_link_order_matters>>,\$<BOOL:\$<GENEX_EVAL:\$<TARGET_PROPERTY:Qt6::Platform,_qt_cmp0099_policy_check>>>,\$<BOOL:TRUE>>:\$<TARGET_OBJECTS:SmoothUIDockplugin_init>>"
+  INTERFACE_SOURCES "\$<\$<BOOL:\$<TARGET_PROPERTY:QT_CONSUMES_METATYPES>>:${_GPLATFORM_SDK_ROOT}/metadata/qt6smoothuidock_metatypes.json>;\$<\$<AND:\$<NOT:\$<STREQUAL:\$<TARGET_PROPERTY:TYPE>,STATIC_LIBRARY>>,\$<BOOL:\$<TARGET_PROPERTY:Qt6::Platform,_qt_link_order_matters>>,\$<NOT:\$<BOOL:\$<GENEX_EVAL:\$<TARGET_PROPERTY:Qt6::Platform,_qt_cmp0099_policy_check>>>>,\$<NOT:\$<BOOL:\$<TARGET_PROPERTY:_qt_object_libraries_finalizer_mode>>>,\$<BOOL:TRUE>>:\$<TARGET_OBJECTS:SmoothUIDockplugin_init>>"
+  _qt_qml_backing_library_and_plugin_are_same_target "FALSE"
+  _qt_qml_module_backing_target "SmoothUIDock"
+  _qt_qml_module_class_name "SmoothUIDockPlugin"
+  _qt_qml_module_is_plugin_target "TRUE"
+  _qt_qml_module_plugin_has_backing_library "TRUE"
+  _qt_qml_module_target_path "SmoothUIDock"
+  _qt_qml_module_uri "SmoothUIDock"
+  _qt_qml_module_version "1.0"
+)
+
+# Create imported target SmoothUIDock_tooling
+add_library(SmoothUIDock_tooling INTERFACE IMPORTED)
+
+# Create imported target SmoothUIDock_resources_2
+add_library(SmoothUIDock_resources_2 OBJECT IMPORTED)
+
+set_target_properties(SmoothUIDock_resources_2 PROPERTIES
+  INTERFACE_LINK_LIBRARIES "Qt6::Core;\$<LINK_ONLY:Qt6::Platform>"
+  _is_qt_propagated_object_library "TRUE"
+)
+
+# Create imported target SmoothUIDockplugin_init
+add_library(SmoothUIDockplugin_init OBJECT IMPORTED)
+
+set_target_properties(SmoothUIDockplugin_init PROPERTIES
+  INTERFACE_LINK_LIBRARIES "\$<LINK_ONLY:Qt6::Core>;\$<LINK_ONLY:Qt6::Platform>"
+  INTERFACE_SOURCES "\$<\$<BOOL:\$<TARGET_PROPERTY:QT_CONSUMES_METATYPES>>:${_GPLATFORM_SDK_ROOT}/metadata/qt6smoothuidockplugin_init_metatypes.json>"
+  _is_qt_plugin_init_target "TRUE"
+  _is_qt_propagated_object_library "TRUE"
+)
+
+# Create imported target kddockwidgets
+add_library(kddockwidgets STATIC IMPORTED)
+
+set_target_properties(kddockwidgets PROPERTIES
+  INTERFACE_COMPILE_DEFINITIONS "KDDOCKWIDGETS_STATICLIB;KDDW_FRONTEND_QTWIDGETS;KDDW_FRONTEND_QT;KDDW_FRONTEND_QTQUICK;KDDW_FRONTEND_QT"
+  INTERFACE_INCLUDE_DIRECTORIES "${_GPLATFORM_SDK_ROOT}/include/ui-deps/kddockwidgets/fwd_headers;${_GPLATFORM_SDK_ROOT}/include/ui-deps/kddockwidgets/fwd_headers/qtwidgets_pretty;${_GPLATFORM_SDK_ROOT}/include/ui-deps/kddockwidgets/qtquick"
+  INTERFACE_LINK_LIBRARIES "Qt6::Widgets;\$<LINK_ONLY:Qt6::WidgetsPrivate>;\$<LINK_ONLY:Qt6::GuiPrivate>;Qt6::Quick;Qt6::QuickControls2;\$<LINK_ONLY:Qt6::GuiPrivate>;\$<LINK_ONLY:Qt6::QuickPrivate>;\$<LINK_ONLY:Qt6::GuiPrivate>;\$<LINK_ONLY:dwmapi>"
+)
+
+# Create imported target kddw_coverage_options
+add_library(kddw_coverage_options INTERFACE IMPORTED)
+
+# Create imported target GPlatformUi
+add_library(GPlatformUi INTERFACE IMPORTED)
+
+set_target_properties(GPlatformUi PROPERTIES
+  INTERFACE_COMPILE_DEFINITIONS "SMOOTHUI_BUILD_STATIC_LIB"
+  INTERFACE_LINK_LIBRARIES "SmoothUIImpl;SmoothUIDock;kddockwidgets;Qt6::Core;Qt6::Qml;SmoothUIplugin;SmoothUIControlsplugin;SmoothUIImplplugin;SmoothUIDockplugin"
+)
+
 # Import target "Tr" for configuration "Release"
 set_property(TARGET Tr APPEND PROPERTY IMPORTED_CONFIGURATIONS RELEASE)
 set_target_properties(Tr PROPERTIES
@@ -319,6 +632,181 @@ set_property(TARGET Renderplugin_init APPEND PROPERTY IMPORTED_CONFIGURATIONS RE
 set_target_properties(Renderplugin_init PROPERTIES
   IMPORTED_COMMON_LANGUAGE_RUNTIME_RELEASE ""
   IMPORTED_OBJECTS_RELEASE "${_GPLATFORM_SDK_ROOT}/objects/557d9aea930e623a1a3734b5972dedfa420b90a0b4ac516fd043d9d1821617eb.obj;${_GPLATFORM_SDK_ROOT}/objects/4a726c6b027e236b70dfcfbc92ffbebefb4da0f4fdfbd2fd32de567a2c9f0312.obj"
+  )
+
+# Import target "SmoothUI" for configuration "Release"
+set_property(TARGET SmoothUI APPEND PROPERTY IMPORTED_CONFIGURATIONS RELEASE)
+set_target_properties(SmoothUI PROPERTIES
+  IMPORTED_LINK_INTERFACE_LANGUAGES_RELEASE "CXX"
+  IMPORTED_LOCATION_RELEASE "${_GPLATFORM_SDK_ROOT}/lib/archives/GPlatform/SmoothUI.lib"
+  )
+
+# Import target "SmoothUI_resources_1" for configuration "Release"
+set_property(TARGET SmoothUI_resources_1 APPEND PROPERTY IMPORTED_CONFIGURATIONS RELEASE)
+set_target_properties(SmoothUI_resources_1 PROPERTIES
+  IMPORTED_COMMON_LANGUAGE_RUNTIME_RELEASE ""
+  IMPORTED_OBJECTS_RELEASE "${_GPLATFORM_SDK_ROOT}/objects/4c99af27a04da4e7e3859106277ae7a612bb806c228edb5b224d6c7607903a69.obj"
+  )
+
+# Import target "SmoothUIplugin" for configuration "Release"
+set_property(TARGET SmoothUIplugin APPEND PROPERTY IMPORTED_CONFIGURATIONS RELEASE)
+set_target_properties(SmoothUIplugin PROPERTIES
+  IMPORTED_LINK_INTERFACE_LANGUAGES_RELEASE "CXX"
+  IMPORTED_LOCATION_RELEASE "${_GPLATFORM_SDK_ROOT}/lib/archives/GPlatform/SmoothUIplugin.lib"
+  )
+
+# Import target "SmoothUI_resources_2" for configuration "Release"
+set_property(TARGET SmoothUI_resources_2 APPEND PROPERTY IMPORTED_CONFIGURATIONS RELEASE)
+set_target_properties(SmoothUI_resources_2 PROPERTIES
+  IMPORTED_COMMON_LANGUAGE_RUNTIME_RELEASE ""
+  IMPORTED_OBJECTS_RELEASE "${_GPLATFORM_SDK_ROOT}/objects/948baa534641926911e91d4b5cd7e0b77a1b3c816e8732a988619f41169a1dad.obj"
+  )
+
+# Import target "SmoothUIplugin_init" for configuration "Release"
+set_property(TARGET SmoothUIplugin_init APPEND PROPERTY IMPORTED_CONFIGURATIONS RELEASE)
+set_target_properties(SmoothUIplugin_init PROPERTIES
+  IMPORTED_COMMON_LANGUAGE_RUNTIME_RELEASE ""
+  IMPORTED_OBJECTS_RELEASE "${_GPLATFORM_SDK_ROOT}/objects/0e00d7ff40c0c0fa7d6c382b051ea15f4424027d91565743bbea682d815bb414.obj;${_GPLATFORM_SDK_ROOT}/objects/6a39bce5ef2ac36a86e331501b8fa4735f13c5e1e7c8e0a715be885b1afd6166.obj"
+  )
+
+# Import target "SmoothUI_resources_3" for configuration "Release"
+set_property(TARGET SmoothUI_resources_3 APPEND PROPERTY IMPORTED_CONFIGURATIONS RELEASE)
+set_target_properties(SmoothUI_resources_3 PROPERTIES
+  IMPORTED_COMMON_LANGUAGE_RUNTIME_RELEASE ""
+  IMPORTED_OBJECTS_RELEASE "${_GPLATFORM_SDK_ROOT}/objects/3f3aa1437d1b72ef6cdc10a901d4eb74c2f93b2a8907fc1fbf3bd569c118a694.obj"
+  )
+
+# Import target "SmoothUIImpl" for configuration "Release"
+set_property(TARGET SmoothUIImpl APPEND PROPERTY IMPORTED_CONFIGURATIONS RELEASE)
+set_target_properties(SmoothUIImpl PROPERTIES
+  IMPORTED_LINK_INTERFACE_LANGUAGES_RELEASE "CXX"
+  IMPORTED_LOCATION_RELEASE "${_GPLATFORM_SDK_ROOT}/lib/archives/GPlatform/SmoothUIImpl.lib"
+  )
+
+# Import target "SmoothUIImpl_resources_1" for configuration "Release"
+set_property(TARGET SmoothUIImpl_resources_1 APPEND PROPERTY IMPORTED_CONFIGURATIONS RELEASE)
+set_target_properties(SmoothUIImpl_resources_1 PROPERTIES
+  IMPORTED_COMMON_LANGUAGE_RUNTIME_RELEASE ""
+  IMPORTED_OBJECTS_RELEASE "${_GPLATFORM_SDK_ROOT}/objects/aa77cea25f027d6e39ba4f923bb197ab7b14b9349185b9e3fb8b17029e8f6f2e.obj"
+  )
+
+# Import target "SmoothUIImplplugin" for configuration "Release"
+set_property(TARGET SmoothUIImplplugin APPEND PROPERTY IMPORTED_CONFIGURATIONS RELEASE)
+set_target_properties(SmoothUIImplplugin PROPERTIES
+  IMPORTED_LINK_INTERFACE_LANGUAGES_RELEASE "CXX"
+  IMPORTED_LOCATION_RELEASE "${_GPLATFORM_SDK_ROOT}/lib/archives/GPlatform/SmoothUIImplplugin.lib"
+  )
+
+# Import target "SmoothUIImpl_resources_2" for configuration "Release"
+set_property(TARGET SmoothUIImpl_resources_2 APPEND PROPERTY IMPORTED_CONFIGURATIONS RELEASE)
+set_target_properties(SmoothUIImpl_resources_2 PROPERTIES
+  IMPORTED_COMMON_LANGUAGE_RUNTIME_RELEASE ""
+  IMPORTED_OBJECTS_RELEASE "${_GPLATFORM_SDK_ROOT}/objects/fec121e4cbe352449e414aaf4832211a232aa887421f85be93194b4d42cdad14.obj"
+  )
+
+# Import target "SmoothUIImpl_resources_3" for configuration "Release"
+set_property(TARGET SmoothUIImpl_resources_3 APPEND PROPERTY IMPORTED_CONFIGURATIONS RELEASE)
+set_target_properties(SmoothUIImpl_resources_3 PROPERTIES
+  IMPORTED_COMMON_LANGUAGE_RUNTIME_RELEASE ""
+  IMPORTED_OBJECTS_RELEASE "${_GPLATFORM_SDK_ROOT}/objects/998e5c6021cbae752c8cc344fdd75961744550c1e524cfcc4d91677cc8c97431.obj"
+  )
+
+# Import target "SmoothUIImplplugin_init" for configuration "Release"
+set_property(TARGET SmoothUIImplplugin_init APPEND PROPERTY IMPORTED_CONFIGURATIONS RELEASE)
+set_target_properties(SmoothUIImplplugin_init PROPERTIES
+  IMPORTED_COMMON_LANGUAGE_RUNTIME_RELEASE ""
+  IMPORTED_OBJECTS_RELEASE "${_GPLATFORM_SDK_ROOT}/objects/bbf39ec83b81431f516319a3851c33665a7b78fc5d82b73910aefb6203d5f044.obj;${_GPLATFORM_SDK_ROOT}/objects/c143aa790107ce9eb9ca534f34ba62c060ea04f9cb6424517030a16dde40ef62.obj"
+  )
+
+# Import target "SmoothUIControls" for configuration "Release"
+set_property(TARGET SmoothUIControls APPEND PROPERTY IMPORTED_CONFIGURATIONS RELEASE)
+set_target_properties(SmoothUIControls PROPERTIES
+  IMPORTED_LINK_INTERFACE_LANGUAGES_RELEASE "CXX"
+  IMPORTED_LOCATION_RELEASE "${_GPLATFORM_SDK_ROOT}/lib/archives/GPlatform/SmoothUIControls.lib"
+  )
+
+# Import target "SmoothUIControls_resources_1" for configuration "Release"
+set_property(TARGET SmoothUIControls_resources_1 APPEND PROPERTY IMPORTED_CONFIGURATIONS RELEASE)
+set_target_properties(SmoothUIControls_resources_1 PROPERTIES
+  IMPORTED_COMMON_LANGUAGE_RUNTIME_RELEASE ""
+  IMPORTED_OBJECTS_RELEASE "${_GPLATFORM_SDK_ROOT}/objects/a316346de1938995c9a7edcc4335b79c66b191fe89e4ca3716a89ba2fb2b6551.obj"
+  )
+
+# Import target "SmoothUIControlsplugin" for configuration "Release"
+set_property(TARGET SmoothUIControlsplugin APPEND PROPERTY IMPORTED_CONFIGURATIONS RELEASE)
+set_target_properties(SmoothUIControlsplugin PROPERTIES
+  IMPORTED_LINK_INTERFACE_LANGUAGES_RELEASE "CXX"
+  IMPORTED_LOCATION_RELEASE "${_GPLATFORM_SDK_ROOT}/lib/archives/GPlatform/SmoothUIControlsplugin.lib"
+  )
+
+# Import target "SmoothUIControls_resources_2" for configuration "Release"
+set_property(TARGET SmoothUIControls_resources_2 APPEND PROPERTY IMPORTED_CONFIGURATIONS RELEASE)
+set_target_properties(SmoothUIControls_resources_2 PROPERTIES
+  IMPORTED_COMMON_LANGUAGE_RUNTIME_RELEASE ""
+  IMPORTED_OBJECTS_RELEASE "${_GPLATFORM_SDK_ROOT}/objects/8e876d097d5624691cdd4ac30874d684750a855c6eadf37b071f76745a3682c2.obj"
+  )
+
+# Import target "SmoothUIControls_resources_3" for configuration "Release"
+set_property(TARGET SmoothUIControls_resources_3 APPEND PROPERTY IMPORTED_CONFIGURATIONS RELEASE)
+set_target_properties(SmoothUIControls_resources_3 PROPERTIES
+  IMPORTED_COMMON_LANGUAGE_RUNTIME_RELEASE ""
+  IMPORTED_OBJECTS_RELEASE "${_GPLATFORM_SDK_ROOT}/objects/02fb2836324a2f284ecd3d07ae1b4c92f49e695b9fb6f2f21eaf40efd25fca34.obj"
+  )
+
+# Import target "SmoothUIControlsplugin_init" for configuration "Release"
+set_property(TARGET SmoothUIControlsplugin_init APPEND PROPERTY IMPORTED_CONFIGURATIONS RELEASE)
+set_target_properties(SmoothUIControlsplugin_init PROPERTIES
+  IMPORTED_COMMON_LANGUAGE_RUNTIME_RELEASE ""
+  IMPORTED_OBJECTS_RELEASE "${_GPLATFORM_SDK_ROOT}/objects/c044476b044cf00b5fbc2d121a5a1ebf4e0501e317e54c212ab9974445749fa5.obj;${_GPLATFORM_SDK_ROOT}/objects/8b571523825208cc5556998849e5abd1ca70711b3b3fbf5bcaeed5f8a02b4d47.obj"
+  )
+
+# Import target "SmoothUIControls_resources_4" for configuration "Release"
+set_property(TARGET SmoothUIControls_resources_4 APPEND PROPERTY IMPORTED_CONFIGURATIONS RELEASE)
+set_target_properties(SmoothUIControls_resources_4 PROPERTIES
+  IMPORTED_COMMON_LANGUAGE_RUNTIME_RELEASE ""
+  IMPORTED_OBJECTS_RELEASE "${_GPLATFORM_SDK_ROOT}/objects/43cff36c2f61740e4401ea56bd96fbde9f86de1c06b323b907705335046b118b.obj"
+  )
+
+# Import target "SmoothUIDock" for configuration "Release"
+set_property(TARGET SmoothUIDock APPEND PROPERTY IMPORTED_CONFIGURATIONS RELEASE)
+set_target_properties(SmoothUIDock PROPERTIES
+  IMPORTED_LINK_INTERFACE_LANGUAGES_RELEASE "CXX"
+  IMPORTED_LOCATION_RELEASE "${_GPLATFORM_SDK_ROOT}/lib/archives/GPlatform/SmoothUIDock.lib"
+  )
+
+# Import target "SmoothUIDock_resources_1" for configuration "Release"
+set_property(TARGET SmoothUIDock_resources_1 APPEND PROPERTY IMPORTED_CONFIGURATIONS RELEASE)
+set_target_properties(SmoothUIDock_resources_1 PROPERTIES
+  IMPORTED_COMMON_LANGUAGE_RUNTIME_RELEASE ""
+  IMPORTED_OBJECTS_RELEASE "${_GPLATFORM_SDK_ROOT}/objects/cfe9327f3a1dcff0768ef01302cc009842a279e7ebb9ff4608a2f5a971d4b18c.obj"
+  )
+
+# Import target "SmoothUIDockplugin" for configuration "Release"
+set_property(TARGET SmoothUIDockplugin APPEND PROPERTY IMPORTED_CONFIGURATIONS RELEASE)
+set_target_properties(SmoothUIDockplugin PROPERTIES
+  IMPORTED_LINK_INTERFACE_LANGUAGES_RELEASE "CXX"
+  IMPORTED_LOCATION_RELEASE "${_GPLATFORM_SDK_ROOT}/lib/archives/GPlatform/SmoothUIDockplugin.lib"
+  )
+
+# Import target "SmoothUIDock_resources_2" for configuration "Release"
+set_property(TARGET SmoothUIDock_resources_2 APPEND PROPERTY IMPORTED_CONFIGURATIONS RELEASE)
+set_target_properties(SmoothUIDock_resources_2 PROPERTIES
+  IMPORTED_COMMON_LANGUAGE_RUNTIME_RELEASE ""
+  IMPORTED_OBJECTS_RELEASE "${_GPLATFORM_SDK_ROOT}/objects/a74366f27f14af4257ef83f128afcfb3c1aa9576a56a6a2972a7e7bed94cd35b.obj"
+  )
+
+# Import target "SmoothUIDockplugin_init" for configuration "Release"
+set_property(TARGET SmoothUIDockplugin_init APPEND PROPERTY IMPORTED_CONFIGURATIONS RELEASE)
+set_target_properties(SmoothUIDockplugin_init PROPERTIES
+  IMPORTED_COMMON_LANGUAGE_RUNTIME_RELEASE ""
+  IMPORTED_OBJECTS_RELEASE "${_GPLATFORM_SDK_ROOT}/objects/3166fa949ece1c96d943c0dddda5198ffc4a16b5b9136208f98d7b6b1e5400dd.obj;${_GPLATFORM_SDK_ROOT}/objects/8c64e9aebc74436c714e1b9f413cbc33ec3f68201160a5216c8deaf636b12c23.obj"
+  )
+
+# Import target "kddockwidgets" for configuration "Release"
+set_property(TARGET kddockwidgets APPEND PROPERTY IMPORTED_CONFIGURATIONS RELEASE)
+set_target_properties(kddockwidgets PROPERTIES
+  IMPORTED_LINK_INTERFACE_LANGUAGES_RELEASE "CXX"
+  IMPORTED_LOCATION_RELEASE "${_GPLATFORM_SDK_ROOT}/lib/archives/GPlatform/kddockwidgets-qt62.lib"
   )
 
 # Commands beyond this point should not need to know the version.

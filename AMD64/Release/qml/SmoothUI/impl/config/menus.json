@@ -1,0 +1,632 @@
+{
+  "version": "1.0",
+  "description": "SmoothUI Menu Configuration with Environment Support",
+  "defaultEnvironment": "normal",
+
+  "environments": {
+    "normal": {
+      "description": "Normal 工作环境",
+      "groups": {
+        "Menu": {
+          "description": "主菜单栏",
+          "items": [
+            {
+              "text": "File",
+              "isMenu": true,
+              "iconSource": "graph_Folder",
+              "displayMode": "TextBesideIcon",
+              "items": [
+                {
+                  "text": "New...",
+                  "iconSource": "graph_Add",
+                  "actionCode": "file.new",
+                  "enabled": true
+                },
+                {
+                  "text": "Open...",
+                  "iconSource": "graph_OpenFile",
+                  "actionCode": "file.open",
+                  "enabled": true
+                },
+                {
+                  "text": "Save",
+                  "iconSource": "graph_Save",
+                  "actionCode": "file.save",
+                  "enabled": true
+                },
+                {
+                  "separator": true
+                },
+                {
+                  "text": "Quit",
+                  "iconSource": "graph_Cancel",
+                  "actionCode": "file.quit",
+                  "enabled": true
+                }
+              ]
+            },
+            {
+              "text": "Edit",
+              "isMenu": true,
+              "iconSource": "graph_Edit",
+              "displayMode": "TextBesideIcon",
+              "items": [
+                {
+                  "text": "Undo",
+                  "iconSource": "graph_Undo",
+                  "actionCode": "edit.undo",
+                  "enabled": true
+                },
+                {
+                  "text": "Redo",
+                  "iconSource": "graph_Redo",
+                  "actionCode": "edit.redo",
+                  "enabled": true
+                },
+                {
+                  "separator": true
+                },
+                {
+                  "text": "Cut",
+                  "iconSource": "graph_Cut",
+                  "actionCode": "edit.cut",
+                  "enabled": true
+                },
+                {
+                  "text": "Copy",
+                  "iconSource": "graph_Copy",
+                  "actionCode": "edit.copy",
+                  "enabled": true
+                },
+                {
+                  "text": "Paste",
+                  "iconSource": "graph_Paste",
+                  "actionCode": "edit.paste",
+                  "enabled": true
+                }
+              ]
+            },
+            {
+              "text": "Help",
+              "isMenu": true,
+              "iconSource": "graph_Help",
+              "displayMode": "TextBesideIcon",
+              "items": [
+                {
+                  "text": "About",
+                  "iconSource": "graph_Info",
+                  "actionCode": "help.about",
+                  "enabled": true
+                }
+              ]
+            }
+          ]
+        },
+        "Toolbar": {
+          "description": "工具栏",
+          "items": [
+            {
+              "text": "New",
+              "iconSource": "Add",
+              "actionCode": "file.new",
+              "enabled": true
+            },
+            {
+              "text": "Open",
+              "iconSource": "OpenFile",
+              "actionCode": "file.open",
+              "enabled": true
+            },
+            {
+              "text": "Save",
+              "iconSource": "Save",
+              "actionCode": "file.save",
+              "enabled": true
+            },
+            {
+              "separator": true
+            },
+            {
+              "text": "Undo",
+              "iconSource": "Undo",
+              "actionCode": "edit.undo",
+              "enabled": true
+            },
+            {
+              "text": "Redo",
+              "iconSource": "Redo",
+              "actionCode": "edit.redo",
+              "enabled": true
+            }
+          ]
+        },
+        "ContextMenu": {
+          "description": "右键菜单",
+          "items": [
+            {
+              "text": "Copy",
+              "iconSource": "graph_Copy",
+              "actionCode": "context.copy",
+              "enabled": true
+            },
+            {
+              "text": "Paste",
+              "iconSource": "graph_Paste",
+              "actionCode": "context.paste",
+              "enabled": true
+            },
+            {
+              "separator": true
+            },
+            {
+              "text": "Delete",
+              "iconSource": "graph_Delete",
+              "actionCode": "context.delete",
+              "enabled": true
+            }
+          ]
+        },
+        "DockMenu": {
+          "description": "Dock 系统菜单",
+          "items": [
+            {
+              "text": "Layout",
+              "isMenu": true,
+              "items": [
+                {
+                  "text": "Save Layout",
+                  "iconSource": "graph_Save",
+                  "actionCode": "dock.layout.save",
+                  "enabled": true
+                },
+                {
+                  "text": "Load Layout",
+                  "iconSource": "graph_OpenFile",
+                  "actionCode": "dock.layout.load",
+                  "enabled": true
+                },
+                {
+                  "text": "Reset Layout",
+                  "iconSource": "graph_Refresh",
+                  "actionCode": "dock.layout.reset",
+                  "enabled": true
+                }
+              ]
+            },
+            {
+              "text": "View",
+              "isMenu": true,
+              "items": [
+                {
+                  "text": "Show All",
+                  "iconSource": "graph_View",
+                  "actionCode": "dock.view.showAll",
+                  "enabled": true
+                },
+                {
+                  "text": "Hide All",
+                  "iconSource": "graph_Hide",
+                  "actionCode": "dock.view.hideAll",
+                  "enabled": true
+                }
+              ]
+            }
+          ]
+        }
+      }
+    },
+
+    "slicing": {
+      "description": "切片环境 - 专注于模型切片和参数配置",
+      "groups": {
+        "Menu": {
+          "description": "切片主菜单",
+          "items": [
+            {
+              "text": "Slice",
+              "isMenu": true,
+              "iconSource": "graph_MapLayers",
+              "displayMode": "TextBesideIcon",
+              "items": [
+                {
+                  "text": "Start Slicing",
+                  "iconSource": "graph_Play",
+                  "actionCode": "slice.start",
+                  "enabled": true
+                },
+                {
+                  "text": "Preview Layers",
+                  "iconSource": "graph_View",
+                  "actionCode": "slice.preview",
+                  "enabled": true
+                },
+                {
+                  "text": "Export G-code",
+                  "iconSource": "graph_Save",
+                  "actionCode": "slice.export",
+                  "enabled": true
+                },
+                {
+                  "separator": true
+                },
+                {
+                  "text": "Slice Settings",
+                  "iconSource": "graph_Settings",
+                  "actionCode": "slice.settings",
+                  "enabled": true
+                }
+              ]
+            },
+            {
+              "text": "Parameters",
+              "isMenu": true,
+              "iconSource": "graph_Settings",
+              "displayMode": "TextBesideIcon",
+              "items": [
+                {
+                  "text": "Layer Height",
+                  "iconSource": "graph_Ruler",
+                  "actionCode": "slice.param.layerHeight",
+                  "enabled": true
+                },
+                {
+                  "text": "Infill Density",
+                  "iconSource": "graph_GridView",
+                  "actionCode": "slice.param.infillDensity",
+                  "enabled": true
+                },
+                {
+                  "text": "Print Speed",
+                  "iconSource": "graph_LightningBolt",
+                  "actionCode": "slice.param.printSpeed",
+                  "enabled": true
+                }
+              ]
+            },
+            {
+              "text": "Help",
+              "isMenu": true,
+              "iconSource": "graph_Help",
+              "displayMode": "TextBesideIcon",
+              "items": [
+                {
+                  "text": "About",
+                  "iconSource": "graph_Info",
+                  "actionCode": "help.about",
+                  "enabled": true
+                }
+              ]
+            }
+          ]
+        },
+        "Toolbar": {
+          "description": "切片工具栏",
+          "items": [
+            {
+              "text": "Start Slice",
+              "iconSource": "Play",
+              "actionCode": "slice.start",
+              "enabled": true
+            },
+            {
+              "text": "Preview",
+              "iconSource": "View",
+              "actionCode": "slice.preview",
+              "enabled": true
+            },
+            {
+              "text": "Export",
+              "iconSource": "Save",
+              "actionCode": "slice.export",
+              "enabled": true
+            },
+            {
+              "separator": true
+            },
+            {
+              "text": "Layer Height",
+              "iconSource": "Ruler",
+              "actionCode": "slice.param.layerHeight",
+              "enabled": true
+            },
+            {
+              "text": "Infill",
+              "iconSource": "GridView",
+              "actionCode": "slice.param.infillDensity",
+              "enabled": true
+            }
+          ]
+        }
+      }
+    },
+
+    "editing": {
+      "description": "编辑环境 - 专注于模型编辑和修改",
+      "groups": {
+        "Menu": {
+          "description": "编辑主菜单",
+          "items": [
+            {
+              "text": "Transform",
+              "isMenu": true,
+              "iconSource": "graph_MoveToFolder",
+              "displayMode": "TextBesideIcon",
+              "items": [
+                {
+                  "text": "Move",
+                  "iconSource": "graph_MoveToFolder",
+                  "actionCode": "model.move",
+                  "enabled": true
+                },
+                {
+                  "text": "Rotate",
+                  "iconSource": "graph_Rotate",
+                  "actionCode": "model.rotate",
+                  "enabled": true
+                },
+                {
+                  "text": "Scale",
+                  "iconSource": "graph_ZoomIn",
+                  "actionCode": "model.scale",
+                  "enabled": true
+                }
+              ]
+            },
+            {
+              "text": "Modify",
+              "isMenu": true,
+              "iconSource": "graph_Edit",
+              "displayMode": "TextBesideIcon",
+              "items": [
+                {
+                  "text": "Split Model",
+                  "iconSource": "graph_Cut",
+                  "actionCode": "model.split",
+                  "enabled": true
+                },
+                {
+                  "text": "Merge Models",
+                  "iconSource": "graph_MergeCall",
+                  "actionCode": "model.merge",
+                  "enabled": true
+                }
+              ]
+            },
+            {
+              "text": "Help",
+              "isMenu": true,
+              "iconSource": "graph_Help",
+              "displayMode": "TextBesideIcon",
+              "items": [
+                {
+                  "text": "About",
+                  "iconSource": "graph_Info",
+                  "actionCode": "help.about",
+                  "enabled": true
+                }
+              ]
+            }
+          ]
+        },
+        "Toolbar": {
+          "description": "编辑工具栏",
+          "items": [
+            {
+              "text": "Move",
+              "iconSource": "MoveToFolder",
+              "actionCode": "model.move",
+              "enabled": true
+            },
+            {
+              "text": "Rotate",
+              "iconSource": "Rotate",
+              "actionCode": "model.rotate",
+              "enabled": true
+            },
+            {
+              "text": "Scale",
+              "iconSource": "ZoomIn",
+              "actionCode": "model.scale",
+              "enabled": true
+            },
+            {
+              "separator": true
+            },
+            {
+              "text": "Split",
+              "iconSource": "Cut",
+              "actionCode": "model.split",
+              "enabled": true
+            },
+            {
+              "text": "Merge",
+              "iconSource": "MergeCall",
+              "actionCode": "model.merge",
+              "enabled": true
+            }
+          ]
+        }
+      }
+    },
+
+    "support": {
+      "description": "支撑环境 - 专注于支撑结构生成",
+      "groups": {
+        "Menu": {
+          "description": "支撑主菜单",
+          "items": [
+            {
+              "text": "Support",
+              "isMenu": true,
+              "iconSource": "graph_GridView",
+              "displayMode": "TextBesideIcon",
+              "items": [
+                {
+                  "text": "Auto Generate",
+                  "iconSource": "graph_LightningBolt",
+                  "actionCode": "support.autoGenerate",
+                  "enabled": true
+                },
+                {
+                  "text": "Add Manual",
+                  "iconSource": "graph_Add",
+                  "actionCode": "support.addManual",
+                  "enabled": true
+                },
+                {
+                  "separator": true
+                },
+                {
+                  "text": "Remove All",
+                  "iconSource": "graph_Delete",
+                  "actionCode": "support.removeAll",
+                  "enabled": true
+                }
+              ]
+            },
+            {
+              "text": "Help",
+              "isMenu": true,
+              "iconSource": "graph_Help",
+              "displayMode": "TextBesideIcon",
+              "items": [
+                {
+                  "text": "About",
+                  "iconSource": "graph_Info",
+                  "actionCode": "help.about",
+                  "enabled": true
+                }
+              ]
+            }
+          ]
+        },
+        "Toolbar": {
+          "description": "支撑工具栏",
+          "items": [
+            {
+              "text": "Auto Generate",
+              "iconSource": "LightningBolt",
+              "actionCode": "support.autoGenerate",
+              "enabled": true
+            },
+            {
+              "text": "Add Support",
+              "iconSource": "Add",
+              "actionCode": "support.addManual",
+              "enabled": true
+            },
+            {
+              "text": "Remove All",
+              "iconSource": "Delete",
+              "actionCode": "support.removeAll",
+              "enabled": true
+            }
+          ]
+        }
+      }
+    },
+
+    "preview": {
+      "description": "预览环境 - 专注于切片结果预览",
+      "groups": {
+        "Menu": {
+          "description": "预览主菜单",
+          "items": [
+            {
+              "text": "Playback",
+              "isMenu": true,
+              "iconSource": "graph_Play",
+              "displayMode": "TextBesideIcon",
+              "items": [
+                {
+                  "text": "Play Animation",
+                  "iconSource": "graph_Play",
+                  "actionCode": "preview.play",
+                  "enabled": true
+                },
+                {
+                  "text": "Pause",
+                  "iconSource": "graph_Pause",
+                  "actionCode": "preview.pause",
+                  "enabled": true
+                },
+                {
+                  "text": "Stop",
+                  "iconSource": "graph_Stop",
+                  "actionCode": "preview.stop",
+                  "enabled": true
+                }
+              ]
+            },
+            {
+              "text": "View",
+              "isMenu": true,
+              "iconSource": "graph_View",
+              "displayMode": "TextBesideIcon",
+              "items": [
+                {
+                  "text": "Layer by Layer",
+                  "iconSource": "graph_MapLayers",
+                  "actionCode": "preview.layerByLayer",
+                  "enabled": true
+                },
+                {
+                  "text": "Show Travels",
+                  "iconSource": "graph_MapPin",
+                  "actionCode": "preview.showTravels",
+                  "enabled": true
+                }
+              ]
+            },
+            {
+              "text": "Help",
+              "isMenu": true,
+              "iconSource": "graph_Help",
+              "displayMode": "TextBesideIcon",
+              "items": [
+                {
+                  "text": "About",
+                  "iconSource": "graph_Info",
+                  "actionCode": "help.about",
+                  "enabled": true
+                }
+              ]
+            }
+          ]
+        },
+        "Toolbar": {
+          "description": "预览工具栏",
+          "items": [
+            {
+              "text": "Play",
+              "iconSource": "Play",
+              "actionCode": "preview.play",
+              "enabled": true
+            },
+            {
+              "text": "Pause",
+              "iconSource": "Pause",
+              "actionCode": "preview.pause",
+              "enabled": true
+            },
+            {
+              "text": "Stop",
+              "iconSource": "Stop",
+              "actionCode": "preview.stop",
+              "enabled": true
+            },
+            {
+              "separator": true
+            },
+            {
+              "text": "Layer View",
+              "iconSource": "MapLayers",
+              "actionCode": "preview.layerByLayer",
+              "enabled": true
+            }
+          ]
+        }
+      }
+    }
+  }
+}

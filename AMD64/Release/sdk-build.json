@@ -1,10 +1,18 @@
 {
+  "APP_SOURCE_STATE": {
+    "DIFF_SHA256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "DIRTY": false,
+    "HEAD": "fd70b887fa0e9b171d5302302d052114417fb432"
+  },
   "CMAKE_BUILD_TYPE": "Release",
   "CMAKE_CXX_COMPILER_ID": "MSVC",
   "CMAKE_CXX_COMPILER_VERSION": "19.44.35228.0",
   "CMAKE_MSVC_RUNTIME_LIBRARY": "",
   "CMAKE_OSX_DEPLOYMENT_TARGET": "",
   "CMAKE_SYSTEM_NAME": "Windows",
+  "CONSUMER_SOURCE_FORKS": [
+    "OrcaSlicer"
+  ],
   "DEPENDENCIES": {
     "BREAKPAD_ACTUAL_BUILD_TYPE": "Release",
     "BREAKPAD_BUILD_TYPE": "Release",
@@ -46,13 +54,13 @@
   },
   "GPLATFORM_SDK_ARCH": "AMD64",
   "Qt6_VERSION": "6.11.2",
-  "SDK_FORMAT": 2,
+  "SDK_FORMAT": 3,
   "SOURCE_INPUTS": {
     "OrcaSlicer": {
-      "content_sha256": "f575e2540154f06b1889b6a62b03ef101206f2faca9fa0be63552a489651aa54",
+      "content_sha256": "c32327640c686ff12550af3df1094544b0093d301e3975bdc9da3a89782ac6e9",
       "diff_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
       "dirty": false,
-      "revision": "4c330d89573ff4d7608cc3aa57047c8b0854b4fd"
+      "revision": "2b1128bf1345e46a4ce177e4726daff7787ff196"
     },
     "SmoothUI": {
       "content_sha256": "77bc11814d2f9afe0ca52f5f7badfd742774fd475ea2a0e80867bfdae37c0882",
@@ -80,7 +88,7 @@
     "SmoothUIDock/KDDockWidgets": false
   },
   "SOURCE_REVISIONS": {
-    "OrcaSlicer": "4c330d89573ff4d7608cc3aa57047c8b0854b4fd",
+    "OrcaSlicer": "2b1128bf1345e46a4ce177e4726daff7787ff196",
     "SmoothUI": "fa4e4ce9cb0eed20ab019ad247465762a0b6fa8c",
     "SmoothUIDock": "0ef2365585071f28ff6f584d272547958dc69022",
     "SmoothUIDock/KDDockWidgets": "b2d189c677e15c391999f56ebb3683a08cc86f63"
@@ -88,7 +96,9 @@
   "SOURCE_STATE": {
     "DIFF_SHA256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
     "DIRTY": false,
-    "HEAD": "21e0901400cfc54833349d2b65b671b2f4215570",
+    "HEAD": "563cdacc5e118307290cde62242fabd56d8d6b5f",
     "MERGE_HEAD": ""
-  }
+  },
+  "UI_BINARY_PACKAGE_VERSION": 1,
+  "UI_PACKAGE_SHA256": "f3575d034622b233c26d7a4829795719711e8d205378e27156ec9aea09e559a3"
 }

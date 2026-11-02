@@ -1,0 +1,11 @@
+module SmoothUI.impl
+linktarget SmoothUIImplplugin
+optional plugin SmoothUIImplplugin
+classname SmoothUI_implPlugin
+designersupported
+typeinfo SmoothUIImpl.qmltypes
+prefer :/qt/qml/SmoothUI/impl/
+Objects 1.0 Objects.qml
+SyntaxHighlighter 1.0 SyntaxHighlighter.qml
+depends QtQuick
+
