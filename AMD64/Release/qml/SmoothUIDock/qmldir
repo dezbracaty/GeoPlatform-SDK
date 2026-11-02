@@ -1,0 +1,20 @@
+module SmoothUIDock
+linktarget SmoothUIDockplugin
+optional plugin SmoothUIDockplugin
+classname SmoothUIDockPlugin
+designersupported
+typeinfo SmoothUIDock.qmltypes
+prefer :/qt/qml/SmoothUIDock/
+DockingArea 1.0 DockingArea.qml
+DockWidget 1.0 DockWidget.qml
+SmoothUITitleBar 1.0 SmoothUITitleBar.qml
+SmoothUIDockWidget 1.0 SmoothUIDockWidget.qml
+SmoothUIFloatingWindow 1.0 SmoothUIFloatingWindow.qml
+SmoothUIGroup 1.0 SmoothUIGroup.qml
+SmoothUITabBar 1.0 SmoothUITabBar.qml
+SmoothUIRubberBand 1.0 SmoothUIRubberBand.qml
+SmoothUISeparator 1.0 SmoothUISeparator.qml
+ClassicIndicatorsOverlay 1.0 ClassicIndicatorsOverlay.qml
+ClassicIndicator 1.0 ClassicIndicator.qml
+depends QtQuick
+
