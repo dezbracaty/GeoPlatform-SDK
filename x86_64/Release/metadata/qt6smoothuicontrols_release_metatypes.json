@@ -1,0 +1,487 @@
+[
+    {
+        "classes": [
+            {
+                "classInfos": [
+                    {
+                        "name": "QML.Element",
+                        "value": "auto"
+                    }
+                ],
+                "className": "ParallaxViewType",
+                "enums": [
+                    {
+                        "alias": "SourceOffsetKind",
+                        "isClass": false,
+                        "isFlag": true,
+                        "name": "SourceOffsetKinds",
+                        "values": [
+                            "Absolute",
+                            "Relative"
+                        ]
+                    }
+                ],
+                "lineNumber": 14,
+                "object": true,
+                "qualifiedClassName": "ParallaxViewType",
+                "superClasses": [
+                    {
+                        "access": "public",
+                        "name": "QObject"
+                    }
+                ]
+            },
+            {
+                "classInfos": [
+                    {
+                        "name": "QML.Element",
+                        "value": "auto"
+                    }
+                ],
+                "className": "TabViewType",
+                "enums": [
+                    {
+                        "alias": "TabWidthBehavior",
+                        "isClass": false,
+                        "isFlag": true,
+                        "name": "TabWidthBehaviors",
+                        "values": [
+                            "Equal",
+                            "SizeToContent",
+                            "Compact"
+                        ]
+                    },
+                    {
+                        "alias": "CloseButtonVisibility",
+                        "isClass": false,
+                        "isFlag": true,
+                        "name": "CloseButtonVisibilitys",
+                        "values": [
+                            "Never",
+                            "Always",
+                            "OnHover"
+                        ]
+                    }
+                ],
+                "lineNumber": 23,
+                "object": true,
+                "qualifiedClassName": "TabViewType",
+                "superClasses": [
+                    {
+                        "access": "public",
+                        "name": "QObject"
+                    }
+                ]
+            },
+            {
+                "classInfos": [
+                    {
+                        "name": "QML.Element",
+                        "value": "auto"
+                    }
+                ],
+                "className": "TimelineType",
+                "enums": [
+                    {
+                        "alias": "Mode",
+                        "isClass": false,
+                        "isFlag": true,
+                        "name": "Modes",
+                        "values": [
+                            "Left",
+                            "Right",
+                            "Alternate"
+                        ]
+                    }
+                ],
+                "lineNumber": 36,
+                "object": true,
+                "qualifiedClassName": "TimelineType",
+                "superClasses": [
+                    {
+                        "access": "public",
+                        "name": "QObject"
+                    }
+                ]
+            },
+            {
+                "classInfos": [
+                    {
+                        "name": "QML.Element",
+                        "value": "auto"
+                    }
+                ],
+                "className": "WindowType",
+                "enums": [
+                    {
+                        "alias": "LaunchMode",
+                        "isClass": false,
+                        "isFlag": true,
+                        "name": "LaunchModes",
+                        "values": [
+                            "Standard",
+                            "SingleTask",
+                            "SingleInstance"
+                        ]
+                    }
+                ],
+                "lineNumber": 45,
+                "object": true,
+                "qualifiedClassName": "WindowType",
+                "superClasses": [
+                    {
+                        "access": "public",
+                        "name": "QObject"
+                    }
+                ]
+            },
+            {
+                "classInfos": [
+                    {
+                        "name": "QML.Element",
+                        "value": "auto"
+                    }
+                ],
+                "className": "WindowEffectType",
+                "enums": [
+                    {
+                        "alias": "EffectMode",
+                        "isClass": false,
+                        "isFlag": true,
+                        "name": "EffectModes",
+                        "values": [
+                            "Normal",
+                            "Mica",
+                            "Acrylic",
+                            "MicaAlt"
+                        ]
+                    }
+                ],
+                "lineNumber": 54,
+                "object": true,
+                "qualifiedClassName": "WindowEffectType",
+                "superClasses": [
+                    {
+                        "access": "public",
+                        "name": "QObject"
+                    }
+                ]
+            },
+            {
+                "classInfos": [
+                    {
+                        "name": "QML.Element",
+                        "value": "auto"
+                    }
+                ],
+                "className": "NavigationViewType",
+                "enums": [
+                    {
+                        "alias": "DisplayMode",
+                        "isClass": false,
+                        "isFlag": true,
+                        "name": "DisplayModes",
+                        "values": [
+                            "Open",
+                            "Compact",
+                            "Minimal",
+                            "Auto",
+                            "Top"
+                        ]
+                    }
+                ],
+                "lineNumber": 63,
+                "object": true,
+                "qualifiedClassName": "NavigationViewType",
+                "superClasses": [
+                    {
+                        "access": "public",
+                        "name": "QObject"
+                    }
+                ]
+            },
+            {
+                "classInfos": [
+                    {
+                        "name": "QML.Element",
+                        "value": "auto"
+                    }
+                ],
+                "className": "TimePickerType",
+                "enums": [
+                    {
+                        "isClass": false,
+                        "isFlag": true,
+                        "name": "HourFormat",
+                        "values": [
+                            "H",
+                            "HH"
+                        ]
+                    }
+                ],
+                "lineNumber": 78,
+                "object": true,
+                "qualifiedClassName": "TimePickerType",
+                "superClasses": [
+                    {
+                        "access": "public",
+                        "name": "QObject"
+                    }
+                ]
+            },
+            {
+                "classInfos": [
+                    {
+                        "name": "QML.Element",
+                        "value": "auto"
+                    }
+                ],
+                "className": "DatePickerType",
+                "enums": [
+                    {
+                        "isClass": false,
+                        "isFlag": true,
+                        "name": "DatePickerField",
+                        "values": [
+                            "Day",
+                            "Month",
+                            "Year"
+                        ]
+                    }
+                ],
+                "lineNumber": 90,
+                "object": true,
+                "qualifiedClassName": "DatePickerType",
+                "superClasses": [
+                    {
+                        "access": "public",
+                        "name": "QObject"
+                    }
+                ]
+            },
+            {
+                "classInfos": [
+                    {
+                        "name": "QML.Element",
+                        "value": "auto"
+                    }
+                ],
+                "className": "NumberBoxType",
+                "enums": [
+                    {
+                        "isClass": false,
+                        "isFlag": true,
+                        "name": "PlacementMode",
+                        "values": [
+                            "Inline",
+                            "Compact"
+                        ]
+                    }
+                ],
+                "lineNumber": 103,
+                "object": true,
+                "qualifiedClassName": "NumberBoxType",
+                "superClasses": [
+                    {
+                        "access": "public",
+                        "name": "QObject"
+                    }
+                ]
+            },
+            {
+                "classInfos": [
+                    {
+                        "name": "QML.Element",
+                        "value": "auto"
+                    }
+                ],
+                "className": "InfoBarType",
+                "enums": [
+                    {
+                        "isClass": false,
+                        "isFlag": true,
+                        "name": "Severity",
+                        "values": [
+                            "Info",
+                            "Warning",
+                            "Error",
+                            "Success"
+                        ]
+                    }
+                ],
+                "lineNumber": 112,
+                "object": true,
+                "qualifiedClassName": "InfoBarType",
+                "superClasses": [
+                    {
+                        "access": "public",
+                        "name": "QObject"
+                    }
+                ]
+            },
+            {
+                "classInfos": [
+                    {
+                        "name": "QML.Element",
+                        "value": "auto"
+                    }
+                ],
+                "className": "ResultType",
+                "enums": [
+                    {
+                        "isClass": false,
+                        "isFlag": true,
+                        "name": "Status",
+                        "values": [
+                            "Info",
+                            "Success",
+                            "Warning",
+                            "Error",
+                            "None",
+                            "HttpStatus"
+                        ]
+                    }
+                ],
+                "lineNumber": 121,
+                "object": true,
+                "qualifiedClassName": "ResultType",
+                "superClasses": [
+                    {
+                        "access": "public",
+                        "name": "QObject"
+                    }
+                ]
+            },
+            {
+                "classInfos": [
+                    {
+                        "name": "QML.Element",
+                        "value": "auto"
+                    }
+                ],
+                "className": "StatisticTimerType",
+                "enums": [
+                    {
+                        "isClass": false,
+                        "isFlag": true,
+                        "name": "Mode",
+                        "values": [
+                            "Countdown",
+                            "Countup"
+                        ]
+                    }
+                ],
+                "lineNumber": 130,
+                "object": true,
+                "qualifiedClassName": "StatisticTimerType",
+                "superClasses": [
+                    {
+                        "access": "public",
+                        "name": "QObject"
+                    }
+                ]
+            },
+            {
+                "classInfos": [
+                    {
+                        "name": "QML.Element",
+                        "value": "auto"
+                    }
+                ],
+                "className": "TagInputBoxType",
+                "enums": [
+                    {
+                        "isClass": false,
+                        "isFlag": true,
+                        "name": "LayoutMode",
+                        "values": [
+                            "Collapse",
+                            "ExpandHeight",
+                            "ExpandWidth"
+                        ]
+                    },
+                    {
+                        "isClass": false,
+                        "isFlag": true,
+                        "name": "TagShape",
+                        "values": [
+                            "Rounded",
+                            "Pill"
+                        ]
+                    }
+                ],
+                "lineNumber": 139,
+                "object": true,
+                "qualifiedClassName": "TagInputBoxType",
+                "superClasses": [
+                    {
+                        "access": "public",
+                        "name": "QObject"
+                    }
+                ]
+            },
+            {
+                "classInfos": [
+                    {
+                        "name": "QML.Element",
+                        "value": "auto"
+                    }
+                ],
+                "className": "ShimmerType",
+                "enums": [
+                    {
+                        "isClass": false,
+                        "isFlag": true,
+                        "name": "AnimationStyle",
+                        "values": [
+                            "Slide",
+                            "Pulse",
+                            "Solid"
+                        ]
+                    }
+                ],
+                "lineNumber": 159,
+                "object": true,
+                "qualifiedClassName": "ShimmerType",
+                "superClasses": [
+                    {
+                        "access": "public",
+                        "name": "QObject"
+                    }
+                ]
+            },
+            {
+                "classInfos": [
+                    {
+                        "name": "QML.Element",
+                        "value": "auto"
+                    }
+                ],
+                "className": "CarouselType",
+                "enums": [
+                    {
+                        "isClass": false,
+                        "isFlag": true,
+                        "name": "ButtonShowMode",
+                        "values": [
+                            "Never",
+                            "Always",
+                            "OnHover"
+                        ]
+                    }
+                ],
+                "lineNumber": 172,
+                "object": true,
+                "qualifiedClassName": "CarouselType",
+                "superClasses": [
+                    {
+                        "access": "public",
+                        "name": "QObject"
+                    }
+                ]
+            }
+        ],
+        "inputFile": "def.h",
+        "outputRevision": 69
+    }
+]

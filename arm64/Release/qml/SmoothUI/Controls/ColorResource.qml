@@ -1,0 +1,99 @@
+/*!
+\qmltype ColorResource
+\inqmlmodule SmoothUI.Controls
+\brief Defines the complete set of Fluent Design theme color resources.
+Provides all tokenized color properties used by the Fluent Design system.
+Each property maps to a specific semantic color role (text fills,
+control fills, strokes, backgrounds, etc.) and is populated by the
+Theme engine based on the active light or dark theme.
+*/
+import QtQuick
+QtObject {
+property color shadowColor: "#000000"
+property color popupBorderColor
+property color popupBackgroundColor
+property color micaBackgroundColor
+property color acrylicBackgroundColor
+property color scaffoldBackgroundColor
+property color inactiveBackgroundColor
+property color textFillColorPrimary
+property color textFillColorSecondary
+property color textFillColorTertiary
+property color textFillColorDisabled
+property color textFillColorInverse
+property color accentTextFillColorDisabled
+property color textOnAccentFillColorSelectedText
+property color textOnAccentFillColorPrimary
+property color textOnAccentFillColorSecondary
+property color textOnAccentFillColorDisabled
+property color controlFillColorDefault
+property color controlFillColorSecondary
+property color controlFillColorTertiary
+property color controlFillColorDisabled
+property color controlFillColorTransparent
+property color controlFillColorInputActive
+property color controlStrongFillColorDefault
+property color controlStrongFillColorDisabled
+property color controlSolidFillColorDefault
+property color subtleFillColorTransparent
+property color subtleFillColorSecondary
+property color subtleFillColorTertiary
+property color subtleFillColorDisabled
+property color controlAltFillColorTransparent
+property color controlAltFillColorSecondary
+property color controlAltFillColorTertiary
+property color controlAltFillColorQuarternary
+property color controlAltFillColorDisabled
+property color controlOnImageFillColorDefault
+property color controlOnImageFillColorSecondary
+property color controlOnImageFillColorTertiary
+property color controlOnImageFillColorDisabled
+property color accentFillColorDisabled
+property color controlStrokeColorDefault
+property color controlStrokeColorSecondary
+property color controlStrokeColorOnAccentDefault
+property color controlStrokeColorOnAccentSecondary
+property color controlStrokeColorOnAccentTertiary
+property color controlStrokeColorOnAccentDisabled
+property color controlStrokeColorForStrongFillWhenOnImage
+property color cardStrokeColorDefault
+property color cardStrokeColorDefaultSolid
+property color controlStrongStrokeColorDefault
+property color controlStrongStrokeColorDisabled
+property color surfaceStrokeColorDefault
+property color surfaceStrokeColorFlyout
+property color surfaceStrokeColorInverse
+property color dividerStrokeColorDefault
+property color focusStrokeColorOuter
+property color focusStrokeColorInner
+property color cardBackgroundColor
+property color cardBackgroundFillColorDefault
+property color cardBackgroundFillColorSecondary
+property color smokeFillColorDefault
+property color layerFillColorDefault
+property color layerFillColorAlt
+property color layerOnAcrylicFillColorDefault
+property color layerOnAccentAcrylicFillColorDefault
+property color layerOnMicaBaseAltFillColorDefault
+property color layerOnMicaBaseAltFillColorSecondary
+property color layerOnMicaBaseAltFillColorTertiary
+property color layerOnMicaBaseAltFillColorTransparent
+property color solidBackgroundFillColorBase
+property color solidBackgroundFillColorSecondary
+property color solidBackgroundFillColorTertiary
+property color solidBackgroundFillColorQuarternary
+property color solidBackgroundFillColorTransparent
+property color solidBackgroundFillColorBaseAlt
+property color systemFillColorSuccess
+property color systemFillColorCaution
+property color systemFillColorCritical
+property color systemFillColorNeutral
+property color systemFillColorSolidNeutral
+property color systemFillColorAttentionBackground
+property color systemFillColorSuccessBackground
+property color systemFillColorCautionBackground
+property color systemFillColorCriticalBackground
+property color systemFillColorNeutralBackground
+property color systemFillColorSolidAttentionBackground
+property color systemFillColorSolidNeutralBackground
+}

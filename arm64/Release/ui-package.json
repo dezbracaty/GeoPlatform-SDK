@@ -1,0 +1,761 @@
+{
+  "link_mode": "STATIC",
+  "modules": {
+    "SmoothUI": {
+      "path": "SmoothUI",
+      "protected_qml": true,
+      "qml_count": 46,
+      "qrc_sha256": "d5372f8c75834142f971118c21449b5411a36cfc428533e30c79e10dd687f39f",
+      "target": "SmoothUI"
+    },
+    "SmoothUI.Controls": {
+      "path": "SmoothUI/Controls",
+      "protected_qml": true,
+      "qml_count": 118,
+      "qrc_sha256": "cfdb865b18da48bc655ab1ddf791f65ff72c95cf9828698c9665bee89bb8402f",
+      "target": "SmoothUIControls"
+    },
+    "SmoothUI.impl": {
+      "path": "SmoothUI/impl",
+      "protected_qml": true,
+      "qml_count": 2,
+      "qrc_sha256": "f4da39b90641a5ac74045737593f93538f21f889cf12f6788263d93718384b13",
+      "target": "SmoothUIImpl"
+    },
+    "SmoothUIDock": {
+      "path": "SmoothUIDock",
+      "protected_qml": true,
+      "qml_count": 11,
+      "qrc_sha256": "75e4b5494f43ad0fd0231e0bf97be01cc7578ffb95ff15824ff5e50d277daf9e",
+      "target": "SmoothUIDock"
+    }
+  },
+  "qml_is_encrypted": false,
+  "resources": {
+    ":/qt/qml/SmoothUI/Button.qml": {
+      "path": "qml/SmoothUI/Button.qml",
+      "sha256": "f60366150f2761113596521318cb39de1700bedc10397a9d54f59723633cec7a"
+    },
+    ":/qt/qml/SmoothUI/CheckBox.qml": {
+      "path": "qml/SmoothUI/CheckBox.qml",
+      "sha256": "61a52634613b8aa9d9dd4973cac998311f6fd1c86edb6ac5f06a1e8ef010f339"
+    },
+    ":/qt/qml/SmoothUI/ComboBox.qml": {
+      "path": "qml/SmoothUI/ComboBox.qml",
+      "sha256": "224368e5ff418acc4d87ebf44d1d89de838b341077ba60ca45537c72bae53311"
+    },
+    ":/qt/qml/SmoothUI/Controls/AccentColor.qml": {
+      "path": "qml/SmoothUI/Controls/AccentColor.qml",
+      "sha256": "58c564e4a1c49d2af8a888406aaffa8c0f27d13063778a0581a89a3813e53210"
+    },
+    ":/qt/qml/SmoothUI/Controls/Acrylic.qml": {
+      "path": "qml/SmoothUI/Controls/Acrylic.qml",
+      "sha256": "8e2a774e82ce4012d004f37d43b697b9f9f1269337b90ac8869f6506316a7446"
+    },
+    ":/qt/qml/SmoothUI/Controls/AppBar.qml": {
+      "path": "qml/SmoothUI/Controls/AppBar.qml",
+      "sha256": "f11580b5ae29552f2bae5619da37c1595803bcffcb67a98b5ca18f2a3289631e"
+    },
+    ":/qt/qml/SmoothUI/Controls/AppBarBackground.qml": {
+      "path": "qml/SmoothUI/Controls/AppBarBackground.qml",
+      "sha256": "91dee04b0b5e5a4e9f91764d1d799484847832c57401c742672b3bfff6a669ea"
+    },
+    ":/qt/qml/SmoothUI/Controls/AutoLoader.qml": {
+      "path": "qml/SmoothUI/Controls/AutoLoader.qml",
+      "sha256": "df9d6f236b0a6fd1a44f911bfa6e0a35579075e440fb1c24dde3078a0adf5c42"
+    },
+    ":/qt/qml/SmoothUI/Controls/AutoSuggestBox.qml": {
+      "path": "qml/SmoothUI/Controls/AutoSuggestBox.qml",
+      "sha256": "211c7fec7ce5972a9fbc0a9dc2d25e1dcddb2129ab0f1697495feb6cea65ccc6"
+    },
+    ":/qt/qml/SmoothUI/Controls/BannerLayout.qml": {
+      "path": "qml/SmoothUI/Controls/BannerLayout.qml",
+      "sha256": "0ae8cca2e8ee8b146bd93c24a2344994840070b9a537ca457cb36d936c226bf6"
+    },
+    ":/qt/qml/SmoothUI/Controls/Breadcrumb.qml": {
+      "path": "qml/SmoothUI/Controls/Breadcrumb.qml",
+      "sha256": "d0ba8fa7b36304962791f841f051157a8f789894a9be7aacc5bcbec2c61e8dea"
+    },
+    ":/qt/qml/SmoothUI/Controls/CalendarPicker.qml": {
+      "path": "qml/SmoothUI/Controls/CalendarPicker.qml",
+      "sha256": "f97ad05ea6c9c0b63a6f412e0b7f3b2a3e90b2d70aa1311125e31348ccc5bafc"
+    },
+    ":/qt/qml/SmoothUI/Controls/Carousel.qml": {
+      "path": "qml/SmoothUI/Controls/Carousel.qml",
+      "sha256": "d3e8e7cc5f8dfb54c5994aecca8f921d057c91ea7adc8fd3d3caf55f6ed14ad6"
+    },
+    ":/qt/qml/SmoothUI/Controls/Chart.js": {
+      "path": "qml/SmoothUI/Controls/Chart.js",
+      "sha256": "d89728184eabbb9247cfaddfd9f9caba101b3d39d46deab9dd279488e75ac967"
+    },
+    ":/qt/qml/SmoothUI/Controls/Chart.qml": {
+      "path": "qml/SmoothUI/Controls/Chart.qml",
+      "sha256": "ee77eb03f59b817e21184e95aa053f2f5d51370865921fb6e810b63927edaa2d"
+    },
+    ":/qt/qml/SmoothUI/Controls/Chip.qml": {
+      "path": "qml/SmoothUI/Controls/Chip.qml",
+      "sha256": "bb2d00c7e68e066753ee01b35e6bcedd82254eddf4290c5b3e95c62cce99fd83"
+    },
+    ":/qt/qml/SmoothUI/Controls/ColorOverlay.qml": {
+      "path": "qml/SmoothUI/Controls/ColorOverlay.qml",
+      "sha256": "f359e39418bb0c18c8515fe510c9665ebd381f83bacc8935d478c45b39351547"
+    },
+    ":/qt/qml/SmoothUI/Controls/ColorPicker.qml": {
+      "path": "qml/SmoothUI/Controls/ColorPicker.qml",
+      "sha256": "be2abbb28710c160d33fba02093c692003c413a276ca6105695ce3872e809d64"
+    },
+    ":/qt/qml/SmoothUI/Controls/ColorResource.qml": {
+      "path": "qml/SmoothUI/Controls/ColorResource.qml",
+      "sha256": "7554da6ad5d23b0be6ce852b4b630f01dda1d4563d79a4798406717d84f85518"
+    },
+    ":/qt/qml/SmoothUI/Controls/Colors.qml": {
+      "path": "qml/SmoothUI/Controls/Colors.qml",
+      "sha256": "786da57f1ccba786ae391d195c2926a581d839ca50cd3d86357fd2830dbed788"
+    },
+    ":/qt/qml/SmoothUI/Controls/ContentDialog.qml": {
+      "path": "qml/SmoothUI/Controls/ContentDialog.qml",
+      "sha256": "0590e3c58de9d03f2d3fa1781d5a0d4dd57ae02799b5383d79947f99fb6d90d4"
+    },
+    ":/qt/qml/SmoothUI/Controls/ContentPage.qml": {
+      "path": "qml/SmoothUI/Controls/ContentPage.qml",
+      "sha256": "c94543eb880ab4f1df08e0618000fe25e09f9c1c5caf9a9d9a0529f22f60ce09"
+    },
+    ":/qt/qml/SmoothUI/Controls/ControlBackground.qml": {
+      "path": "qml/SmoothUI/Controls/ControlBackground.qml",
+      "sha256": "da1b77fa63e3f49f94545f5911b49aca20e28d79245c0188cc0160e4494cac8c"
+    },
+    ":/qt/qml/SmoothUI/Controls/CopyableText.qml": {
+      "path": "qml/SmoothUI/Controls/CopyableText.qml",
+      "sha256": "62e3615a43393ad17559b877df547161c9d796686deeeaca89e66d633e4ddcb7"
+    },
+    ":/qt/qml/SmoothUI/Controls/DataGrid.qml": {
+      "path": "qml/SmoothUI/Controls/DataGrid.qml",
+      "sha256": "1fd81c2d488e8fc3cd8c7a3b03dbaf8953a2fe75cb06f91e2d51217be6e2ef30"
+    },
+    ":/qt/qml/SmoothUI/Controls/DatePicker.qml": {
+      "path": "qml/SmoothUI/Controls/DatePicker.qml",
+      "sha256": "b61080d8a4a96d2158006e1aa48f68aeafa590ea16c53003ede642b93466c8b3"
+    },
+    ":/qt/qml/SmoothUI/Controls/DialogWindow.qml": {
+      "path": "qml/SmoothUI/Controls/DialogWindow.qml",
+      "sha256": "2d7abb5cfcfa1dd0a3394ab3774aa552cd82eaca605160f4bd243da996ee27c8"
+    },
+    ":/qt/qml/SmoothUI/Controls/DropDownButton.qml": {
+      "path": "qml/SmoothUI/Controls/DropDownButton.qml",
+      "sha256": "35d64cdc4aac2f5ff0164631590ca9113add18ae3634fef5f7efe4483fb2d2af"
+    },
+    ":/qt/qml/SmoothUI/Controls/DropDownPopup.qml": {
+      "path": "qml/SmoothUI/Controls/DropDownPopup.qml",
+      "sha256": "269afb3998716f315af1245e4fd37bedf22bd44913dfb298d35f883d1ecef7ef"
+    },
+    ":/qt/qml/SmoothUI/Controls/Expander.qml": {
+      "path": "qml/SmoothUI/Controls/Expander.qml",
+      "sha256": "a095ddf164922efac386c12040bc50d888eab8c3d10c9d71e83b1a2ef04763fc"
+    },
+    ":/qt/qml/SmoothUI/Controls/FastBlur.qml": {
+      "path": "qml/SmoothUI/Controls/FastBlur.qml",
+      "sha256": "0809b597880b0279dc44fb295ec8e8b7f968dd4b71a0782d51b7a221e170d80e"
+    },
+    ":/qt/qml/SmoothUI/Controls/FileBrowserDialog.qml": {
+      "path": "qml/SmoothUI/Controls/FileBrowserDialog.qml",
+      "sha256": "47711fc4a45af57c39082a8b184f245870b4b1904f8f141068fbc316aa9a1c59"
+    },
+    ":/qt/qml/SmoothUI/Controls/FilePicker.qml": {
+      "path": "qml/SmoothUI/Controls/FilePicker.qml",
+      "sha256": "b360df822891d4e69810ab0a01c822efe02dc121bc60e186c03a3f5eebf08510"
+    },
+    ":/qt/qml/SmoothUI/Controls/FilledButton.qml": {
+      "path": "qml/SmoothUI/Controls/FilledButton.qml",
+      "sha256": "ab5e04f8b66cfd03b47083949e763efa561b844f17710b86bf02d4f699142406"
+    },
+    ":/qt/qml/SmoothUI/Controls/FlipLayout.qml": {
+      "path": "qml/SmoothUI/Controls/FlipLayout.qml",
+      "sha256": "4b1a715a8bfc2d3d1e78a987ebf60d21d679772ede8c30f16f1d2b56a0712cea"
+    },
+    ":/qt/qml/SmoothUI/Controls/FluentIcons.qml": {
+      "path": "qml/SmoothUI/Controls/FluentIcons.qml",
+      "sha256": "8caf436b09b9b54872f58054af402d44b8813f9e5f335eba9e7c6c36f8523373"
+    },
+    ":/qt/qml/SmoothUI/Controls/FocusItem.qml": {
+      "path": "qml/SmoothUI/Controls/FocusItem.qml",
+      "sha256": "e991fa34be89fc4c32a27173a3f9847e94c2efe81c1ca3edbf6c61c9a97d8066"
+    },
+    ":/qt/qml/SmoothUI/Controls/FramelessWindow.qml": {
+      "path": "qml/SmoothUI/Controls/FramelessWindow.qml",
+      "sha256": "daf4f9242f0451adc01bf3896a78db8231969b05ed6eef05c2e20b3332413638"
+    },
+    ":/qt/qml/SmoothUI/Controls/HeaderScrollablePage.qml": {
+      "path": "qml/SmoothUI/Controls/HeaderScrollablePage.qml",
+      "sha256": "7359531d4a5814b724208c24e512e21c739dea63ab715a83add1d67671aedc13"
+    },
+    ":/qt/qml/SmoothUI/Controls/HighlightRectangle.qml": {
+      "path": "qml/SmoothUI/Controls/HighlightRectangle.qml",
+      "sha256": "a68a4aa0f0f575313b1d8252beeb4af64c2cf1c536da5955023f8fa52cfaef80"
+    },
+    ":/qt/qml/SmoothUI/Controls/HotLoader.qml": {
+      "path": "qml/SmoothUI/Controls/HotLoader.qml",
+      "sha256": "ce34487a30d8fe5473956ed61bd375f0248a8b98438d962c61173283fba4c624"
+    },
+    ":/qt/qml/SmoothUI/Controls/HyperlinkButton.qml": {
+      "path": "qml/SmoothUI/Controls/HyperlinkButton.qml",
+      "sha256": "b7857f4964649cea1a1e0e56ac0ff36098bf0cbaadb4295f9cad092cdf920042"
+    },
+    ":/qt/qml/SmoothUI/Controls/Icon.qml": {
+      "path": "qml/SmoothUI/Controls/Icon.qml",
+      "sha256": "e39a47279c802571321a8d67fbe9ee4c9a1b22a0497815342b7bdd9d0287eab3"
+    },
+    ":/qt/qml/SmoothUI/Controls/IconButton.qml": {
+      "path": "qml/SmoothUI/Controls/IconButton.qml",
+      "sha256": "3ad2782ecbebb3deb23dffa560ff4211b77f3b66ea84081ff71b980a35492ca6"
+    },
+    ":/qt/qml/SmoothUI/Controls/IconLabel.qml": {
+      "path": "qml/SmoothUI/Controls/IconLabel.qml",
+      "sha256": "2c2ff5cd338227c599d15af12f512062924176e86c2e0eda60d23ddb49e2f790"
+    },
+    ":/qt/qml/SmoothUI/Controls/InfoBadge.qml": {
+      "path": "qml/SmoothUI/Controls/InfoBadge.qml",
+      "sha256": "c2fba56fa962987901b8a19a4dd4421aea53c838862f0093e645d71afd67988d"
+    },
+    ":/qt/qml/SmoothUI/Controls/InfoBar.qml": {
+      "path": "qml/SmoothUI/Controls/InfoBar.qml",
+      "sha256": "7027d8ad60b3bebcd1a486849a225221c66f57ffddb08ff66c359a10d41bdea9"
+    },
+    ":/qt/qml/SmoothUI/Controls/InfoBarManager.qml": {
+      "path": "qml/SmoothUI/Controls/InfoBarManager.qml",
+      "sha256": "959cda3e3150e35a3934b62aceeb41fee9f95499f3252a4bbbe5da888cd9e09d"
+    },
+    ":/qt/qml/SmoothUI/Controls/InputBackground.qml": {
+      "path": "qml/SmoothUI/Controls/InputBackground.qml",
+      "sha256": "df95c0f9be645350a191092e7f0a60b4413ee8c58d7f6105ba155ae31c43e529"
+    },
+    ":/qt/qml/SmoothUI/Controls/InputMenu.qml": {
+      "path": "qml/SmoothUI/Controls/InputMenu.qml",
+      "sha256": "70b04246eb827dc682e39183373e884511298f81e9b3fbb1864e40dd2ba27d62"
+    },
+    ":/qt/qml/SmoothUI/Controls/LinearGradient.qml": {
+      "path": "qml/SmoothUI/Controls/LinearGradient.qml",
+      "sha256": "3fb808fecaf3a4e74b5f94011ed3a56a36c6988557ad4a1e1887cd33a23601c0"
+    },
+    ":/qt/qml/SmoothUI/Controls/LiquidGlass.qml": {
+      "path": "qml/SmoothUI/Controls/LiquidGlass.qml",
+      "sha256": "d512a795babeaa588d08eb59893d86169b692198fe406506f7db17ae7b5318fd"
+    },
+    ":/qt/qml/SmoothUI/Controls/ListTile.qml": {
+      "path": "qml/SmoothUI/Controls/ListTile.qml",
+      "sha256": "8ef03b08df5b1e707965de1473d062dfd6f64c3c5d9690df2f0844f55b112b18"
+    },
+    ":/qt/qml/SmoothUI/Controls/Marquee.qml": {
+      "path": "qml/SmoothUI/Controls/Marquee.qml",
+      "sha256": "17d165fe46982df340ba66f4358037a3d662bc5302748631f91088345c686ad4"
+    },
+    ":/qt/qml/SmoothUI/Controls/MultiLineTextBox.qml": {
+      "path": "qml/SmoothUI/Controls/MultiLineTextBox.qml",
+      "sha256": "c54c0df300a1115b90eb8e0af3e42117942c5e4dbbc84cc9b13b52e1f21319f8"
+    },
+    ":/qt/qml/SmoothUI/Controls/MultiSelectComboBox.qml": {
+      "path": "qml/SmoothUI/Controls/MultiSelectComboBox.qml",
+      "sha256": "f08f448963b7200e7f316a2079ed0c5fd8476db834bd10c730c09a77f8132783"
+    },
+    ":/qt/qml/SmoothUI/Controls/MultiTreeSelectComboBox.qml": {
+      "path": "qml/SmoothUI/Controls/MultiTreeSelectComboBox.qml",
+      "sha256": "49cf8d1a7f477675b4140a5f69a7220e29b90e944ea60e12f43625e8655aa0bb"
+    },
+    ":/qt/qml/SmoothUI/Controls/NavigationMenu.qml": {
+      "path": "qml/SmoothUI/Controls/NavigationMenu.qml",
+      "sha256": "24fb811e3263d96b610fb2fffdef321b3515e298591fb48a19ac8785bde0900d"
+    },
+    ":/qt/qml/SmoothUI/Controls/NavigationMenuItem.qml": {
+      "path": "qml/SmoothUI/Controls/NavigationMenuItem.qml",
+      "sha256": "528730828ce4ccfd2a4010e63ee8eab57f732ee49e332506568c597380abcedb"
+    },
+    ":/qt/qml/SmoothUI/Controls/NavigationView.qml": {
+      "path": "qml/SmoothUI/Controls/NavigationView.qml",
+      "sha256": "88c4abc3877c04cd7109cf4e55d8b68528d53ea0ca82a7eb79dce3a1d096bfba"
+    },
+    ":/qt/qml/SmoothUI/Controls/NumberBox.qml": {
+      "path": "qml/SmoothUI/Controls/NumberBox.qml",
+      "sha256": "024b37091d2d919266059002d2d80e4c44b48a72d23d3ab70a34a519b1a7b6a0"
+    },
+    ":/qt/qml/SmoothUI/Controls/OpacityMask.qml": {
+      "path": "qml/SmoothUI/Controls/OpacityMask.qml",
+      "sha256": "841b06736c060935e3b5964883eecc1431de52696f1bc9ff02544007c888369e"
+    },
+    ":/qt/qml/SmoothUI/Controls/PageContext.qml": {
+      "path": "qml/SmoothUI/Controls/PageContext.qml",
+      "sha256": "99eaf7be2a38c41a19b1662a874fd27c4f790de61a494934b533ddeebd66cc64"
+    },
+    ":/qt/qml/SmoothUI/Controls/PageRouter.qml": {
+      "path": "qml/SmoothUI/Controls/PageRouter.qml",
+      "sha256": "059d8f7e435c4794fe061bf274b36fb52a213632b37e401d0dca1b937e4f92b1"
+    },
+    ":/qt/qml/SmoothUI/Controls/PageRouterView.qml": {
+      "path": "qml/SmoothUI/Controls/PageRouterView.qml",
+      "sha256": "69f1ad8025c49fa80ba6704ad5a2ae111a4163800b8010da25ae46f5224b52c2"
+    },
+    ":/qt/qml/SmoothUI/Controls/Pagination.qml": {
+      "path": "qml/SmoothUI/Controls/Pagination.qml",
+      "sha256": "a6cd76d231b59cd551ee3df2edb798a74b910d7c811e623f76cf95bc323f42a9"
+    },
+    ":/qt/qml/SmoothUI/Controls/PaneItem.qml": {
+      "path": "qml/SmoothUI/Controls/PaneItem.qml",
+      "sha256": "f4a00aec5c9b3feda358cb7f5a94ea9c6c1b2fc9be828df3484d9299330faeaa"
+    },
+    ":/qt/qml/SmoothUI/Controls/PaneItemExpander.qml": {
+      "path": "qml/SmoothUI/Controls/PaneItemExpander.qml",
+      "sha256": "012bc63957b51abb5580c56c1715288a6ab75f43cb7691d2d26a3d8929aebe33"
+    },
+    ":/qt/qml/SmoothUI/Controls/PaneItemHeader.qml": {
+      "path": "qml/SmoothUI/Controls/PaneItemHeader.qml",
+      "sha256": "a060d7e0bb24e5b1befc8471264bbef253df0420dab7cbbd924cac0423909238"
+    },
+    ":/qt/qml/SmoothUI/Controls/PaneItemSeparator.qml": {
+      "path": "qml/SmoothUI/Controls/PaneItemSeparator.qml",
+      "sha256": "fe899cab6699ff4e1e2239ea8337a43b9e12b4d76e267be7d9a30bbb3bf0fc8f"
+    },
+    ":/qt/qml/SmoothUI/Controls/ParallaxView.qml": {
+      "path": "qml/SmoothUI/Controls/ParallaxView.qml",
+      "sha256": "354208f7beeb506b3fc9757ae9546854601fa066561675d53ea45725bfaf44fa"
+    },
+    ":/qt/qml/SmoothUI/Controls/PasswordBox.qml": {
+      "path": "qml/SmoothUI/Controls/PasswordBox.qml",
+      "sha256": "1d44345c9efffed02b67ec3b41f934e951368f6d1671cb99ba3d30b7f58e1e0d"
+    },
+    ":/qt/qml/SmoothUI/Controls/PillButton.qml": {
+      "path": "qml/SmoothUI/Controls/PillButton.qml",
+      "sha256": "8c7c9c05e4f8d1d92987e3c7c8345af4a1313aeb101231f469e8e00d91d25b91"
+    },
+    ":/qt/qml/SmoothUI/Controls/ProgressButton.qml": {
+      "path": "qml/SmoothUI/Controls/ProgressButton.qml",
+      "sha256": "0a609d23b74535ea7ebde7be41dd6a85bb37f0d5dfd355e979f21fb0fd4d5168"
+    },
+    ":/qt/qml/SmoothUI/Controls/ProgressRing.qml": {
+      "path": "qml/SmoothUI/Controls/ProgressRing.qml",
+      "sha256": "c6eacb2357139ad9d12b25fa3b9e2e9ff156e4f77aa01a6bba17afbf9a3235ba"
+    },
+    ":/qt/qml/SmoothUI/Controls/QMLHighlighter.qml": {
+      "path": "qml/SmoothUI/Controls/QMLHighlighter.qml",
+      "sha256": "7872e1abc0236af418a3d9fba49115b0defd6d6b6d5276b774b8fbd3a2cd2fbd"
+    },
+    ":/qt/qml/SmoothUI/Controls/RadialGradient.qml": {
+      "path": "qml/SmoothUI/Controls/RadialGradient.qml",
+      "sha256": "35b1f797d877fce5b295f09686195386ae00691c205725336ce7a503d3eb5d0c"
+    },
+    ":/qt/qml/SmoothUI/Controls/RatingControl.qml": {
+      "path": "qml/SmoothUI/Controls/RatingControl.qml",
+      "sha256": "5e16242a4e9fbc9f16e1861074c529e13b4579dd4f11204164d146fb875119be"
+    },
+    ":/qt/qml/SmoothUI/Controls/RefreshGridView.qml": {
+      "path": "qml/SmoothUI/Controls/RefreshGridView.qml",
+      "sha256": "44f1759893d4aa71fedab92a3ec5add6e523e70a50071eb3195f17ac28b05ff6"
+    },
+    ":/qt/qml/SmoothUI/Controls/RefreshListView.qml": {
+      "path": "qml/SmoothUI/Controls/RefreshListView.qml",
+      "sha256": "c039e77764f3db7508a37cf02d564134d980495fb95f2685bfaa0b5194628e43"
+    },
+    ":/qt/qml/SmoothUI/Controls/Result.qml": {
+      "path": "qml/SmoothUI/Controls/Result.qml",
+      "sha256": "6cdb203fa6a1f7346965d16172e67a97d937a941571aad749aefef3627b61f81"
+    },
+    ":/qt/qml/SmoothUI/Controls/RibbonBar.qml": {
+      "path": "qml/SmoothUI/Controls/RibbonBar.qml",
+      "sha256": "10cbfe4c620134a17ab975a880a76b321869b32c944a7a4071c54c3f6703681f"
+    },
+    ":/qt/qml/SmoothUI/Controls/RibbonButton.qml": {
+      "path": "qml/SmoothUI/Controls/RibbonButton.qml",
+      "sha256": "b86a88186894e00d36db383668a788e2547b967869a4fd9e00fec64c0ae1ec28"
+    },
+    ":/qt/qml/SmoothUI/Controls/RibbonPanel.qml": {
+      "path": "qml/SmoothUI/Controls/RibbonPanel.qml",
+      "sha256": "bcb8a88fdcd9d0560fbe50cea34dc0f5224432f8ff127cb25359f09fa33e8c3e"
+    },
+    ":/qt/qml/SmoothUI/Controls/RoundClip.qml": {
+      "path": "qml/SmoothUI/Controls/RoundClip.qml",
+      "sha256": "6d8e676a3cd064aa4f523afaa8af9c2c6636d500b62e41e887477815a1f09581"
+    },
+    ":/qt/qml/SmoothUI/Controls/RoundImageView.qml": {
+      "path": "qml/SmoothUI/Controls/RoundImageView.qml",
+      "sha256": "04bbda91253eb0d6ee06a3b841065294ad76bc5063c2176be407377748ebcf0b"
+    },
+    ":/qt/qml/SmoothUI/Controls/ScrollablePage.qml": {
+      "path": "qml/SmoothUI/Controls/ScrollablePage.qml",
+      "sha256": "d09125318368c5f1f036503ecd015eb67b3464019cfb2515679df232afff4635"
+    },
+    ":/qt/qml/SmoothUI/Controls/ScrollableTextBox.qml": {
+      "path": "qml/SmoothUI/Controls/ScrollableTextBox.qml",
+      "sha256": "f332d7ccd33ca5ce90adff08dd1fe8d9dd4c0e836c04f585e805409f24d5d3cc"
+    },
+    ":/qt/qml/SmoothUI/Controls/SegmentedButton.qml": {
+      "path": "qml/SmoothUI/Controls/SegmentedButton.qml",
+      "sha256": "2cfde6d54abaa408a3e25b314b2cf1f017a3cb42594f3ec53b5ec21d3e0d43f6"
+    },
+    ":/qt/qml/SmoothUI/Controls/SegmentedControl.qml": {
+      "path": "qml/SmoothUI/Controls/SegmentedControl.qml",
+      "sha256": "eb8661fffddb75aafd543a1dbf2f5ba20d22f5f6b883fb065ce485a9da6e3d7a"
+    },
+    ":/qt/qml/SmoothUI/Controls/SelectionArea.qml": {
+      "path": "qml/SmoothUI/Controls/SelectionArea.qml",
+      "sha256": "faab03b11662ad0e3a328e19a69fe5c5064729c4a4cd6c17636af4c19bc94eb4"
+    },
+    ":/qt/qml/SmoothUI/Controls/Shadow.qml": {
+      "path": "qml/SmoothUI/Controls/Shadow.qml",
+      "sha256": "7f9b7822eb7d51376fb49ea76f6fdc7185aec69e17aefe1a82736dd07c8a7289"
+    },
+    ":/qt/qml/SmoothUI/Controls/Shimmer.qml": {
+      "path": "qml/SmoothUI/Controls/Shimmer.qml",
+      "sha256": "d394c58a5a3808963d776c37d02acf743a1a658f7de389deee9567d0bfab3392"
+    },
+    ":/qt/qml/SmoothUI/Controls/ShortcutPicker.qml": {
+      "path": "qml/SmoothUI/Controls/ShortcutPicker.qml",
+      "sha256": "a19d98e405785aa8254b44faaf06e092a3faba146ec748dd61a73080f82cb644"
+    },
+    ":/qt/qml/SmoothUI/Controls/SideBarBackground.qml": {
+      "path": "qml/SmoothUI/Controls/SideBarBackground.qml",
+      "sha256": "37e9fe510ea4ce3aa6a503957466656c9d8b6ad53ed3f2ca837014cb41965055"
+    },
+    ":/qt/qml/SmoothUI/Controls/SideBarTextStyle.qml": {
+      "path": "qml/SmoothUI/Controls/SideBarTextStyle.qml",
+      "sha256": "e2b85c596b8220c4d53f3b3a5c9112ccd6e3c27db3c6b14cf2a82e14ea1a6866"
+    },
+    ":/qt/qml/SmoothUI/Controls/SkeletonItem.qml": {
+      "path": "qml/SmoothUI/Controls/SkeletonItem.qml",
+      "sha256": "38e14a60ed8cff27a4f82e935e2787a1c7c5aafc077494ab183ec623c3c517ea"
+    },
+    ":/qt/qml/SmoothUI/Controls/SkeletonView.qml": {
+      "path": "qml/SmoothUI/Controls/SkeletonView.qml",
+      "sha256": "deaab3be29392a82b26f5506fe0f268714f4718e712087d26259fb1358aaa925"
+    },
+    ":/qt/qml/SmoothUI/Controls/SplitLayout.qml": {
+      "path": "qml/SmoothUI/Controls/SplitLayout.qml",
+      "sha256": "ac4e3b1faee5a8881031c7b73201c090aa61cd5479f6704dfa4c7ce60b7fcd7c"
+    },
+    ":/qt/qml/SmoothUI/Controls/StackPage.qml": {
+      "path": "qml/SmoothUI/Controls/StackPage.qml",
+      "sha256": "62578f0a0255c612ea59bc504c4ea6a543184de2117ac8a29473ee1cb340aeec"
+    },
+    ":/qt/qml/SmoothUI/Controls/StaggeredGridView.qml": {
+      "path": "qml/SmoothUI/Controls/StaggeredGridView.qml",
+      "sha256": "f20945cc620870ac5c1b90edccfd86aeb819a140de6f49dcaf56109583ddce79"
+    },
+    ":/qt/qml/SmoothUI/Controls/StaggeredLayout.qml": {
+      "path": "qml/SmoothUI/Controls/StaggeredLayout.qml",
+      "sha256": "b7ae137b7ffec5d4c89b74a6fe69ea73bd391a4d90f64ce6268a077ade66a0c3"
+    },
+    ":/qt/qml/SmoothUI/Controls/StandardButton.qml": {
+      "path": "qml/SmoothUI/Controls/StandardButton.qml",
+      "sha256": "977c7c67f015e69f3461c08d271f93fdedb01700e067fb00030a3a56a68424c9"
+    },
+    ":/qt/qml/SmoothUI/Controls/Starter.qml": {
+      "path": "qml/SmoothUI/Controls/Starter.qml",
+      "sha256": "deed0775b6a69a9151cf926f257632fc764c3fa168c031e399ffd92950184ba6"
+    },
+    ":/qt/qml/SmoothUI/Controls/Statistic.qml": {
+      "path": "qml/SmoothUI/Controls/Statistic.qml",
+      "sha256": "c57b8e0057df6fdcbb81e3a49ef1282a288850dea46f7dc7912bc5536536626c"
+    },
+    ":/qt/qml/SmoothUI/Controls/StatisticTimer.qml": {
+      "path": "qml/SmoothUI/Controls/StatisticTimer.qml",
+      "sha256": "f433dce9ad2dc651830078123a5455cdcd0365b5b21443bd07be40269afc88b9"
+    },
+    ":/qt/qml/SmoothUI/Controls/SyntaxView.qml": {
+      "path": "qml/SmoothUI/Controls/SyntaxView.qml",
+      "sha256": "5993ac663125c6c123a25baf5b5cbcc2459bf260e077f7986b3e5ec37091b6c1"
+    },
+    ":/qt/qml/SmoothUI/Controls/TabView.qml": {
+      "path": "qml/SmoothUI/Controls/TabView.qml",
+      "sha256": "83baae5e91b4372af7d3c803e3f44d451092bcc23733a6ee03555459dd392960"
+    },
+    ":/qt/qml/SmoothUI/Controls/TagInputBox.qml": {
+      "path": "qml/SmoothUI/Controls/TagInputBox.qml",
+      "sha256": "16c87fc2975e22a581a92607c36191460eea7826489e40f7546d481905921fbd"
+    },
+    ":/qt/qml/SmoothUI/Controls/TextBox.qml": {
+      "path": "qml/SmoothUI/Controls/TextBox.qml",
+      "sha256": "01a1dd9f19efe947bf36f2255ab987349ebbc9d48c4dcf5dbb2a2e81707352a9"
+    },
+    ":/qt/qml/SmoothUI/Controls/TextEditingContextMenu.qml": {
+      "path": "qml/SmoothUI/Controls/TextEditingContextMenu.qml",
+      "sha256": "be1512a2a94fcc3383fe0eb025b786b88d8dbe2a79f27f11b771c1788ec94aa8"
+    },
+    ":/qt/qml/SmoothUI/Controls/Theme.qml": {
+      "path": "qml/SmoothUI/Controls/Theme.qml",
+      "sha256": "ee9b333f09004e85f1d709170a057441a6058b5ba12ad8fdef9a86bea26a172a"
+    },
+    ":/qt/qml/SmoothUI/Controls/TimePicker.qml": {
+      "path": "qml/SmoothUI/Controls/TimePicker.qml",
+      "sha256": "896d3ff209dc57513dd5d0788db91e3f20cf0f55460c4c3f15a08ac4f0b6e57b"
+    },
+    ":/qt/qml/SmoothUI/Controls/Timeline.qml": {
+      "path": "qml/SmoothUI/Controls/Timeline.qml",
+      "sha256": "3ea588a5a02734e02627798513a6118cca38f2f3c2f97c02ea4a4c6a8eeda360"
+    },
+    ":/qt/qml/SmoothUI/Controls/ToggleButton.qml": {
+      "path": "qml/SmoothUI/Controls/ToggleButton.qml",
+      "sha256": "16c83189126b7722faeb0827c4e917e920e4dd1f065a601c8f4f95bb1ae91449"
+    },
+    ":/qt/qml/SmoothUI/Controls/Tour.qml": {
+      "path": "qml/SmoothUI/Controls/Tour.qml",
+      "sha256": "f84f092ed2fe70590e53607cc8bc65b751654860ea77b80216612220a135c775"
+    },
+    ":/qt/qml/SmoothUI/Controls/TreeDataGrid.qml": {
+      "path": "qml/SmoothUI/Controls/TreeDataGrid.qml",
+      "sha256": "9fe0ff41ec3e779a328b81c733a353550a87118633c2ffbd68165dbe2fd75234"
+    },
+    ":/qt/qml/SmoothUI/Controls/TreeView.qml": {
+      "path": "qml/SmoothUI/Controls/TreeView.qml",
+      "sha256": "1c331b67223ba25c2f130b1cfae06b082fefcc70371a76e517dbc3faa2cff34d"
+    },
+    ":/qt/qml/SmoothUI/Controls/Typography.qml": {
+      "path": "qml/SmoothUI/Controls/Typography.qml",
+      "sha256": "56497eefbe9383920efe280b544ab4d37a01a3c8005ce8e32d5f811b3d32f57d"
+    },
+    ":/qt/qml/SmoothUI/Controls/Watermark.qml": {
+      "path": "qml/SmoothUI/Controls/Watermark.qml",
+      "sha256": "52e0203a559f7c76bccd9e03ea58c9ee454cb836d93299dcd560e2982936789c"
+    },
+    ":/qt/qml/SmoothUI/Controls/WindowResultLauncher.qml": {
+      "path": "qml/SmoothUI/Controls/WindowResultLauncher.qml",
+      "sha256": "0a18ac88a7b27f412cb8af54689f0d3eb06ad523301c98ddae6090c6c2e3ac0a"
+    },
+    ":/qt/qml/SmoothUI/Controls/WindowRouter.qml": {
+      "path": "qml/SmoothUI/Controls/WindowRouter.qml",
+      "sha256": "39495d3714f0a564c12acd7444e32cfabb65f2834946bba9143934a01743ad3e"
+    },
+    ":/qt/qml/SmoothUI/Controls/font/FluentIcons.ttf": {
+      "path": "qml/SmoothUI/Controls/font/FluentIcons.ttf",
+      "sha256": "82f5dc0e0cb9f41efad49e5423c76768ae0fc96e062a0893b6c729b863033013"
+    },
+    ":/qt/qml/SmoothUI/Controls/noise.webp": {
+      "path": "qml/SmoothUI/Controls/noise.webp",
+      "sha256": "c29456a4877a80db653862c5d91c5cadd2417da140d5441bc139b9bb5e91cae1"
+    },
+    ":/qt/qml/SmoothUI/DelayButton.qml": {
+      "path": "qml/SmoothUI/DelayButton.qml",
+      "sha256": "6c2f6766871a818c2f1e60ca5c3b9c623e486edc8e139e859f947567765beff4"
+    },
+    ":/qt/qml/SmoothUI/Dial.qml": {
+      "path": "qml/SmoothUI/Dial.qml",
+      "sha256": "2f312121e8ceb1fe87e921abab5ed5ec95419ba9fb88234025aab16fbc4b7554"
+    },
+    ":/qt/qml/SmoothUI/Dialog.qml": {
+      "path": "qml/SmoothUI/Dialog.qml",
+      "sha256": "409dd4b0aa14c1c97d1d167814e55f9fb530d0606db97182b56100c434436e6f"
+    },
+    ":/qt/qml/SmoothUI/DialogButtonBox.qml": {
+      "path": "qml/SmoothUI/DialogButtonBox.qml",
+      "sha256": "a5db62ba699c2e2eece0961105e402a95d20ecd758ab2ebf0fd708fcb828e13d"
+    },
+    ":/qt/qml/SmoothUI/Drawer.qml": {
+      "path": "qml/SmoothUI/Drawer.qml",
+      "sha256": "28c4a2b8754bd7b53c34ae18fbf98172a02ec395953d4e4dcf8afdc4801465af"
+    },
+    ":/qt/qml/SmoothUI/Frame.qml": {
+      "path": "qml/SmoothUI/Frame.qml",
+      "sha256": "f9f60d3435142637ca2a86ac3b176ef10ee06eaa9e3d15de250c988e5e0bfc55"
+    },
+    ":/qt/qml/SmoothUI/GroupBox.qml": {
+      "path": "qml/SmoothUI/GroupBox.qml",
+      "sha256": "e6bd74413389813bed2c082583d976d9d8fb884821cabf4944cdb94ab7c7e4ad"
+    },
+    ":/qt/qml/SmoothUI/HorizontalHeaderView.qml": {
+      "path": "qml/SmoothUI/HorizontalHeaderView.qml",
+      "sha256": "6d00af1e8a15f1852ac77b8468569956f5afe1c8300078d7286f69786dc4a1fc"
+    },
+    ":/qt/qml/SmoothUI/ItemDelegate.qml": {
+      "path": "qml/SmoothUI/ItemDelegate.qml",
+      "sha256": "d47bfe15e4bc556187a02a2f7d5dff3d4ecfdc781b28396cfc1e8cceba6186c4"
+    },
+    ":/qt/qml/SmoothUI/Label.qml": {
+      "path": "qml/SmoothUI/Label.qml",
+      "sha256": "517541f5b7a8dbcf16a68a97fa7064be108ecfe78ed9fed6426178bbea892f46"
+    },
+    ":/qt/qml/SmoothUI/Menu.qml": {
+      "path": "qml/SmoothUI/Menu.qml",
+      "sha256": "4621fd007cb53cbcb196b5a24321f037c919e84e31ffa5aedd942ff89cee061a"
+    },
+    ":/qt/qml/SmoothUI/MenuBar.qml": {
+      "path": "qml/SmoothUI/MenuBar.qml",
+      "sha256": "1904f344270f323c0f3c0599a1654abde6558e1e1e47f93b520505d28a1b322a"
+    },
+    ":/qt/qml/SmoothUI/MenuBarItem.qml": {
+      "path": "qml/SmoothUI/MenuBarItem.qml",
+      "sha256": "230c29929b1cd019ffbcc5325bd6c1bdb4954bcca71c0d165a2f98b7151754fc"
+    },
+    ":/qt/qml/SmoothUI/MenuItem.qml": {
+      "path": "qml/SmoothUI/MenuItem.qml",
+      "sha256": "966438659343395f047c35240811790847f6f5cd8b66c3e6f638b78f27360d73"
+    },
+    ":/qt/qml/SmoothUI/MenuSeparator.qml": {
+      "path": "qml/SmoothUI/MenuSeparator.qml",
+      "sha256": "e9d0b269e5b8d7e418441d293be06107ecfa11005fb588d8817000fa744db4b2"
+    },
+    ":/qt/qml/SmoothUI/Page.qml": {
+      "path": "qml/SmoothUI/Page.qml",
+      "sha256": "fffe8a557548f861ff8e93c47666f48727efddebc9a0fa6c351f21ae5a86cbd6"
+    },
+    ":/qt/qml/SmoothUI/PageIndicator.qml": {
+      "path": "qml/SmoothUI/PageIndicator.qml",
+      "sha256": "fa6052e036b6fe3112703f6e7f0145fa12e72391c234c67886ffd9ac1f01108e"
+    },
+    ":/qt/qml/SmoothUI/Pane.qml": {
+      "path": "qml/SmoothUI/Pane.qml",
+      "sha256": "586d20c0a33151eb58aa43431aba48173d4fc5525258f0c66c5dbf926a78258a"
+    },
+    ":/qt/qml/SmoothUI/Popup.qml": {
+      "path": "qml/SmoothUI/Popup.qml",
+      "sha256": "e990d52e8cc3b52da31c17de7a004f9cfa6902a57f31eda92db088270a3c7493"
+    },
+    ":/qt/qml/SmoothUI/ProgressBar.qml": {
+      "path": "qml/SmoothUI/ProgressBar.qml",
+      "sha256": "9fa5f3f4ee8726b2ef85a49ecffd07e87292060404048592c0a45f0482a6e89d"
+    },
+    ":/qt/qml/SmoothUI/QuickActionMenu.qml": {
+      "path": "qml/SmoothUI/QuickActionMenu.qml",
+      "sha256": "d51c02a7518cca14517eef24b23f3d775649463b7c9cb71a96225f3f48a17777"
+    },
+    ":/qt/qml/SmoothUI/QuickActionSubmenu.qml": {
+      "path": "qml/SmoothUI/QuickActionSubmenu.qml",
+      "sha256": "28b467be8f3a7ed52665d359ce8f65c60a29e2b94eb30a7911b716d6ec75b0b8"
+    },
+    ":/qt/qml/SmoothUI/RadioButton.qml": {
+      "path": "qml/SmoothUI/RadioButton.qml",
+      "sha256": "5e85abf342d74b5b1ed7b00f8f4aeca6fcb4220552992e461b40d5bd4fe79aa2"
+    },
+    ":/qt/qml/SmoothUI/RangeSlider.qml": {
+      "path": "qml/SmoothUI/RangeSlider.qml",
+      "sha256": "8c3df7bf90804487d4228d3c335c5dd36d767a9ef83af5ae0cc7da0b35ae84e2"
+    },
+    ":/qt/qml/SmoothUI/ScrollBar.qml": {
+      "path": "qml/SmoothUI/ScrollBar.qml",
+      "sha256": "39a5474c0608026cae3c6d3793b2be7c12826ea8a9a32650601f2f435c407a51"
+    },
+    ":/qt/qml/SmoothUI/ScrollView.qml": {
+      "path": "qml/SmoothUI/ScrollView.qml",
+      "sha256": "c71bddcc45be2890cdfb9ae3dd7edb30e7938ebb57ba341665783c584e7b25df"
+    },
+    ":/qt/qml/SmoothUI/SelectionRectangle.qml": {
+      "path": "qml/SmoothUI/SelectionRectangle.qml",
+      "sha256": "2d31e4395a52bcb6cd2b720a941888e16a6f1b3c5a695afd43bb87ecd5162346"
+    },
+    ":/qt/qml/SmoothUI/Slider.qml": {
+      "path": "qml/SmoothUI/Slider.qml",
+      "sha256": "67be276f4a7b309a517304f848773bc52e5ff50e3db38369580d40715518e367"
+    },
+    ":/qt/qml/SmoothUI/SpinBox.qml": {
+      "path": "qml/SmoothUI/SpinBox.qml",
+      "sha256": "617f0e11a1457115e702d7c4abdb989162f55df87ece7bf744a9194da03c33cc"
+    },
+    ":/qt/qml/SmoothUI/SplitView.qml": {
+      "path": "qml/SmoothUI/SplitView.qml",
+      "sha256": "5d0de05c72a57e3954455d149766cff8bd283b19c63132064d8046314893e78a"
+    },
+    ":/qt/qml/SmoothUI/StackView.qml": {
+      "path": "qml/SmoothUI/StackView.qml",
+      "sha256": "8a5fd6f3a96486cb406d2f6de88f94500a60eaeba576143b24ea7c1f7a791c33"
+    },
+    ":/qt/qml/SmoothUI/Switch.qml": {
+      "path": "qml/SmoothUI/Switch.qml",
+      "sha256": "66fc264cccaa84fcb9256f5118c1915616a33c6e9146cb6b1c97df4636687f08"
+    },
+    ":/qt/qml/SmoothUI/TabBar.qml": {
+      "path": "qml/SmoothUI/TabBar.qml",
+      "sha256": "fcb003abcf3bfc9b18c6ebe4ff7d918bb1db5c573a4a53b39bbe3778baffc14e"
+    },
+    ":/qt/qml/SmoothUI/TabButton.qml": {
+      "path": "qml/SmoothUI/TabButton.qml",
+      "sha256": "b0ca64cb34183d574b5aa21c8d38c93d2e36cca73b18287c456bc21a78c6f2f1"
+    },
+    ":/qt/qml/SmoothUI/TextArea.qml": {
+      "path": "qml/SmoothUI/TextArea.qml",
+      "sha256": "60878d3ca1a1f3442f5d5a9e5d3bcfa48d5472dca8fb09c095796f04d3141d56"
+    },
+    ":/qt/qml/SmoothUI/TextField.qml": {
+      "path": "qml/SmoothUI/TextField.qml",
+      "sha256": "23833333662c0053bfd54ca5d5af6e2ce36d23dab20be72c7fe188a13ff39c0d"
+    },
+    ":/qt/qml/SmoothUI/ToolBar.qml": {
+      "path": "qml/SmoothUI/ToolBar.qml",
+      "sha256": "0768d38c201c8cae55e7b4041a5f3786535d4fe35438e87b13ca4ff2ac70787f"
+    },
+    ":/qt/qml/SmoothUI/ToolBarButton.qml": {
+      "path": "qml/SmoothUI/ToolBarButton.qml",
+      "sha256": "fb67abc87a441ab830389aea73627e77a48463fdc9705670006b48156893e9a9"
+    },
+    ":/qt/qml/SmoothUI/ToolBarSeparator.qml": {
+      "path": "qml/SmoothUI/ToolBarSeparator.qml",
+      "sha256": "48ce1e32926041350dd1d14b37286dbb6c08aa20f7a54912f4bb0bd865623649"
+    },
+    ":/qt/qml/SmoothUI/ToolTip.qml": {
+      "path": "qml/SmoothUI/ToolTip.qml",
+      "sha256": "33a8e74e3ff8b7de345b8a7a5783c14e329719528a8312b9aff16522a4fa3880"
+    },
+    ":/qt/qml/SmoothUI/TreeViewDelegate.qml": {
+      "path": "qml/SmoothUI/TreeViewDelegate.qml",
+      "sha256": "7c2020f4de561059c840e14b2dde001719c823634b999070289a518bf41ee70c"
+    },
+    ":/qt/qml/SmoothUI/Tumbler.qml": {
+      "path": "qml/SmoothUI/Tumbler.qml",
+      "sha256": "d307a3fc25abeb33564ab4c495d2c167f88eea38aca4087f088b2c703de84268"
+    },
+    ":/qt/qml/SmoothUI/VerticalHeaderView.qml": {
+      "path": "qml/SmoothUI/VerticalHeaderView.qml",
+      "sha256": "632bab281cf4267ea1e6876e8a57b1a391813d91b6bd13df2f50c9813ca02ddb"
+    },
+    ":/qt/qml/SmoothUI/impl/Objects.qml": {
+      "path": "qml/SmoothUI/impl/Objects.qml",
+      "sha256": "ba713fea7173ef7d022cc676a4f20fb9aa06394acca51e8d3f94c6cb11f44041"
+    },
+    ":/qt/qml/SmoothUI/impl/SyntaxHighlighter.qml": {
+      "path": "qml/SmoothUI/impl/SyntaxHighlighter.qml",
+      "sha256": "68c70a50890536c5480bfba8bf0a2c0733a1cb087cf9dab05562945aed51f6f8"
+    },
+    ":/qt/qml/SmoothUI/impl/config/menus.json": {
+      "path": "qml/SmoothUI/impl/config/menus.json",
+      "sha256": "d508f4e99761e450db859fee339ea0f783529d01cca3d91d3be0aef080906095"
+    },
+    ":/qt/qml/SmoothUIDock/ClassicIndicator.qml": {
+      "path": "qml/SmoothUIDock/ClassicIndicator.qml",
+      "sha256": "36acab6ed7d7c6c0f0927b4da14fbdd71e75c91fb972832498a34900dca0c932"
+    },
+    ":/qt/qml/SmoothUIDock/ClassicIndicatorsOverlay.qml": {
+      "path": "qml/SmoothUIDock/ClassicIndicatorsOverlay.qml",
+      "sha256": "212e91e1d82a05de2cf8145a8b235e1786e312554046e2036b152a36afe753d0"
+    },
+    ":/qt/qml/SmoothUIDock/DockWidget.qml": {
+      "path": "qml/SmoothUIDock/DockWidget.qml",
+      "sha256": "0537c960b1f712d236728b5dba5d6b5c6098ba510ca90ed00d4be4b8d20b372c"
+    },
+    ":/qt/qml/SmoothUIDock/DockingArea.qml": {
+      "path": "qml/SmoothUIDock/DockingArea.qml",
+      "sha256": "0ab5136e894a50f69332f4993663a7e3fcee8cb50a5d1887072039620d593974"
+    },
+    ":/qt/qml/SmoothUIDock/SmoothUIDockWidget.qml": {
+      "path": "qml/SmoothUIDock/SmoothUIDockWidget.qml",
+      "sha256": "dc9dfafaf706a7e670adf4d841a4a0e8e0a417923c430efa0cbbabd18f30e32c"
+    },
+    ":/qt/qml/SmoothUIDock/SmoothUIFloatingWindow.qml": {
+      "path": "qml/SmoothUIDock/SmoothUIFloatingWindow.qml",
+      "sha256": "c873051a22da9547be5b25b74727939ba72d2336c775a0b4c322d5fe031cea84"
+    },
+    ":/qt/qml/SmoothUIDock/SmoothUIGroup.qml": {
+      "path": "qml/SmoothUIDock/SmoothUIGroup.qml",
+      "sha256": "6e54411683bd8cc123a01e4bc9c66f86a2f40cc113d2b2cf77d04f9f09f39318"
+    },
+    ":/qt/qml/SmoothUIDock/SmoothUIRubberBand.qml": {
+      "path": "qml/SmoothUIDock/SmoothUIRubberBand.qml",
+      "sha256": "3167d15c99deedbb0822029c70c07521941f83d9957a5fc78204bf3d79197de4"
+    },
+    ":/qt/qml/SmoothUIDock/SmoothUISeparator.qml": {
+      "path": "qml/SmoothUIDock/SmoothUISeparator.qml",
+      "sha256": "30c3c8052eae5aa2747a7b57d3cdf61a2ac7382845ae5632674980ae635c86b8"
+    },
+    ":/qt/qml/SmoothUIDock/SmoothUITabBar.qml": {
+      "path": "qml/SmoothUIDock/SmoothUITabBar.qml",
+      "sha256": "bf5ae306cbe71e76c3142996fa2213c37f3269fb1ce5d10aa0af0e7738d24e76"
+    },
+    ":/qt/qml/SmoothUIDock/SmoothUITitleBar.qml": {
+      "path": "qml/SmoothUIDock/SmoothUITitleBar.qml",
+      "sha256": "86260c95e89c6f6b2d74813b709e6b0716afd5c751f063c3f30f4246c40d511f"
+    }
+  },
+  "schema": 1
+}

@@ -1,0 +1,95 @@
+[
+    {
+        "classes": [
+            {
+                "classInfos": [
+                    {
+                        "name": "QML.Element",
+                        "value": "SmoothUIDock"
+                    },
+                    {
+                        "name": "QML.Singleton",
+                        "value": "true"
+                    }
+                ],
+                "className": "SmoothUIDock",
+                "enums": [
+                    {
+                        "alias": "Location",
+                        "isClass": false,
+                        "isFlag": true,
+                        "name": "Locations",
+                        "values": [
+                            "Location_None",
+                            "Location_OnLeft",
+                            "Location_OnTop",
+                            "Location_OnRight",
+                            "Location_OnBottom"
+                        ]
+                    },
+                    {
+                        "alias": "MainWindowOption",
+                        "isClass": false,
+                        "isFlag": true,
+                        "name": "MainWindowOptions",
+                        "values": [
+                            "MainWindowOption_None",
+                            "MainWindowOption_HasCentralGroup",
+                            "MainWindowOption_HasCentralFrame",
+                            "MainWindowOption_MDI",
+                            "MainWindowOption_HasCentralWidget",
+                            "MainWindowOption_QDockWidgets",
+                            "MainWindowOption_ManualInit"
+                        ]
+                    }
+                ],
+                "lineNumber": 12,
+                "methods": [
+                    {
+                        "access": "public",
+                        "index": 1,
+                        "name": "init",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "arguments": [
+                            {
+                                "name": "component",
+                                "type": "QObject*"
+                            }
+                        ],
+                        "index": 2,
+                        "name": "setCustomTabBarComponent",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "index": 3,
+                        "isConst": true,
+                        "name": "customTabBarComponent",
+                        "returnType": "QObject*"
+                    }
+                ],
+                "object": true,
+                "qualifiedClassName": "SmoothUIDock",
+                "signals": [
+                    {
+                        "access": "public",
+                        "index": 0,
+                        "name": "customTabBarComponentChanged",
+                        "returnType": "void"
+                    }
+                ],
+                "superClasses": [
+                    {
+                        "access": "public",
+                        "name": "QObject"
+                    }
+                ]
+            }
+        ],
+        "inputFile": "SmoothUIDock.h",
+        "outputRevision": 69
+    }
+]
