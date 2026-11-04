@@ -115,7 +115,8 @@ if (component.status === Component.Ready) {
 var item = component.createObject(object.parent.contentItem, {
 subMenuModel: object.subMenuModel,
 view: control.view,
-text: object.subMenuModel.text
+text: object.subMenuModel.text,
+tmenu: object.subMenuModel
 });
 object.value = item;
 control.insertItem(index, item);

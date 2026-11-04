@@ -2,7 +2,7 @@
   "APP_SOURCE_STATE": {
     "DIFF_SHA256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
     "DIRTY": false,
-    "HEAD": "e89f9e23749950e67cb6d64606f01639289d4621"
+    "HEAD": "be2fa4afd9efbcbef5c10c113c5aadb17183bd72"
   },
   "CMAKE_BUILD_TYPE": "Release",
   "CMAKE_CXX_COMPILER_ID": "AppleClang",
@@ -57,16 +57,16 @@
   "SDK_FORMAT": 3,
   "SOURCE_INPUTS": {
     "OrcaSlicer": {
-      "content_sha256": "f4e16fb27e5ad0fafcf188d3ecc3236576cd9166c0bcc82d14f6d7599ceba4ee",
+      "content_sha256": "15c3e0f4ffb84a9a7d13dfc59f92c829327341f068fa3329702119a8c6f2199c",
       "diff_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
       "dirty": false,
-      "revision": "9eadbf0c6882368db6a7c6e651cf5ebec692bc6b"
+      "revision": "ad64f2c7fdb33e1fcae536c33215ea4e43bb7a8f"
     },
     "SmoothUI": {
-      "content_sha256": "77bc11814d2f9afe0ca52f5f7badfd742774fd475ea2a0e80867bfdae37c0882",
+      "content_sha256": "d4a83fb12cc42b7817ead1ca8e044c1897520a3e4d0f8f14cbaa313372ffa540",
       "diff_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
       "dirty": false,
-      "revision": "fa4e4ce9cb0eed20ab019ad247465762a0b6fa8c"
+      "revision": "99d7edccb247baa3830e0cd383d476e418a4f59a"
     },
     "SmoothUIDock": {
       "content_sha256": "ca3c2b2cc877bda47154eff038537e0a4252c7358ada4ddc4771098868fc6157",
@@ -88,17 +88,17 @@
     "SmoothUIDock/KDDockWidgets": false
   },
   "SOURCE_REVISIONS": {
-    "OrcaSlicer": "9eadbf0c6882368db6a7c6e651cf5ebec692bc6b",
-    "SmoothUI": "fa4e4ce9cb0eed20ab019ad247465762a0b6fa8c",
+    "OrcaSlicer": "ad64f2c7fdb33e1fcae536c33215ea4e43bb7a8f",
+    "SmoothUI": "99d7edccb247baa3830e0cd383d476e418a4f59a",
     "SmoothUIDock": "0ef2365585071f28ff6f584d272547958dc69022",
     "SmoothUIDock/KDDockWidgets": "b2d189c677e15c391999f56ebb3683a08cc86f63"
   },
   "SOURCE_STATE": {
     "DIFF_SHA256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
     "DIRTY": false,
-    "HEAD": "a0621e8107e6e3686313c2aa5b16ed5a534f2582",
+    "HEAD": "eaac4674427e37e747606dd35bf370c74879a3ad",
     "MERGE_HEAD": ""
   },
   "UI_BINARY_PACKAGE_VERSION": 1,
-  "UI_PACKAGE_SHA256": "fbbd44a1fbb5635a1669eacf5f9a0c388fd56d36592a36aef4508a2640e4fee6"
+  "UI_PACKAGE_SHA256": "e66589e318d62805b9c1c9611752b8421c8119538aea239e0d648f037fe5c29a"
 }

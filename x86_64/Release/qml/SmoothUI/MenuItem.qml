@@ -19,6 +19,7 @@ SmoothUI.theme: Theme.of(control)
 property var accentColor: SmoothUI.theme.accentColor
 property var localIconSource: ""
 property TMenuItem tmenu : null
+objectName: tmenu && tmenu.actionCode ? "menuAction_" + tmenu.actionCode : ""
 implicitWidth: Math.max(implicitBackgroundWidth + leftInset + rightInset,
 implicitContentWidth + leftPadding + rightPadding)
 implicitHeight: Math.max(implicitBackgroundHeight + topInset + bottomInset,
