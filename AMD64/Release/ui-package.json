@@ -160,7 +160,7 @@
     },
     ":/qt/qml/SmoothUI/Controls/FileBrowserDialog.qml": {
       "path": "qml/SmoothUI/Controls/FileBrowserDialog.qml",
-      "sha256": "86a44c6a4f098516346665100841b93399389591caa995dcd9a03f21d892f4f2"
+      "sha256": "8a6d237a6df07a1bb1b7c156b42d3eef2ed8b51d922a06ceeb7f56e2eb2e659d"
     },
     ":/qt/qml/SmoothUI/Controls/FilePicker.qml": {
       "path": "qml/SmoothUI/Controls/FilePicker.qml",
@@ -572,7 +572,7 @@
     },
     ":/qt/qml/SmoothUI/Menu.qml": {
       "path": "qml/SmoothUI/Menu.qml",
-      "sha256": "aeebdf62f5bc3ba27252b3baeff92ae35976bf0e6f530b62435413664a0f86de"
+      "sha256": "945063a28a51ff067625e23bf3f9310974147b388232b7b96fc392267423bb32"
     },
     ":/qt/qml/SmoothUI/MenuBar.qml": {
       "path": "qml/SmoothUI/MenuBar.qml",
@@ -584,7 +584,7 @@
     },
     ":/qt/qml/SmoothUI/MenuItem.qml": {
       "path": "qml/SmoothUI/MenuItem.qml",
-      "sha256": "0b7e8f88286d45cf7f33049f2233ec80005dda6e3cd81f316b063482775bd446"
+      "sha256": "0306dc265df09dc9f52870e58729d6aee4d06476c8e575906379c494e5803faf"
     },
     ":/qt/qml/SmoothUI/MenuSeparator.qml": {
       "path": "qml/SmoothUI/MenuSeparator.qml",

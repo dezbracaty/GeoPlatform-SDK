@@ -8,6 +8,7 @@ import SmoothUI.Controls
 import SmoothUI.impl
 Window {
 id: control
+objectName: "smoothui.fileBrowser"
 property string mode: "openFile"
 property url currentFolder: StandardPaths.writableLocation(StandardPaths.HomeLocation)
 property url currentFile
@@ -449,6 +450,7 @@ onClicked: control.refreshFolder()
 }
 TextBox {
 id: addressBox
+objectName: "fileBrowserLocation"
 Layout.fillWidth: true
 Layout.minimumWidth: 100
 placeholderText: qsTr("Enter folder path")
@@ -740,6 +742,7 @@ color: control.SmoothUI.theme.res.textFillColorSecondary
 font: Typography.body
 }
 TextBox {
+objectName: "fileBrowserFileName"
 text: control.fileName
 Layout.fillWidth: true
 selectByMouse: true
@@ -771,6 +774,7 @@ implicitWidth: 88
 onClicked: control.rejectSelection()
 }
 FilledButton {
+objectName: "fileBrowserAccept"
 text: control.mode === "saveFile" ? qsTr("Save")
 : control.mode === "openFolder" ? qsTr("Select") : qsTr("Open")
 enabled: control.canAccept
