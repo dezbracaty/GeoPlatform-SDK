@@ -174,11 +174,18 @@ function(gplatform_assert_renderer_library_boundaries host_target backend_target
 
     get_target_property(
         _backend_public_dirs ${_backend_implementation} INTERFACE_INCLUDE_DIRECTORIES)
-    if(_backend_public_dirs AND
-       NOT _backend_public_dirs MATCHES "-NOTFOUND$")
-        message(FATAL_ERROR
-            "${_backend_implementation} must not export include directories: ${_backend_public_dirs}")
-    endif()
+    get_target_property(_backend_source_dir ${_backend_implementation} SOURCE_DIR)
+    foreach(_dir IN LISTS _backend_public_dirs)
+        if(_dir MATCHES "-NOTFOUND$")
+            continue()
+        endif()
+        # Native extensions are an explicit opt-in API. Session/thread and
+        # adapter implementations remain private; BaseRender stays neutral.
+        if(NOT _dir STREQUAL "$<BUILD_INTERFACE:${_backend_source_dir}/include>")
+            message(FATAL_ERROR
+                "${_backend_implementation} exports a non-API directory: ${_dir}")
+        endif()
+    endforeach()
 
     get_target_property(
         _backend_public_links ${_backend_implementation} INTERFACE_LINK_LIBRARIES)
