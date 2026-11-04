@@ -27,6 +27,8 @@ class JOURNALSYSTEM_EXPORT JournalSystem final : public QObject {
     Q_OBJECT
     Q_PROPERTY(quint16 serverPort READ serverPort NOTIFY listeningChanged)
     Q_PROPERTY(QString listenError READ listenError NOTIFY listeningChanged)
+    Q_PROPERTY(bool recording READ isRecording NOTIFY recordingChanged)
+    Q_PROPERTY(bool replaying READ isReplaying NOTIFY replayingChanged)
 
 public:
     using ActionInvoker = std::function<bool(
@@ -49,12 +51,16 @@ public:
     void setReplayPreparationHandler(ReplayPreparationHandler handler);
     void setStartupReplayId(const QString& replayId);
 
+    bool isRecording() const { return m_recording; }
+    bool isReplaying() const { return m_replayActive; }
     void startRecording();
     QJsonArray stopRecording();
     bool executeEntry(const JournalEntry& entry, QString* error = nullptr);
 
 signals:
     void listeningChanged();
+    void recordingChanged();
+    void replayingChanged();
 
 protected:
     bool eventFilter(QObject* watched, QEvent* event) override;

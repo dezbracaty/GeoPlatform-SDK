@@ -5,30 +5,30 @@
       "path": "SmoothUI",
       "protected_qml": true,
       "qml_count": 46,
-      "qrc_sha256": "4a6fc97cbd1327d3ebe4d6f820f00f76799bf3835c26ad3d57af37cf3011c147",
+      "qrc_sha256": "73ae4690ee234a0a41d16d8d0ad3bd369ef254050fd4fb296c4545a7d0fdc69c",
       "target": "SmoothUI"
     },
     "SmoothUI.Controls": {
       "path": "SmoothUI/Controls",
       "protected_qml": true,
       "qml_count": 118,
-      "qrc_sha256": "a74214c64a4528513a12f0d7067d6eeba6aa27d349f7fd15866c734927806502",
-      "resource_qrc_sha256": "3b004689be54a352e0430924a8f9bbde329fca2df644fdef8eee14256fd5d843",
+      "qrc_sha256": "30d5cca16ec7af099e98d91606df0f506b2f5a782f110112b325b4a6dc5996a9",
+      "resource_qrc_sha256": "abe6aadf44024fa0feff9f2ebc2d4692495ceaed33554671d8e56fc4c727cbf9",
       "target": "SmoothUIControls"
     },
     "SmoothUI.impl": {
       "path": "SmoothUI/impl",
       "protected_qml": true,
       "qml_count": 2,
-      "qrc_sha256": "03f55f2ad686cb2e2801e5688d6417444584fb6cb3971fb3de8397b5e23d8da4",
-      "resource_qrc_sha256": "94a50da93585b1fec91a66ec6658edaaf94da30e031f50167740b170e8b9bedd",
+      "qrc_sha256": "cd165b73d25cbd51c1ac37aaf1f31fc08b7b1b9d98dfc447a211ede86600682e",
+      "resource_qrc_sha256": "8fc54eebd5cd52c4e28d15f90d90592e966365c02713c9cdea8747fb071813ea",
       "target": "SmoothUIImpl"
     },
     "SmoothUIDock": {
       "path": "SmoothUIDock",
       "protected_qml": true,
       "qml_count": 11,
-      "qrc_sha256": "9f1ca9ef7e80f43457fb4ddcb97ad94b991b688114e806639c7152a1c0dc5fd2",
+      "qrc_sha256": "6b66bd5ee55966d069b402a70fc487eedfc0667e664f804041e1395a140b9866",
       "target": "SmoothUIDock"
     }
   },
@@ -88,7 +88,7 @@
     },
     ":/qt/qml/SmoothUI/Controls/Chart.js": {
       "path": "qml/SmoothUI/Controls/Chart.js",
-      "sha256": "d89728184eabbb9247cfaddfd9f9caba101b3d39d46deab9dd279488e75ac967"
+      "sha256": "3449ce88aae53804544201083885b4de156acbd15e108a872d5a7af9ce4b6550"
     },
     ":/qt/qml/SmoothUI/Controls/Chart.qml": {
       "path": "qml/SmoothUI/Controls/Chart.qml",
@@ -712,7 +712,7 @@
     },
     ":/qt/qml/SmoothUI/impl/config/menus.json": {
       "path": "qml/SmoothUI/impl/config/menus.json",
-      "sha256": "d508f4e99761e450db859fee339ea0f783529d01cca3d91d3be0aef080906095"
+      "sha256": "ef7aa5ddd79e79b1ddc316257e7e66ecb2cb32f85ee7cdf711bf854260d9110c"
     },
     ":/qt/qml/SmoothUIDock/ClassicIndicator.qml": {
       "path": "qml/SmoothUIDock/ClassicIndicator.qml",
