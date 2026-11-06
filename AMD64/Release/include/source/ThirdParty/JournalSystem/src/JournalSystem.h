@@ -12,7 +12,10 @@
 #include <QJsonObject>
 #include <QJsonValue>
 #include <QList>
+#include <QPointer>
+#include <QRect>
 #include <QVariantMap>
+#include <QWindow>
 
 #include <functional>
 
@@ -39,6 +42,7 @@ public:
     using ReplayPreparationHandler = std::function<bool(const QString&, QString&)>;
 
     explicit JournalSystem(QGuiApplication* app);
+    ~JournalSystem() override;
 
     QString version() const;
     int init(quint16 port = 9999);
@@ -70,6 +74,8 @@ private slots:
 
 private:
     QQuickWindow* resolveWindow(const QJsonObject& descriptor) const;
+    bool prepareSessionWindow(const QJsonObject& params, QString& error);
+    void restoreSessionWindow();
     QQuickItem* resolveInputTarget(const QJsonObject& payload, QString* error) const;
     bool dispatchInput(const JournalEntry& entry, QString* error);
     bool dispatchAction(const JournalEntry& entry, QString* error);
@@ -104,6 +110,11 @@ private:
     QList<JournalEntry> m_entries;
     QString m_recordingsPath;
     QString m_playbacksPath;
+    QPointer<QQuickWindow> m_sessionWindow;
+    QRect m_savedWindowGeometry;
+    QSize m_savedMinimumSize;
+    QSize m_savedMaximumSize;
+    QWindow::Visibility m_savedWindowVisibility{QWindow::Windowed};
 };
 
 #endif // JOURNALSYSTEM_H
