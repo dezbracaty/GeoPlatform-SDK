@@ -502,7 +502,7 @@
   "qml/SmoothUIDock/SmoothUISeparator.qml": "944a6a178769238ee33863f9d4fa347390fd4ce11eefcb18765f5f5d8f461b1d",
   "qml/SmoothUIDock/SmoothUITabBar.qml": "f55c295a31b884f122fd5f22e6da5f53f751fe8ea6d47522dd417e193578e9f2",
   "qml/SmoothUIDock/SmoothUITitleBar.qml": "75f016aa14f5f34730f5b187a673fdba1ca5c82ce50380bb34d5097b14726c92",
-  "sdk-build.json": "cdd9f2e94dd0023a0d1750162eb0c286ce74e8f644005eed6ee509c1d381c1a7",
+  "sdk-build.json": "c6338074e74f172737242d392e3abcb8b2c8832483b5f7fc50d57b928cc5b325",
   "share/licenses/ThirdParty/SmoothUIDock/KDDockWidgets/LICENSE.GPL.txt": "f589e7b6041b47b67d3515627d6c288966741d629e031dc76ddc7e9d11a11d92",
   "share/licenses/ThirdParty/SmoothUIDock/KDDockWidgets/LICENSE.txt": "dae642f8054f6e1501c584406097ea1ecc4c7d6843852ab8c6e605906f6d6c73",
   "share/renderer/monkey.obj": "7b754119aa286ff618b9ac30038c8aa9a093e2820242913728c8b20d8000ca88",

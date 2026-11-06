@@ -2,7 +2,7 @@
   "APP_SOURCE_STATE": {
     "DIFF_SHA256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
     "DIRTY": false,
-    "HEAD": "c812e00b8b9ffc7c4cecdeac7f42203e5d7467d4"
+    "HEAD": "a51f4159cefa650158043be910e77c5d82bc144e"
   },
   "CMAKE_BUILD_TYPE": "Release",
   "CMAKE_CXX_COMPILER_ID": "MSVC",
@@ -57,10 +57,10 @@
   "SDK_FORMAT": 3,
   "SOURCE_INPUTS": {
     "OrcaSlicer": {
-      "content_sha256": "79319d5b470008372ba188b7f28afb3df7ed1adaffd3bc1a38cb9dba2f38bc45",
+      "content_sha256": "4a63f8e960959c82fbdb4b9847d902669743d3910a9090c3cbe55e83d0682f74",
       "diff_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
       "dirty": false,
-      "revision": "186d22b661048eef15ad9ac9442d770d2b1a2499"
+      "revision": "ca64ce1765562269a5a2fff3b50f3aac6604f211"
     },
     "SmoothUI": {
       "content_sha256": "d4a83fb12cc42b7817ead1ca8e044c1897520a3e4d0f8f14cbaa313372ffa540",
@@ -88,7 +88,7 @@
     "SmoothUIDock/KDDockWidgets": false
   },
   "SOURCE_REVISIONS": {
-    "OrcaSlicer": "186d22b661048eef15ad9ac9442d770d2b1a2499",
+    "OrcaSlicer": "ca64ce1765562269a5a2fff3b50f3aac6604f211",
     "SmoothUI": "99d7edccb247baa3830e0cd383d476e418a4f59a",
     "SmoothUIDock": "0ef2365585071f28ff6f584d272547958dc69022",
     "SmoothUIDock/KDDockWidgets": "b2d189c677e15c391999f56ebb3683a08cc86f63"
@@ -96,7 +96,7 @@
   "SOURCE_STATE": {
     "DIFF_SHA256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
     "DIRTY": false,
-    "HEAD": "ac9f1ca7a87063b1a7f9c35746aac4adefba6648",
+    "HEAD": "98c4c2a5f96ae40a43ab60df75596e66c17aa0e2",
     "MERGE_HEAD": ""
   },
   "UI_BINARY_PACKAGE_VERSION": 1,
