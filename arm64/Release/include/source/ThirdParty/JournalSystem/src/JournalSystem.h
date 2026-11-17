@@ -76,7 +76,8 @@ private:
     QQuickWindow* resolveWindow(const QJsonObject& descriptor) const;
     bool prepareSessionWindow(const QJsonObject& params, QString& error);
     void restoreSessionWindow();
-    QQuickItem* resolveInputTarget(const QJsonObject& payload, QString* error) const;
+    QQuickItem* resolveInputTarget(const QJsonObject& payload, QString* error,
+                                  bool* missing = nullptr) const;
     bool dispatchInput(const JournalEntry& entry, QString* error);
     bool dispatchAction(const JournalEntry& entry, QString* error);
     bool appendPhysicalInput(QObject* watched, QEvent* event);
@@ -87,7 +88,7 @@ private:
                       const QJsonObject& result = {},
                       const QString& error = {});
 
-    static constexpr auto Version = "2.0.0";
+    static constexpr auto Version = "2.1.0";
     QGuiApplication* m_app{nullptr};
     Server* m_server{nullptr};
     ActionInvoker m_actionInvoker;
